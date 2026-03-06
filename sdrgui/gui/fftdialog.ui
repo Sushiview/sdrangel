@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>FFTW Wisdom file generator</string>
+   <string>Генератор FFTW Wisdom</string>
   </property>
   <property name="modal">
    <bool>true</bool>
@@ -34,10 +34,10 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Path to fftwf-wisdom executable</string>
+        <string>Путь к fftwf-wisdom</string>
        </property>
        <property name="text">
-        <string>FFT Engine</string>
+        <string>Движок FFT</string>
        </property>
       </widget>
      </item>

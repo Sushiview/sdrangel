@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Basic device settings</string>
+   <string>Основные настройки устройства</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -31,14 +31,14 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Title</string>
+        <string>Заголовок</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLineEdit" name="title">
        <property name="toolTip">
-        <string>Channel marker title</string>
+        <string>Заголовок маркера</string>
        </property>
       </widget>
      </item>
@@ -51,7 +51,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reset title to channel type name</string>
+        <string>Сбросить заголовок</string>
        </property>
        <property name="text">
         <string/>
@@ -69,10 +69,10 @@
      <item>
       <widget class="QCheckBox" name="reverseAPI">
        <property name="toolTip">
-        <string>Synchronize with reverse API </string>
+        <string>Синхр. с Reverse API</string>
        </property>
        <property name="text">
-        <string>reverse API</string>
+        <string>Reverse API</string>
        </property>
       </widget>
      </item>
@@ -85,7 +85,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API address</string>
+        <string>Адрес Reverse API</string>
        </property>
        <property name="inputMask">
         <string>000.000.000.000</string>
@@ -117,7 +117,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API port</string>
+        <string>Порт Reverse API</string>
        </property>
        <property name="inputMask">
         <string>00000</string>
@@ -130,7 +130,7 @@
      <item>
       <widget class="QLabel" name="reverseAPIDeviceLabel">
        <property name="text">
-        <string>D</string>
+        <string>Д</string>
        </property>
       </widget>
      </item>
@@ -149,7 +149,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API destination device index</string>
+        <string>Индекс устройства Reverse API</string>
        </property>
        <property name="inputMask">
         <string>00</string>
@@ -188,7 +188,7 @@
         </size>
        </property>
        <property name="text">
-        <string>Replay buffer length</string>
+        <string>Длина буфера повтора</string>
        </property>
       </widget>
      </item>
@@ -201,7 +201,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Length of replay buffer in seconds</string>
+        <string>Длина буфера повтора (с)</string>
        </property>
        <property name="decimals">
         <number>1</number>
@@ -214,17 +214,17 @@
      <item>
       <widget class="QLabel" name="replayLengthUnits">
        <property name="text">
-        <string>s</string>
+        <string>с</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="replayLengthSize">
        <property name="toolTip">
-        <string>Size of replay buffer in megabytes</string>
+        <string>Размер буфера повтора (МБ)</string>
        </property>
        <property name="text">
-        <string>(100MB)</string>
+        <string>(100МБ)</string>
        </property>
       </widget>
      </item>
@@ -254,7 +254,7 @@
         </size>
        </property>
        <property name="text">
-        <string>Replay step</string>
+        <string>Шаг повтора</string>
        </property>
       </widget>
      </item>
@@ -267,7 +267,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Step time in seconds</string>
+        <string>Шаг времени (с)</string>
        </property>
        <property name="decimals">
         <number>1</number>
@@ -283,7 +283,7 @@
      <item>
       <widget class="QLabel" name="replayStepUnits">
        <property name="text">
-        <string>s</string>
+        <string>с</string>
        </property>
       </widget>
      </item>
@@ -307,7 +307,7 @@
      <item>
       <widget class="QToolButton" name="presets">
        <property name="toolTip">
-        <string>Open device presets dialog</string>
+        <string>Пресеты устройства</string>
        </property>
        <property name="text">
         <string/>

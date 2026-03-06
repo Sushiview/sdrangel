@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>About SDRangel</string>
+   <string>О SDRangel</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="sizeConstraint">
@@ -84,7 +84,7 @@
    <item>
     <widget class="QLabel" name="version">
      <property name="text">
-      <string>Here goes the version and copyright</string>
+      <string>Версия и авторские права</string>
      </property>
     </widget>
    </item>
@@ -93,14 +93,14 @@
      <item>
       <widget class="QLabel" name="build">
        <property name="text">
-        <string>Here goes the build info</string>
+        <string>Информация о сборке</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="dspBits">
        <property name="text">
-        <string>DSP Rx 24 bits Tx 16 bits</string>
+        <string>DSP Rx 24 бит Tx 16 бит</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -114,7 +114,7 @@
      <item>
       <widget class="QLabel" name="restApiUrl">
        <property name="text">
-        <string>Here goes the REST API URL</string>
+        <string>URL REST API</string>
        </property>
       </widget>
      </item>
@@ -141,7 +141,7 @@
      <item>
       <widget class="QLabel" name="settingsFile">
        <property name="text">
-        <string>Here goes the settings file location</string>
+        <string>Расположение файла настроек</string>
        </property>
       </widget>
      </item>

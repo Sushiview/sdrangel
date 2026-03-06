@@ -23,7 +23,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Spectrum Measurements</string>
+   <string>Измерения спектра</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -31,14 +31,14 @@
      <item row="2" column="0">
       <widget class="QLabel" name="highlightLabel">
        <property name="text">
-        <string>Highlight on spectrum</string>
+        <string>Выделить на спектре</string>
        </property>
       </widget>
      </item>
      <item row="9" column="1">
       <widget class="QSpinBox" name="harmonics">
        <property name="toolTip">
-        <string>Number of harmonics</string>
+        <string>Число гармоник</string>
        </property>
        <property name="maximum">
         <number>20</number>
@@ -72,14 +72,14 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="toolTip">
-        <string>Center frequency offset (Hz)</string>
+        <string>Смещение ц. частоты (Гц)</string>
        </property>
       </widget>
      </item>
      <item row="7" column="0">
       <widget class="QLabel" name="chSpacingLabel">
        <property name="text">
-        <string>Channel spacing</string>
+        <string>Шаг канала</string>
        </property>
        <property name="margin">
         <number>2</number>
@@ -89,26 +89,26 @@
      <item row="1" column="1">
       <widget class="QComboBox" name="position">
        <property name="toolTip">
-        <string>Where to display the measurements result table</string>
+        <string>Где показывать таблицу</string>
        </property>
        <item>
         <property name="text">
-         <string>Above spectrum</string>
+         <string>Над спектром</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Below spectrum</string>
+         <string>Под спектром</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Left of spectrum</string>
+         <string>Слева от спектра</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Right of spectrum</string>
+         <string>Справа от спектра</string>
         </property>
        </item>
       </widget>
@@ -116,53 +116,53 @@
      <item row="4" column="0">
       <widget class="QLabel" name="peaksLabel">
        <property name="text">
-        <string>Peaks</string>
+        <string>Пики</string>
        </property>
       </widget>
      </item>
      <item row="5" column="0">
       <widget class="QLabel" name="centerFrequencyOffsetLabel">
        <property name="text">
-        <string>Center frequency offset</string>
+        <string>Смещение ц. частоты</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
       <widget class="QComboBox" name="measurement">
        <property name="toolTip">
-        <string>Type of measurement</string>
+        <string>Тип измерения</string>
        </property>
        <property name="currentIndex">
         <number>0</number>
        </property>
        <item>
         <property name="text">
-         <string>None</string>
+         <string>Нет</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Peaks</string>
+         <string>Пики</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Channel power</string>
+         <string>Мощность канала</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Adjacent channel power</string>
+         <string>Мощность соседн. кан.</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Occupied bandwidth</string>
+         <string>Занятая полоса</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>3dB bandwidth</string>
+         <string>Полоса 3dB</string>
         </property>
        </item>
        <item>
@@ -175,14 +175,14 @@
      <item row="1" column="0">
       <widget class="QLabel" name="positionLabel">
        <property name="text">
-        <string>Display results table</string>
+        <string>Показать таблицу</string>
        </property>
       </widget>
      </item>
      <item row="6" column="0">
       <widget class="QLabel" name="bandwidthLabel">
        <property name="text">
-        <string>Channel bandwidth</string>
+        <string>Полоса канала</string>
        </property>
        <property name="margin">
         <number>2</number>
@@ -216,14 +216,14 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="toolTip">
-        <string>Channel spacing (Hz)</string>
+        <string>Шаг канала (Гц)</string>
        </property>
       </widget>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="precisionLabel">
        <property name="text">
-        <string>Results precision</string>
+        <string>Точность результ.</string>
        </property>
       </widget>
      </item>
@@ -254,21 +254,21 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="toolTip">
-        <string>Channel bandwidth (Hz)</string>
+        <string>Полоса канала (Гц)</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
       <widget class="QLabel" name="measurementLabel">
        <property name="text">
-        <string>Measurement</string>
+        <string>Измерение</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
       <widget class="QCheckBox" name="highlight">
        <property name="toolTip">
-        <string>Whether to highlight the measurements in the spectrum</string>
+        <string>Выделять измерения на спектре</string>
        </property>
        <property name="text">
         <string/>
@@ -278,7 +278,7 @@
      <item row="9" column="0">
       <widget class="QLabel" name="harmonicsLabel">
        <property name="text">
-        <string>Harmonics</string>
+        <string>Гармоники</string>
        </property>
        <property name="margin">
         <number>2</number>
@@ -288,7 +288,7 @@
      <item row="4" column="1">
       <widget class="QSpinBox" name="peaks">
        <property name="toolTip">
-        <string>Number of peaks to display</string>
+        <string>Число пиков для отображ.</string>
        </property>
        <property name="minimum">
         <number>1</number>
@@ -301,7 +301,7 @@
      <item row="8" column="0">
       <widget class="QLabel" name="adjChBandwidthLabel">
        <property name="text">
-        <string>Adjacent channel bandwidth</string>
+        <string>Полоса соседн. канала</string>
        </property>
        <property name="margin">
         <number>2</number>
@@ -311,7 +311,7 @@
      <item row="3" column="1">
       <widget class="QSpinBox" name="precision">
        <property name="toolTip">
-        <string>Precision of results (number of decimal places)</string>
+        <string>Точность (знаков после запятой)</string>
        </property>
        <property name="maximum">
         <number>9</number>
@@ -345,7 +345,7 @@
         <enum>Qt::StrongFocus</enum>
        </property>
        <property name="toolTip">
-        <string>Adjacent channel bandwidth (Hz)</string>
+        <string>Полоса соседн. кан. (Гц)</string>
        </property>
       </widget>
      </item>
@@ -369,10 +369,10 @@
      <item>
       <widget class="QPushButton" name="resetMeasurements">
        <property name="toolTip">
-        <string>Reset measurement results</string>
+        <string>Сбросить результаты</string>
        </property>
        <property name="text">
-        <string>Reset</string>
+        <string>Сброс</string>
        </property>
       </widget>
      </item>

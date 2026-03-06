@@ -17,19 +17,19 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Preset details</string>
+   <string>Детали пресета</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QGroupBox" name="descriptionBox">
      <property name="title">
-      <string>Preset Description</string>
+      <string>Описание пресета</string>
      </property>
      <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="groupLabel">
         <property name="text">
-         <string>&amp;Group</string>
+         <string>&amp;Группа</string>
         </property>
         <property name="buddy">
          <cstring>group</cstring>
@@ -46,7 +46,7 @@
       <item row="1" column="0">
        <widget class="QLabel" name="descriptionLabel">
         <property name="text">
-         <string>&amp;Description</string>
+         <string>&amp;Описание</string>
         </property>
         <property name="buddy">
          <cstring>description</cstring>

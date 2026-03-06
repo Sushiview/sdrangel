@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>CW Keyer</string>
+   <string>CW манипулятор</string>
   </property>
   <layout class="QGridLayout" name="gridLayout" columnstretch="1,0,0">
    <property name="leftMargin">
@@ -56,7 +56,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>CW speed (WPM)</string>
+        <string>Скорость CW (WPM)</string>
        </property>
        <property name="minimum">
         <number>1</number>
@@ -87,7 +87,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>CW speed display (WPM)</string>
+        <string>Скорость CW (WPM)</string>
        </property>
        <property name="text">
         <string>13</string>
@@ -156,7 +156,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Send dots</string>
+        <string>Отправить точки</string>
        </property>
        <property name="text">
         <string>.</string>
@@ -222,7 +222,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Send dashes</string>
+        <string>Отправить тире</string>
        </property>
        <property name="text">
         <string>-</string>
@@ -295,7 +295,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Send text written above</string>
+        <string>Отправить текст</string>
        </property>
        <property name="text">
         <string>T</string>
@@ -320,7 +320,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Play text in a loop</string>
+        <string>Передача в цикле</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -352,7 +352,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Play / stop text coding</string>
+        <string>Старт/стоп передачи</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -400,7 +400,7 @@
      <item>
       <widget class="QLineEdit" name="cwTextEdit">
        <property name="toolTip">
-        <string>CW text</string>
+        <string>Текст CW</string>
        </property>
       </widget>
      </item>
@@ -419,7 +419,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Clear CW text</string>
+        <string>Очистить текст CW</string>
        </property>
        <property name="text">
         <string/>
@@ -449,7 +449,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Activate keyboard keyer key bindings</string>
+        <string>Вкл. клавиши манипулятора</string>
        </property>
        <property name="text">
         <string/>
@@ -472,7 +472,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Keying style straight or iambic</string>
+        <string>Стиль: прямой или иамб.</string>
        </property>
        <property name="text">
         <string/>
@@ -496,7 +496,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Put the mouse pointer here to activate the CW mouse keyer</string>
+        <string>Наведите мышь для CW</string>
        </property>
        <property name="frameShape">
         <enum>QFrame::NoFrame</enum>
@@ -574,7 +574,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Enter key to associate dots with</string>
+        <string>Клавиша для точек</string>
        </property>
        <property name="text">
         <string>.</string>
@@ -662,7 +662,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Enter key to associate dashes with</string>
+        <string>Клавиша для тире</string>
        </property>
        <property name="text">
         <string>-</string>

@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>FM Preemphasis Settings</string>
+   <string>Настройки преэмфазиса FM</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -26,21 +26,21 @@
       <item row="1" column="0">
        <widget class="QLabel" name="tauLabel">
         <property name="text">
-         <string>Time constant (Tau) (us)</string>
+         <string>Постоянная времени (мкс)</string>
         </property>
        </widget>
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="lowFreqLabel">
         <property name="text">
-         <string>Low frequency corner (Hz)</string>
+         <string>Ниж. граничная частота (Гц)</string>
         </property>
        </widget>
       </item>
       <item row="2" column="1">
        <widget class="QDoubleSpinBox" name="lowFreq">
         <property name="toolTip">
-         <string>Low frequency corner. Automatically calculated based on tau.</string>
+         <string>Ниж. частота. Авторасчёт по tau.</string>
         </property>
         <property name="maximum">
          <double>10000.000000000000000</double>
@@ -53,14 +53,14 @@
       <item row="3" column="0">
        <widget class="QLabel" name="highFreqLabel">
         <property name="text">
-         <string>High frequency corner (Hz)</string>
+         <string>Верх. граничная частота (Гц)</string>
         </property>
        </widget>
       </item>
       <item row="3" column="1">
        <widget class="QDoubleSpinBox" name="highFreq">
         <property name="toolTip">
-         <string>High frequency corner.</string>
+         <string>Верхняя граничная частота.</string>
         </property>
         <property name="maximum">
          <double>1000000.000000000000000</double>
@@ -73,7 +73,7 @@
       <item row="1" column="1">
        <widget class="QDoubleSpinBox" name="tau">
         <property name="toolTip">
-         <string>Time constant in us. 50 for EU. 75 for USA.</string>
+         <string>Пост. врем. мкс. 50 ЕС. 75 США.</string>
         </property>
         <property name="decimals">
          <number>0</number>
@@ -89,26 +89,26 @@
       <item row="0" column="1">
        <widget class="QComboBox" name="preset">
         <property name="toolTip">
-         <string>Preset preemphasis values.</string>
+         <string>Пресеты преэмфазиса.</string>
         </property>
         <item>
          <property name="text">
-          <string>Narrowband FM</string>
+          <string>Узкополосный FM</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Broadcast FM (US)</string>
+          <string>Радиовещ. FM (США)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Broadcast FM (EU, Asia)</string>
+          <string>Радиовещ. FM (ЕС, Азия)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>User-defined</string>
+          <string>Пользовательский</string>
          </property>
         </item>
        </widget>
@@ -116,7 +116,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="presetLabel">
         <property name="text">
-         <string>Preset</string>
+         <string>Пресет</string>
         </property>
        </widget>
       </item>

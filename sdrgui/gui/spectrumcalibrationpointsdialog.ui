@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Spectrum Calibration Points</string>
+   <string>Точки калибровки спектра</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -30,7 +30,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Pt</string>
+          <string>Тч</string>
          </property>
         </widget>
        </item>
@@ -59,7 +59,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Calibration point index</string>
+          <string>Индекс точки калибр.</string>
          </property>
          <property name="maximum">
           <number>0</number>
@@ -126,7 +126,7 @@
             </font>
            </property>
            <property name="toolTip">
-            <string>Add a new calibration point</string>
+            <string>Добавить точку калибр.</string>
            </property>
            <property name="text">
             <string>+</string>
@@ -185,7 +185,7 @@
             </font>
            </property>
            <property name="toolTip">
-            <string>Remove current calibration point</string>
+            <string>Удалить точку калибр.</string>
            </property>
            <property name="text">
             <string>-</string>
@@ -203,7 +203,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Rel</string>
+          <string>Отн</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -237,14 +237,14 @@
           <enum>Qt::StrongFocus</enum>
          </property>
          <property name="toolTip">
-          <string>Relative power (dB)</string>
+          <string>Отн. мощность (dB)</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLabel" name="relativePowerUnits">
          <property name="text">
-          <string>dB</string>
+          <string>дБ</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -267,7 +267,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Cal</string>
+          <string>Кал</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -301,14 +301,14 @@
           <enum>Qt::StrongFocus</enum>
          </property>
          <property name="toolTip">
-          <string>Calibrated power (dBx)</string>
+          <string>Мощность калибр. (dBx)</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLabel" name="calibratedPowerUnits">
          <property name="text">
-          <string>dB</string>
+          <string>дБ</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -366,7 +366,7 @@
           <enum>Qt::StrongFocus</enum>
          </property>
          <property name="toolTip">
-          <string>Calibration point frequency (Hz)</string>
+          <string>Частота точки калибр. (Гц)</string>
          </property>
         </widget>
        </item>
@@ -391,10 +391,10 @@
           <enum>Qt::StrongFocus</enum>
          </property>
          <property name="toolTip">
-          <string>Marker frequency (Hz)</string>
+          <string>Частота маркера (Гц)</string>
          </property>
          <property name="text">
-          <string>Hz</string>
+          <string>Гц</string>
          </property>
         </widget>
        </item>
@@ -420,7 +420,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Sort points by increasing frequency</string>
+          <string>Сортировка по частоте</string>
          </property>
          <property name="text">
           <string/>
@@ -440,7 +440,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Duplicate current calibration point</string>
+          <string>Копировать точку калибр.</string>
          </property>
          <property name="text">
           <string/>
@@ -460,7 +460,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Import data from histogram marker 0</string>
+          <string>Импорт из маркера гист. 0</string>
          </property>
          <property name="text">
           <string>M0</string>
@@ -476,7 +476,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Set calibration point frequency to center frequency</string>
+          <string>Частота точки = центр. частоте</string>
          </property>
          <property name="text">
           <string>C</string>
@@ -490,23 +490,23 @@
        <item>
         <widget class="QLabel" name="calibInterpModeLabel">
          <property name="text">
-          <string>Interp</string>
+          <string>Интерп</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QComboBox" name="calibInterpMode">
          <property name="toolTip">
-          <string>Calibration interpolation mode</string>
+          <string>Режим интерп. калибровки</string>
          </property>
          <item>
           <property name="text">
-           <string>Linear</string>
+           <string>Линейный</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Log</string>
+           <string>Лог</string>
           </property>
          </item>
         </widget>
@@ -520,10 +520,10 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Correct or set value</string>
+          <string>Задать/коррект.</string>
          </property>
          <property name="text">
-          <string>Cor</string>
+          <string>Кор</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -560,14 +560,14 @@
           <enum>Qt::StrongFocus</enum>
          </property>
          <property name="toolTip">
-          <string>Correction or set (dB)</string>
+          <string>Коррекция/знач. (dB)</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLabel" name="calibrationGlobalCorrUnits">
          <property name="text">
-          <string>dB</string>
+          <string>дБ</string>
          </property>
         </widget>
        </item>
@@ -580,10 +580,10 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Set or apply correction to all relative values</string>
+          <string>Коррекция всех отн. значений</string>
          </property>
          <property name="text">
-          <string>Rel</string>
+          <string>Отн</string>
          </property>
         </widget>
        </item>
@@ -596,10 +596,10 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Set or apply correction to all calibrated values</string>
+          <string>Коррекция всех калибр. значений</string>
          </property>
          <property name="text">
-          <string>Cal</string>
+          <string>Кал</string>
          </property>
         </widget>
        </item>
@@ -619,7 +619,7 @@
        <item>
         <widget class="QToolButton" name="calibPointsExport">
          <property name="toolTip">
-          <string>Export calibration points to .csv file</string>
+          <string>Экспорт точек калибр. в .csv</string>
          </property>
          <property name="text">
           <string/>
@@ -633,7 +633,7 @@
        <item>
         <widget class="QToolButton" name="calibPointsImport">
          <property name="toolTip">
-          <string>Import calibration points from .csv file</string>
+          <string>Импорт точек калибр. из .csv</string>
          </property>
          <property name="text">
           <string/>

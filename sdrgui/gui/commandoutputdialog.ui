@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Command output</string>
+   <string>Вывод команды</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../resources/res.qrc">
@@ -32,7 +32,7 @@
         <bool>false</bool>
        </property>
        <property name="toolTip">
-        <string>Running state icon</string>
+        <string>Иконка состояния</string>
        </property>
        <property name="text">
         <string/>
@@ -50,7 +50,7 @@
      <item>
       <widget class="QToolButton" name="processRefresh">
        <property name="toolTip">
-        <string>Refresh data</string>
+        <string>Обновить данные</string>
        </property>
        <property name="text">
         <string/>
@@ -79,7 +79,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Start time of last execution</string>
+        <string>Время запуска</string>
        </property>
        <property name="text">
         <string>2015-01-01 00:00:00.000</string>
@@ -111,7 +111,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>End time of last execution</string>
+        <string>Время завершения</string>
        </property>
        <property name="text">
         <string>2015-01-01 00:00:00.000</string>
@@ -133,7 +133,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Process PID</string>
+        <string>PID процесса</string>
        </property>
        <property name="text">
         <string>00000</string>
@@ -159,7 +159,7 @@
      <item>
       <widget class="QToolButton" name="processKill">
        <property name="toolTip">
-        <string>Kill the process (SIGKILL)</string>
+        <string>Завершить процесс (SIGKILL)</string>
        </property>
        <property name="text">
         <string/>
@@ -186,7 +186,7 @@
         </size>
        </property>
        <property name="text">
-        <string>Cmd:</string>
+        <string>Команда:</string>
        </property>
       </widget>
      </item>
@@ -196,7 +196,7 @@
         <bool>false</bool>
        </property>
        <property name="toolTip">
-        <string>Command that was executed</string>
+        <string>Выполненная команда</string>
        </property>
       </widget>
      </item>
@@ -213,7 +213,7 @@
         </size>
        </property>
        <property name="text">
-        <string>Error:</string>
+        <string>Ошибка:</string>
        </property>
       </widget>
      </item>
@@ -226,7 +226,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Process error status</string>
+        <string>Статус ошибки</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -242,7 +242,7 @@
         </size>
        </property>
        <property name="text">
-        <string>Exit:</string>
+        <string>Выход:</string>
        </property>
       </widget>
      </item>
@@ -255,7 +255,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Return code</string>
+        <string>Код возврата</string>
        </property>
        <property name="text">
         <string>0</string>
@@ -271,7 +271,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Process exit status</string>
+        <string>Статус завершения</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -292,7 +292,7 @@
       </font>
      </property>
      <property name="toolTip">
-      <string>Output log (stdout + stderr)</string>
+      <string>Лог вывода (stdout + stderr)</string>
      </property>
      <property name="readOnly">
       <bool>true</bool>

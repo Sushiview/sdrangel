@@ -23,7 +23,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Spectrum Markers</string>
+   <string>Маркеры спектра</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -33,10 +33,10 @@
      </property>
      <widget class="QWidget" name="hisTab">
       <attribute name="title">
-       <string>Hist</string>
+       <string>Гист</string>
       </attribute>
       <attribute name="toolTip">
-       <string>Histogram (spectrum line) markers</string>
+       <string>Маркеры гистограммы</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <property name="spacing">
@@ -90,7 +90,7 @@
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
           </widget>
          </item>
@@ -115,10 +115,10 @@
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
            <property name="text">
-            <string>Hz</string>
+            <string>Гц</string>
            </property>
           </widget>
          </item>
@@ -144,7 +144,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Set marker as reference (index 0)</string>
+            <string>Маркер как эталон (индекс 0)</string>
            </property>
            <property name="text">
             <string>C</string>
@@ -166,7 +166,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Current marker color (click to change)</string>
+            <string>Цвет маркера (клик для смены)</string>
            </property>
            <property name="text">
             <string/>
@@ -176,7 +176,7 @@
          <item>
           <widget class="QCheckBox" name="showMarker">
            <property name="toolTip">
-            <string>Show this marker</string>
+            <string>Показать маркер</string>
            </property>
            <property name="text">
             <string/>
@@ -199,7 +199,7 @@
             </size>
            </property>
            <property name="text">
-            <string>Mk</string>
+            <string>Мк</string>
            </property>
           </widget>
          </item>
@@ -228,7 +228,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Marker index (0 is reference)</string>
+            <string>Индекс маркера (0=реф.)</string>
            </property>
            <property name="maximum">
             <number>0</number>
@@ -247,7 +247,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Set marker as reference (index 0)</string>
+            <string>Маркер как эталон (индекс 0)</string>
            </property>
            <property name="text">
             <string>0</string>
@@ -311,7 +311,7 @@
               </font>
              </property>
              <property name="toolTip">
-              <string>Add a new marker</string>
+              <string>Добавить маркер</string>
              </property>
              <property name="text">
               <string>+</string>
@@ -370,7 +370,7 @@
               </font>
              </property>
              <property name="toolTip">
-              <string>Remove current marker</string>
+              <string>Удалить маркер</string>
              </property>
              <property name="text">
               <string>-</string>
@@ -404,7 +404,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Reset power max hold</string>
+            <string>Сбросить макс.</string>
            </property>
            <property name="text">
             <string>R</string>
@@ -432,17 +432,17 @@ Max - Marker will move according to the maximum power at the marker frequency</s
            </property>
            <item>
             <property name="text">
-             <string>Man</string>
+             <string>Руч</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Cur</string>
+             <string>Тек</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Max</string>
+             <string>Макс</string>
             </property>
            </item>
           </widget>
@@ -474,7 +474,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Fixed power (dB)</string>
+            <string>Фикс. мощность (dB)</string>
            </property>
           </widget>
          </item>
@@ -487,7 +487,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="text">
-            <string>dB</string>
+            <string>дБ</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -516,7 +516,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Put markers in find peaks mode</string>
+            <string>Режим поиска пиков</string>
            </property>
            <property name="text">
             <string/>
@@ -546,10 +546,10 @@ Max - Marker will move according to the maximum power at the marker frequency</s
      </widget>
      <widget class="QWidget" name="watTab">
       <attribute name="title">
-       <string>Wat</string>
+       <string>Вод</string>
       </attribute>
       <attribute name="toolTip">
-       <string>Waterfall markers</string>
+       <string>Маркеры водопада</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <property name="spacing">
@@ -603,7 +603,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
           </widget>
          </item>
@@ -628,10 +628,10 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
            <property name="text">
-            <string>Hz</string>
+            <string>Гц</string>
            </property>
           </widget>
          </item>
@@ -657,7 +657,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Set marker as reference (index 0)</string>
+            <string>Маркер как эталон (индекс 0)</string>
            </property>
            <property name="text">
             <string>C</string>
@@ -679,7 +679,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Current marker color (click to change)</string>
+            <string>Цвет маркера (клик для смены)</string>
            </property>
            <property name="text">
             <string/>
@@ -689,7 +689,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
          <item>
           <widget class="QCheckBox" name="wShowMarker">
            <property name="toolTip">
-            <string>Show this marker</string>
+            <string>Показать маркер</string>
            </property>
            <property name="text">
             <string/>
@@ -712,7 +712,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="text">
-            <string>Mk</string>
+            <string>Мк</string>
            </property>
           </widget>
          </item>
@@ -741,7 +741,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Marker index (0 is reference)</string>
+            <string>Индекс маркера (0=реф.)</string>
            </property>
            <property name="maximum">
             <number>0</number>
@@ -760,7 +760,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Set marker as reference (index 0)</string>
+            <string>Маркер как эталон (индекс 0)</string>
            </property>
            <property name="text">
             <string>0</string>
@@ -824,7 +824,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
               </font>
              </property>
              <property name="toolTip">
-              <string>Add a new marker</string>
+              <string>Добавить маркер</string>
              </property>
              <property name="text">
               <string>+</string>
@@ -883,7 +883,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
               </font>
              </property>
              <property name="toolTip">
-              <string>Remove current marker</string>
+              <string>Удалить маркер</string>
              </property>
              <property name="text">
               <string>-</string>
@@ -901,7 +901,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="text">
-            <string>t(s)</string>
+            <string>t(с)</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -924,7 +924,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
                 </size>
                </property>
                <property name="toolTip">
-                <string>Time mantissa</string>
+                <string>Мантисса времени</string>
                </property>
                <property name="text">
                 <string>0.000</string>
@@ -943,7 +943,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
                 </size>
                </property>
                <property name="toolTip">
-                <string>Time mantissa (fine)</string>
+                <string>Мантисса (точн.)</string>
                </property>
                <property name="minimum">
                 <number>0</number>
@@ -968,7 +968,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
                 </size>
                </property>
                <property name="toolTip">
-                <string>Time mantissa (coarse)</string>
+                <string>Мантисса врем. (груб.)</string>
                </property>
                <property name="minimum">
                 <number>0</number>
@@ -1009,7 +1009,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
                 </size>
                </property>
                <property name="toolTip">
-                <string>Time exponent</string>
+                <string>Порядок времени</string>
                </property>
                <property name="text">
                 <string>e+0</string>
@@ -1028,7 +1028,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
                 </size>
                </property>
                <property name="toolTip">
-                <string>Time exponent</string>
+                <string>Порядок времени</string>
                </property>
                <property name="minimum">
                 <number>-10</number>
@@ -1080,10 +1080,10 @@ Max - Marker will move according to the maximum power at the marker frequency</s
      </widget>
      <widget class="QWidget" name="anoTab">
       <attribute name="title">
-       <string>Anno</string>
+       <string>Аннот</string>
       </attribute>
       <attribute name="toolTip">
-       <string>Annotation markers</string>
+       <string>Маркеры аннотаций</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <property name="spacing">
@@ -1112,7 +1112,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="text">
-            <string>Mk</string>
+            <string>Мк</string>
            </property>
           </widget>
          </item>
@@ -1125,7 +1125,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Marker index</string>
+            <string>Индекс маркера</string>
            </property>
            <property name="text">
             <string>0</string>
@@ -1144,7 +1144,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Marker index selection</string>
+            <string>Выбор индекса маркера</string>
            </property>
            <property name="maximum">
             <number>0</number>
@@ -1211,7 +1211,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
               </font>
              </property>
              <property name="toolTip">
-              <string>Add a new marker</string>
+              <string>Добавить маркер</string>
              </property>
              <property name="text">
               <string>+</string>
@@ -1270,7 +1270,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
               </font>
              </property>
              <property name="toolTip">
-              <string>Remove current marker</string>
+              <string>Удалить маркер</string>
              </property>
              <property name="text">
               <string>-</string>
@@ -1294,7 +1294,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Current marker color (click to change)</string>
+            <string>Цвет маркера (клик для смены)</string>
            </property>
            <property name="text">
             <string/>
@@ -1304,7 +1304,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
          <item>
           <widget class="QLineEdit" name="aMarkerText">
            <property name="toolTip">
-            <string>Marker text</string>
+            <string>Текст маркера</string>
            </property>
            <property name="maxLength">
             <number>36</number>
@@ -1314,7 +1314,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
          <item>
           <widget class="QToolButton" name="aMarkersExport">
            <property name="toolTip">
-            <string>Export annotation marks to .csv file</string>
+            <string>Экспорт аннотаций в .csv</string>
            </property>
            <property name="text">
             <string/>
@@ -1328,7 +1328,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
          <item>
           <widget class="QToolButton" name="aMarkersImport">
            <property name="toolTip">
-            <string>Import annotation marks from .csv file</string>
+            <string>Импорт аннотаций из .csv</string>
            </property>
            <property name="text">
             <string/>
@@ -1346,7 +1346,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
          <item>
           <widget class="QToolButton" name="aMarkerToggleFrequency">
            <property name="text">
-            <string>Start</string>
+            <string>Старт</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -1383,7 +1383,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker start frequency (Hz)</string>
+            <string>Нач. частота маркера (Гц)</string>
            </property>
           </widget>
          </item>
@@ -1408,10 +1408,10 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
            <property name="text">
-            <string>Hz</string>
+            <string>Гц</string>
            </property>
           </widget>
          </item>
@@ -1424,7 +1424,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Set marker frequency to center frequency</string>
+            <string>Маркер на центр. частоту</string>
            </property>
            <property name="text">
             <string>C</string>
@@ -1440,7 +1440,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Duplicate current marker</string>
+            <string>Копировать маркер</string>
            </property>
            <property name="text">
             <string/>
@@ -1460,7 +1460,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Sort markers by increasing start frequency</string>
+            <string>Сортировка по нач. частоте</string>
            </property>
            <property name="text">
             <string/>
@@ -1497,7 +1497,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="text">
-            <string>Cent</string>
+            <string>Центр</string>
            </property>
           </widget>
          </item>
@@ -1516,7 +1516,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </font>
            </property>
            <property name="toolTip">
-            <string>Marker stop frequency (Hz)</string>
+            <string>Кон. частота маркера (Гц)</string>
            </property>
            <property name="text">
             <string>0,000,000,000</string>
@@ -1547,10 +1547,10 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
            <property name="text">
-            <string>Hz</string>
+            <string>Гц</string>
            </property>
           </widget>
          </item>
@@ -1576,7 +1576,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="text">
-            <string>Stop</string>
+            <string>Стоп</string>
            </property>
           </widget>
          </item>
@@ -1601,7 +1601,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </font>
            </property>
            <property name="toolTip">
-            <string>Marker stop frequency (Hz)</string>
+            <string>Кон. частота маркера (Гц)</string>
            </property>
            <property name="text">
             <string>0,000,000,000</string>
@@ -1632,10 +1632,10 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
            <property name="text">
-            <string>Hz</string>
+            <string>Гц</string>
            </property>
           </widget>
          </item>
@@ -1686,7 +1686,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker width (Hz)</string>
+            <string>Ширина маркера (Гц)</string>
            </property>
           </widget>
          </item>
@@ -1711,36 +1711,36 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             <enum>Qt::StrongFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Marker frequency (Hz)</string>
+            <string>Частота маркера (Гц)</string>
            </property>
            <property name="text">
-            <string>Hz</string>
+            <string>Гц</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QComboBox" name="aMarkerShowState">
            <property name="toolTip">
-            <string>Marker show state</string>
+            <string>Видимость маркера</string>
            </property>
            <item>
             <property name="text">
-             <string>Hidden</string>
+             <string>Скрыт</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Top</string>
+             <string>Верх</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Full</string>
+             <string>Полный</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Text</string>
+             <string>Текст</string>
             </property>
            </item>
           </widget>
@@ -1754,10 +1754,10 @@ Max - Marker will move according to the maximum power at the marker frequency</s
             </size>
            </property>
            <property name="toolTip">
-            <string>Apply current show state to all markers</string>
+            <string>Применить к всем маркерам</string>
            </property>
            <property name="text">
-            <string>All</string>
+            <string>Все</string>
            </property>
           </widget>
          </item>
@@ -1801,7 +1801,7 @@ Max - Marker will move according to the maximum power at the marker frequency</s
      <item>
       <widget class="QLabel" name="showLabel">
        <property name="text">
-        <string>Show</string>
+        <string>Показ</string>
        </property>
       </widget>
      </item>
@@ -1817,22 +1817,22 @@ All  - Show all markers</string>
        </property>
        <item>
         <property name="text">
-         <string>None</string>
+         <string>Нет</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Spec</string>
+         <string>Спек</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Anno</string>
+         <string>Аннот</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>All</string>
+         <string>Все</string>
         </property>
        </item>
       </widget>

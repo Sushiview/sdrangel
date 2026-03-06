@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Profile Data</string>
+   <string>Данные профиля</string>
   </property>
   <property name="modal">
    <bool>false</bool>
@@ -29,42 +29,42 @@
       <widget class="QTableWidget" name="table">
        <column>
         <property name="text">
-         <string>Name</string>
+         <string>Название</string>
         </property>
         <property name="toolTip">
-         <string>Name of profile</string>
+         <string>Название профиля</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Total</string>
+         <string>Итого</string>
         </property>
         <property name="toolTip">
-         <string>Total time spent executing the code</string>
+         <string>Общее время выполнения</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Average</string>
+         <string>Среднее</string>
         </property>
         <property name="toolTip">
-         <string>Average time executing the code</string>
+         <string>Среднее время выполнения</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Last</string>
+         <string>Последнее</string>
         </property>
         <property name="toolTip">
-         <string>Time for last execution of the code</string>
+         <string>Время последн. выполнения</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Samples</string>
+         <string>Вызовы</string>
         </property>
         <property name="toolTip">
-         <string>Number of times code was executed</string>
+         <string>Число вызовов кода</string>
         </property>
        </column>
       </widget>

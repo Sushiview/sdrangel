@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Graphics settings</string>
+   <string>Настройки графики</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -36,14 +36,14 @@
       <item row="0" column="0">
        <widget class="QLabel" name="uiScaleFactorLabel">
         <property name="text">
-         <string>UI Scale Factor</string>
+         <string>Масштаб UI</string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
        <widget class="QSlider" name="uiScaleFactor">
         <property name="toolTip">
-         <string>UI scale factor. Set &gt;100% for high DPI displays. Requires restarting SDRangel to apply</string>
+         <string>Масштаб UI. &gt;100% для HiDPI. Требуется перезапуск</string>
         </property>
         <property name="minimum">
          <number>100</number>
@@ -64,7 +64,7 @@
      <item row="0" column="0">
       <widget class="QGroupBox" name="antialiasingGroup">
        <property name="title">
-        <string>Anti-aliasing</string>
+        <string>Сглаживание</string>
        </property>
        <layout class="QFormLayout" name="formLayout_2">
         <item row="0" column="0">
@@ -76,7 +76,7 @@
            </size>
           </property>
           <property name="text">
-           <string>Spectrum (MSAA)</string>
+           <string>Спектр (MSAA)</string>
           </property>
          </widget>
         </item>
@@ -95,7 +95,7 @@ Requires windows to be reopened to take effect</string>
           </property>
           <item>
            <property name="text">
-            <string>Off</string>
+            <string>Выкл</string>
            </property>
           </item>
           <item>
@@ -128,7 +128,7 @@ Requires windows to be reopened to take effect</string>
 Requires windows to be reopened to take effect</string>
           </property>
           <property name="text">
-           <string>2D Map (MSAA)</string>
+           <string>2D карта (MSAA)</string>
           </property>
          </widget>
         </item>
@@ -141,7 +141,7 @@ Requires windows to be reopened to take effect</string>
           </property>
           <item>
            <property name="text">
-            <string>Off</string>
+            <string>Выкл</string>
            </property>
           </item>
           <item>
@@ -169,7 +169,7 @@ Requires windows to be reopened to take effect</string>
         <item row="2" column="1">
          <widget class="QCheckBox" name="mapSmoothing">
           <property name="toolTip">
-           <string>Whether smoothing should be enabled for text on 2D maps</string>
+           <string>Сглаживание текста на 2D-картах</string>
           </property>
           <property name="text">
            <string/>
@@ -179,7 +179,7 @@ Requires windows to be reopened to take effect</string>
         <item row="2" column="0">
          <widget class="QLabel" name="mapSmoothingLabel">
           <property name="text">
-           <string>2D Map Text Smoothing</string>
+           <string>Сглаживание текста 2D</string>
           </property>
          </widget>
         </item>

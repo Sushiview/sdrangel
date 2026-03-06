@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Select device stream</string>
+   <string>Выбрать поток устройства</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -25,14 +25,14 @@
      <item>
       <widget class="QLabel" name="deviceStreamLabel">
        <property name="text">
-        <string>Stream</string>
+        <string>Поток</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QComboBox" name="deviceStream">
        <property name="toolTip">
-        <string>Device stream index</string>
+        <string>Индекс потока устройства</string>
        </property>
       </widget>
      </item>

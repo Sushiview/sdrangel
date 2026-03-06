@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Oscilloscope</string>
+   <string>Осциллограф</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -71,7 +71,7 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>Data</string>
+        <string>Данные</string>
        </property>
       </widget>
      </item>
@@ -88,27 +88,27 @@
        </property>
        <item>
         <property name="text">
-         <string>I+Q Level (linear)</string>
+         <string>I+Q уровень (лин.)</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Magnitude (linear) + Phase</string>
+         <string>Амплитуда (лин.) + Фаза</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Magnitude (dB) + Phase</string>
+         <string>Амплитуда (dB) + Фаза</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Derived 1st + 2nd order</string>
+         <string>Производная 1+2 порядка</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Cyclostationary</string>
+         <string>Циклостац.</string>
         </property>
        </item>
       </widget>
@@ -128,7 +128,7 @@
        <item>
         <widget class="QToolButton" name="horizView">
          <property name="toolTip">
-          <string>Horizontal display arrangement</string>
+          <string>Горизонт. расположение</string>
          </property>
          <property name="text">
           <string/>
@@ -154,7 +154,7 @@
        <item>
         <widget class="QToolButton" name="vertView">
          <property name="toolTip">
-          <string>Vertical display arrangement</string>
+          <string>Вертикальное расположение</string>
          </property>
          <property name="text">
           <string/>
@@ -186,7 +186,7 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Time</string>
+        <string>Время</string>
        </property>
       </widget>
      </item>
@@ -273,7 +273,7 @@
      <item>
       <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>Amp</string>
+        <string>Усил</string>
        </property>
       </widget>
      </item>

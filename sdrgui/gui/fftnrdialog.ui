@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>FFT Noise reduction</string>
+   <string>Шумоподавление FFT</string>
   </property>
   <property name="modal">
    <bool>true</bool>
@@ -34,7 +34,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Path to fftwf-wisdom executable</string>
+        <string>Путь к fftwf-wisdom</string>
        </property>
        <property name="text">
         <string>Scheme</string>
@@ -44,21 +44,21 @@
      <item>
       <widget class="QComboBox" name="scheme">
        <property name="toolTip">
-        <string>Select noise reduction scheme</string>
+        <string>Выбрать схему шумопод.</string>
        </property>
        <item>
         <property name="text">
-         <string>Average</string>
+         <string>Среднее</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Avg Std Dev</string>
+         <string>СКО среднего</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Peaks</string>
+         <string>Пики</string>
         </property>
        </item>
       </widget>
@@ -78,7 +78,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Path to fftwf-wisdom executable</string>
+        <string>Путь к fftwf-wisdom</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -125,7 +125,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Path to fftwf-wisdom executable</string>
+        <string>Путь к fftwf-wisdom</string>
        </property>
        <property name="text">
         <string>20.0</string>
@@ -221,7 +221,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Path to fftwf-wisdom executable</string>
+        <string>Путь к fftwf-wisdom</string>
        </property>
        <property name="text">
         <string>Tau</string>
@@ -243,7 +243,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Time constant of the smoothing filter in seconds</string>
+        <string>Пост. времени сглаж. фильтра (с)</string>
        </property>
        <property name="text">
         <string>0.000</string>

@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Basic channel settings</string>
+   <string>Основные настройки канала</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -31,14 +31,14 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Title</string>
+        <string>Заголовок</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLineEdit" name="title">
        <property name="toolTip">
-        <string>Channel marker title</string>
+        <string>Заголовок маркера</string>
        </property>
       </widget>
      </item>
@@ -51,7 +51,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reset title to channel type name</string>
+        <string>Сбросить заголовок</string>
        </property>
        <property name="text">
         <string/>
@@ -75,14 +75,14 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Color</string>
+        <string>Цвет</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QToolButton" name="colorBtn">
        <property name="toolTip">
-        <string>Channel marker color</string>
+        <string>Цвет маркера канала</string>
        </property>
        <property name="text">
         <string/>
@@ -99,7 +99,7 @@
      <item>
       <widget class="QLabel" name="fScaleDisplayTypeLabel">
        <property name="text">
-        <string>FScale</string>
+        <string>FМасшт</string>
        </property>
       </widget>
      </item>
@@ -107,12 +107,12 @@
       <widget class="QComboBox" name="fScaleDisplayType">
        <item>
         <property name="text">
-         <string>Freq</string>
+         <string>Частота</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Title</string>
+         <string>Заголовок</string>
         </property>
        </item>
       </widget>
@@ -120,7 +120,7 @@
      <item>
       <widget class="QLabel" name="streamIndexLabel">
        <property name="text">
-        <string>Stream</string>
+        <string>Поток</string>
        </property>
       </widget>
      </item>
@@ -130,7 +130,7 @@
         <bool>false</bool>
        </property>
        <property name="toolTip">
-        <string>Stream index for MIMO device and single stream channel</string>
+        <string>Индекс потока MIMO</string>
        </property>
        <property name="maximum">
         <number>0</number>
@@ -157,10 +157,10 @@
      <item>
       <widget class="QCheckBox" name="reverseAPI">
        <property name="toolTip">
-        <string>Synchronize with reverse API </string>
+        <string>Синхр. с Reverse API</string>
        </property>
        <property name="text">
-        <string>reverse API</string>
+        <string>Reverse API</string>
        </property>
       </widget>
      </item>
@@ -173,7 +173,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API address</string>
+        <string>Адрес Reverse API</string>
        </property>
        <property name="inputMask">
         <string>000.000.000.000</string>
@@ -205,7 +205,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API port</string>
+        <string>Порт Reverse API</string>
        </property>
        <property name="inputMask">
         <string>00000</string>
@@ -218,7 +218,7 @@
      <item>
       <widget class="QLabel" name="reverseAPIDeviceLabel">
        <property name="text">
-        <string>D</string>
+        <string>Д</string>
        </property>
       </widget>
      </item>
@@ -237,7 +237,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API destination device index</string>
+        <string>Индекс устройства Reverse API</string>
        </property>
        <property name="inputMask">
         <string>00</string>
@@ -272,7 +272,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API destination channel index</string>
+        <string>Индекс канала Reverse API</string>
        </property>
        <property name="inputMask">
         <string>00</string>
@@ -305,7 +305,7 @@
      <item>
       <widget class="QToolButton" name="presets">
        <property name="toolTip">
-        <string>Open channel presets dialog</string>
+        <string>Пресеты канала</string>
        </property>
        <property name="text">
         <string/>

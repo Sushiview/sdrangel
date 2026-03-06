@@ -17,19 +17,19 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Loaded Plugins</string>
+   <string>Загруж. плагины</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTreeWidget" name="tree">
      <column>
       <property name="text">
-       <string>Name</string>
+       <string>Название</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Version</string>
+       <string>Версия</string>
       </property>
      </column>
      <column>

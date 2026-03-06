@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Logging settings</string>
+   <string>Настройки журнала</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -25,7 +25,7 @@
      <item>
       <widget class="QLabel" name="consoleLevelLabel">
        <property name="text">
-        <string>Console log level</string>
+        <string>Уровень консоли</string>
        </property>
       </widget>
      </item>
@@ -38,26 +38,26 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Choose minimum message severity level for logging to console</string>
+        <string>Мин. уровень важности для консоли</string>
        </property>
        <item>
         <property name="text">
-         <string>Debug</string>
+         <string>Отладка</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Info</string>
+         <string>Инфо</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Warning</string>
+         <string>Предупр.</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Error</string>
+         <string>Ошибка</string>
         </property>
        </item>
       </widget>
@@ -78,7 +78,7 @@
      <item>
       <widget class="QLabel" name="fileLevelLabel">
        <property name="text">
-        <string>File log level</string>
+        <string>Уровень файла</string>
        </property>
       </widget>
      </item>
@@ -92,22 +92,22 @@
        </property>
        <item>
         <property name="text">
-         <string>Debug</string>
+         <string>Отладка</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Info</string>
+         <string>Инфо</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Warning</string>
+         <string>Предупр.</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Error</string>
+         <string>Ошибка</string>
         </property>
        </item>
       </widget>
@@ -125,10 +125,10 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Select to activate file logging</string>
+        <string>Вкл. запись в файл</string>
        </property>
        <property name="text">
-        <string>Log to file</string>
+        <string>Лог в файл</string>
        </property>
       </widget>
      </item>
@@ -141,7 +141,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Choose a log file</string>
+        <string>Выбрать лог-файл</string>
        </property>
        <property name="text">
         <string/>
@@ -155,7 +155,7 @@
      <item>
       <widget class="QLabel" name="logFileNameText">
        <property name="toolTip">
-        <string>Log file</string>
+        <string>Лог-файл</string>
        </property>
        <property name="text">
         <string>...</string>

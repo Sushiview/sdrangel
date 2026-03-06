@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Configurations</string>
+   <string>Конфигурации</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -38,14 +38,14 @@
       <item>
        <widget class="QLabel" name="description">
         <property name="text">
-         <string>Select configuration to load:</string>
+         <string>Выбрать конфигурацию:</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QTreeWidget" name="configurationsTree">
         <property name="toolTip">
-         <string>List of configurations</string>
+         <string>Список конфигураций</string>
         </property>
         <property name="indentation">
          <number>5</number>
@@ -61,7 +61,7 @@
         </attribute>
         <column>
          <property name="text">
-          <string>Description</string>
+          <string>Описание</string>
          </property>
         </column>
        </widget>
@@ -74,7 +74,7 @@
      <item>
       <widget class="QToolButton" name="configurationSave">
        <property name="toolTip">
-        <string>Save current workspaces configuration as new configuration</string>
+        <string>Сохранить как конфигурацию</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -94,7 +94,7 @@
      <item>
       <widget class="QToolButton" name="configurationUpdate">
        <property name="toolTip">
-        <string>Update selected configuration with current workspaces configuration</string>
+        <string>Обновить конфигурацию</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -114,7 +114,7 @@
      <item>
       <widget class="QToolButton" name="configurationEdit">
        <property name="toolTip">
-        <string>Edit configuration details</string>
+        <string>Редакт. конфигурацию</string>
        </property>
        <property name="text">
         <string/>
@@ -128,7 +128,7 @@
      <item>
       <widget class="QToolButton" name="configurationExport">
        <property name="toolTip">
-        <string>Export current configuration to file</string>
+        <string>Экспорт конфигурации</string>
        </property>
        <property name="text">
         <string/>
@@ -142,7 +142,7 @@
      <item>
       <widget class="QToolButton" name="configurationImport">
        <property name="toolTip">
-        <string>Import configuration from file into current group</string>
+        <string>Импорт конфигурации</string>
        </property>
        <property name="text">
         <string/>
@@ -169,7 +169,7 @@
      <item>
       <widget class="QToolButton" name="configurationDelete">
        <property name="toolTip">
-        <string>Delete selected configuration</string>
+        <string>Удалить конфигурацию</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -202,7 +202,7 @@
      <item>
       <widget class="QToolButton" name="configurationLoad">
        <property name="toolTip">
-        <string>Load selected configuration</string>
+        <string>Загрузить конфигурацию</string>
        </property>
        <property name="text">
         <string>...</string>

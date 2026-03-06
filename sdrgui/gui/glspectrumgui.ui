@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Spectrum</string>
+   <string>Спектр</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -43,10 +43,10 @@
      <item>
       <widget class="ButtonSwitch" name="grid">
        <property name="toolTip">
-        <string>Toggle the scale grid</string>
+        <string>Вкл/выкл сетку</string>
        </property>
        <property name="text">
-        <string>Grid</string>
+        <string>Сетка</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -75,7 +75,7 @@
         <cursorShape>ArrowCursor</cursorShape>
        </property>
        <property name="toolTip">
-        <string>Grid intensity</string>
+        <string>Яркость сетки</string>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -91,10 +91,10 @@
      <item>
       <widget class="ButtonSwitch" name="truncateScale">
        <property name="toolTip">
-        <string>Truncate non significant upper digits from frequency scale</string>
+        <string>Убрать незнач. цифры шкалы частот</string>
        </property>
        <property name="text">
-        <string>Grid</string>
+        <string>Сетка</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -120,7 +120,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Clear spectrum histogram</string>
+        <string>Очистить гистограмму</string>
        </property>
        <property name="text">
         <string/>
@@ -140,10 +140,10 @@
      <item>
       <widget class="ButtonSwitch" name="histogram">
        <property name="toolTip">
-        <string>Display phosphor effect spectrum</string>
+        <string>Фосфорный эффект</string>
        </property>
        <property name="text">
-        <string>Histogram</string>
+        <string>Гистограмма</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -163,10 +163,10 @@
      <item>
       <widget class="ButtonSwitch" name="maxHold">
        <property name="toolTip">
-        <string>Display max hold</string>
+        <string>Показать макс. удержание</string>
        </property>
        <property name="text">
-        <string>Max Hold</string>
+        <string>Макс. удержание</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -192,7 +192,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Decay:</string>
+        <string>Затухание:</string>
        </property>
        <property name="maximum">
         <number>20</number>
@@ -211,7 +211,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Decay divisor:</string>
+        <string>Делитель затухания:</string>
        </property>
        <property name="minimum">
         <number>1</number>
@@ -233,7 +233,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Stroke:</string>
+        <string>Толщина:</string>
        </property>
        <property name="minimum">
         <number>1</number>
@@ -272,10 +272,10 @@
      <item>
       <widget class="ButtonSwitch" name="currentLine">
        <property name="toolTip">
-        <string>Display live spectrum line style</string>
+        <string>Линия спектра</string>
        </property>
        <property name="text">
-        <string>Max Hold</string>
+        <string>Макс. удержание</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -295,10 +295,10 @@
      <item>
       <widget class="ButtonSwitch" name="currentFill">
        <property name="toolTip">
-        <string>Display live spectrum fill style</string>
+        <string>Заливка спектра</string>
        </property>
        <property name="text">
-        <string>Max Hold</string>
+        <string>Макс. удержание</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -318,10 +318,10 @@
      <item>
       <widget class="ButtonSwitch" name="currentGradient">
        <property name="toolTip">
-        <string>Display live spectrum gradient style</string>
+        <string>Градиент спектра</string>
        </property>
        <property name="text">
-        <string>Max Hold</string>
+        <string>Макс. удержание</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -347,7 +347,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Trace intensity</string>
+        <string>Яркость трассы</string>
        </property>
        <property name="maximum">
         <number>100</number>
@@ -375,7 +375,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Color Map</string>
+        <string>Цветовая карта</string>
        </property>
       </widget>
      </item>
@@ -386,10 +386,10 @@
      <item>
       <widget class="ButtonSwitch" name="invertWaterfall">
        <property name="toolTip">
-        <string>Exchange waterfall and spectrum</string>
+        <string>Поменять спектр и водопад</string>
        </property>
        <property name="text">
-        <string>Inv</string>
+        <string>Инв</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -409,10 +409,10 @@
      <item>
       <widget class="ButtonSwitch" name="waterfall">
        <property name="toolTip">
-        <string>Display waterfall</string>
+        <string>Показать водопад</string>
        </property>
        <property name="text">
-        <string>Waterfall</string>
+        <string>Водопад</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -435,10 +435,10 @@
      <item>
       <widget class="ButtonSwitch" name="spectrogram">
        <property name="toolTip">
-        <string>Display 3D spectrogram</string>
+        <string>Показать 3D спектрограмму</string>
        </property>
        <property name="text">
-        <string>3D Spectrogram</string>
+        <string>3D Спектрограмма</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -473,31 +473,31 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>3D Spectrogram Style</string>
+        <string>Стиль 3D спектрогр.</string>
        </property>
        <item>
         <property name="text">
-         <string>Points</string>
+         <string>Точки</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Lines</string>
+         <string>Линии</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Solid</string>
+         <string>Сплошной</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Outline</string>
+         <string>Контур</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Shaded</string>
+         <string>Заливка</string>
         </property>
        </item>
       </widget>
@@ -530,7 +530,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>FFT window function</string>
+        <string>Оконная функция FFT</string>
        </property>
        <property name="sizeAdjustPolicy">
         <enum>QComboBox::AdjustToContents</enum>
@@ -603,7 +603,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>FFT size</string>
+        <string>Размер FFT</string>
        </property>
        <property name="sizeAdjustPolicy">
         <enum>QComboBox::AdjustToContents</enum>
@@ -669,7 +669,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>FFT overlap</string>
+        <string>Перекрытие FFT</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -697,7 +697,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Averaging type</string>
+        <string>Тип усреднения</string>
        </property>
        <item>
         <property name="text">
@@ -716,7 +716,7 @@
        </item>
        <item>
         <property name="text">
-         <string>Max</string>
+         <string>Макс</string>
         </property>
        </item>
       </widget>
@@ -736,7 +736,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Number of averaging samples</string>
+        <string>Число сэмплов усреднения</string>
        </property>
        <item>
         <property name="text">
@@ -870,7 +870,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Autoscale max level and range</string>
+        <string>Авто-масштаб макс. уровня</string>
        </property>
        <property name="text">
         <string>A</string>
@@ -892,7 +892,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reference level (dB)</string>
+        <string>Опорный уровень (дБ)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -920,7 +920,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Range (dB)</string>
+        <string>Диапазон (дБ)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -948,7 +948,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Spectrum maximum FPS</string>
+        <string>Макс. FPS спектра</string>
        </property>
        <property name="currentIndex">
         <number>0</number>
@@ -993,7 +993,7 @@
      <item>
       <widget class="QToolButton" name="linscale">
        <property name="toolTip">
-        <string>Logarithmic / Linear scale selection</string>
+        <string>Лог / Лин шкала</string>
        </property>
        <property name="text">
         <string/>
@@ -1034,7 +1034,7 @@
      <item>
       <widget class="ButtonSwitch" name="freeze">
        <property name="toolTip">
-        <string>Play/Pause spectrum display</string>
+        <string>Пауза/Запуск спектра</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -1049,7 +1049,7 @@
      <item>
       <widget class="QToolButton" name="save">
        <property name="toolTip">
-        <string>Save spectrum data to file</string>
+        <string>Сохранить спектр в файл</string>
        </property>
        <property name="text">
         <string/>
@@ -1063,7 +1063,7 @@
      <item>
       <widget class="ButtonSwitch" name="wsSpectrum">
        <property name="toolTip">
-        <string>Left: toggle websocket spectrum - Right: websocket spectrum parameters</string>
+        <string>Лев: WebSocket спектр - Прав: параметры</string>
        </property>
        <property name="icon">
         <iconset>
@@ -1084,7 +1084,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Open spectrum markers dialog</string>
+        <string>Маркеры спектра</string>
        </property>
        <property name="icon">
         <iconset>
@@ -1105,7 +1105,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Open spectrum measurements dialog</string>
+        <string>Измерения спектра</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -1119,7 +1119,7 @@
      <item>
       <widget class="QToolButton" name="resetMeasurements">
        <property name="toolTip">
-        <string>Reset measurements</string>
+        <string>Сбросить измерения</string>
        </property>
        <property name="text">
         <string/>
@@ -1133,7 +1133,7 @@
      <item>
       <widget class="ButtonSwitch" name="calibration">
        <property name="toolTip">
-        <string>Left: toggle relative / calibrated power - Right: open calibration dialog</string>
+        <string>Лев: откл. мощность - Прав: калибровка</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -1147,10 +1147,10 @@
      <item>
       <widget class="ButtonSwitch" name="showAllControls">
        <property name="toolTip">
-        <string>Toggle all controls</string>
+        <string>Вкл/выкл все элементы</string>
        </property>
        <property name="text">
-        <string>Grid</string>
+        <string>Сетка</string>
        </property>
        <property name="icon">
         <iconset resource="../resources/res.qrc">
@@ -1182,11 +1182,11 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Set frequency to marker</string>
+        <string>Частота на маркер</string>
        </property>
        <item>
         <property name="text">
-         <string>Go to...</string>
+         <string>Перейти...</string>
         </property>
        </item>
       </widget>

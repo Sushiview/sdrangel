@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Device Set Presets</string>
+   <string>Пресеты набора устройств</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -33,23 +33,23 @@
      </attribute>
      <column>
       <property name="text">
-       <string>Freq (MHz)</string>
+       <string>Частота (МГц)</string>
       </property>
       <property name="toolTip">
-       <string>Center frequency in MHz</string>
+       <string>Центр. частота МГц</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>M</string>
+       <string>М</string>
       </property>
       <property name="toolTip">
-       <string>Mode: R: Rx or source, T: Tx or sink</string>
+       <string>Режим: R: приём, T: передача</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Description</string>
+       <string>Описание</string>
       </property>
      </column>
     </widget>
@@ -59,7 +59,7 @@
      <item>
       <widget class="QToolButton" name="presetSave">
        <property name="toolTip">
-        <string>Save current settings as new preset</string>
+        <string>Сохранить как пресет</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -79,7 +79,7 @@
      <item>
       <widget class="QToolButton" name="presetUpdate">
        <property name="toolTip">
-        <string>Update selected preset with current settings</string>
+        <string>Обновить пресет</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -99,7 +99,7 @@
      <item>
       <widget class="QToolButton" name="presetEdit">
        <property name="toolTip">
-        <string>Edit preset details</string>
+        <string>Редакт. пресет</string>
        </property>
        <property name="text">
         <string/>
@@ -113,7 +113,7 @@
      <item>
       <widget class="QToolButton" name="presetExport">
        <property name="toolTip">
-        <string>Export current preset to file</string>
+        <string>Экспорт пресета</string>
        </property>
        <property name="text">
         <string/>
@@ -127,7 +127,7 @@
      <item>
       <widget class="QToolButton" name="presetImport">
        <property name="toolTip">
-        <string>Import preset from file into current group</string>
+        <string>Импорт пресета в группу</string>
        </property>
        <property name="text">
         <string/>
@@ -154,7 +154,7 @@
      <item>
       <widget class="QToolButton" name="presetDelete">
        <property name="toolTip">
-        <string>Delete selected preset</string>
+        <string>Удалить пресет</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -193,7 +193,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Load selected preset</string>
+        <string>Загрузить пресет</string>
        </property>
        <property name="text">
         <string>...</string>

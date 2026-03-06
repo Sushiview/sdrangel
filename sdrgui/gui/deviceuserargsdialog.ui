@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Device user arguments</string>
+   <string>Аргументы устройств</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -51,14 +51,14 @@
     </font>
    </property>
    <property name="toolTip">
-    <string>Arguments for hardware</string>
+    <string>Аргументы устройства</string>
    </property>
    <property name="currentIndex">
     <number>0</number>
    </property>
    <widget class="QWidget" name="tabHW">
     <attribute name="title">
-     <string>Hardware</string>
+     <string>Устройство</string>
     </attribute>
     <widget class="QTreeWidget" name="deviceTree">
      <property name="geometry">
@@ -70,30 +70,30 @@
       </rect>
      </property>
      <property name="toolTip">
-      <string>List of available hardware</string>
+      <string>Список устройств</string>
      </property>
      <column>
       <property name="text">
        <string>HwID</string>
       </property>
       <property name="toolTip">
-       <string>Hardware ID</string>
+       <string>ID устройства</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Seq</string>
+       <string>Сек</string>
       </property>
       <property name="toolTip">
-       <string>Sequence</string>
+       <string>Последовательность</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Description</string>
+       <string>Описание</string>
       </property>
       <property name="toolTip">
-       <string>Description</string>
+       <string>Описание</string>
       </property>
      </column>
     </widget>
@@ -116,7 +116,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Add the selected hardware in the list below</string>
+         <string>Добавить выбр. устройство</string>
         </property>
         <property name="text">
          <string/>
@@ -150,14 +150,14 @@
       <item>
        <widget class="QLineEdit" name="addDeviceHwIDEdit">
         <property name="toolTip">
-         <string>Hardware Id of non discoverable device</string>
+         <string>ID необнаруж. устройства</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QLabel" name="addDeviceSeqLabel">
         <property name="text">
-         <string>Seq</string>
+         <string>Сек</string>
         </property>
        </widget>
       </item>
@@ -170,7 +170,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Sequence of non discoverable device</string>
+         <string>Номер необнаруж. устройства</string>
         </property>
         <property name="inputMask">
          <string>00</string>
@@ -186,7 +186,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Add non discoverable device </string>
+         <string>Добавить необнаружив. устр.</string>
         </property>
         <property name="text">
          <string/>
@@ -218,7 +218,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Delete arguments and remove hardware from list above</string>
+         <string>Удалить аргументы и устройство</string>
         </property>
         <property name="text">
          <string/>
@@ -238,14 +238,14 @@
          </size>
         </property>
         <property name="text">
-         <string>Args</string>
+         <string>Аргументы</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QLineEdit" name="argStringEdit">
         <property name="toolTip">
-         <string>Edit user arguments of hardware selected above</string>
+         <string>Редакт. аргументы устройства</string>
         </property>
        </widget>
       </item>
@@ -261,14 +261,14 @@
       </rect>
      </property>
      <property name="toolTip">
-      <string>List of hardware with user arguments</string>
+      <string>Устройства с аргументами</string>
      </property>
      <column>
       <property name="text">
-       <string>ND</string>
+       <string>НО</string>
       </property>
       <property name="toolTip">
-       <string>Non discoverable</string>
+       <string>Необнаруживаемое</string>
       </property>
      </column>
      <column>
@@ -276,23 +276,23 @@
        <string>HwID</string>
       </property>
       <property name="toolTip">
-       <string>Hardware ID</string>
+       <string>ID устройства</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Seq</string>
+       <string>Сек</string>
       </property>
       <property name="toolTip">
-       <string>Sequence</string>
+       <string>Последовательность</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Arg string</string>
+       <string>Строка аргументов</string>
       </property>
       <property name="toolTip">
-       <string>Argument string</string>
+       <string>Строка аргументов</string>
       </property>
      </column>
     </widget>

@@ -23,7 +23,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Basic feature settings</string>
+   <string>Основные настройки функции</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -37,14 +37,14 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Title</string>
+        <string>Заголовок</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLineEdit" name="title">
        <property name="toolTip">
-        <string>Channel marker title</string>
+        <string>Заголовок маркера</string>
        </property>
       </widget>
      </item>
@@ -57,7 +57,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reset title to feature type name</string>
+        <string>Сбросить заголовок</string>
        </property>
        <property name="text">
         <string/>
@@ -75,10 +75,10 @@
      <item>
       <widget class="QCheckBox" name="reverseAPI">
        <property name="toolTip">
-        <string>Synchronize with reverse API </string>
+        <string>Синхр. с Reverse API</string>
        </property>
        <property name="text">
-        <string>reverse API</string>
+        <string>Reverse API</string>
        </property>
       </widget>
      </item>
@@ -91,7 +91,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API address</string>
+        <string>Адрес Reverse API</string>
        </property>
        <property name="inputMask">
         <string>000.000.000.000</string>
@@ -117,7 +117,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API port</string>
+        <string>Порт Reverse API</string>
        </property>
        <property name="inputMask">
         <string>00000</string>
@@ -130,7 +130,7 @@
      <item>
       <widget class="QLabel" name="reverseAPIFeatureSetLabel">
        <property name="text">
-        <string>Set</string>
+        <string>Задать</string>
        </property>
       </widget>
      </item>
@@ -143,7 +143,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API destination feature set index</string>
+        <string>Индекс набора функций API</string>
        </property>
        <property name="inputMask">
         <string>00</string>
@@ -159,7 +159,7 @@
      <item>
       <widget class="QLabel" name="reverseAPIFeatureLabel">
        <property name="text">
-        <string>Feat</string>
+        <string>Функц</string>
        </property>
       </widget>
      </item>
@@ -172,7 +172,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Reverse API destination feature index</string>
+        <string>Индекс функции Reverse API</string>
        </property>
        <property name="inputMask">
         <string>00</string>
@@ -205,7 +205,7 @@
      <item>
       <widget class="QToolButton" name="presets">
        <property name="toolTip">
-        <string>Open feature presets dialog</string>
+        <string>Пресеты функции</string>
        </property>
        <property name="text">
         <string/>

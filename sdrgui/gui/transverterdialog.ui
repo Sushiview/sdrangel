@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Delta Frequency</string>
+   <string>Дельта частота</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -58,14 +58,14 @@
           <enum>Qt::StrongFocus</enum>
          </property>
          <property name="toolTip">
-          <string>Transverter delta frequency (Hz)</string>
+          <string>Дельта частота трансв. (Гц)</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLabel" name="deltaFrequencyUnits">
          <property name="text">
-          <string>Hz</string>
+          <string>Гц</string>
          </property>
         </widget>
        </item>
@@ -85,7 +85,7 @@
        <item>
         <widget class="ButtonSwitch" name="deltaFrequencyActive">
          <property name="toolTip">
-          <string>Enable or disable frequency translation</string>
+          <string>Вкл/выкл трансвертер</string>
          </property>
          <property name="text">
           <string/>
@@ -105,7 +105,7 @@
      <item>
       <widget class="ButtonSwitch" name="iqOrder">
        <property name="toolTip">
-        <string>IQ order: IQ: straight QI: swapped</string>
+        <string>IQ: прямой, QI: обратный</string>
        </property>
        <property name="text">
         <string>IQ</string>

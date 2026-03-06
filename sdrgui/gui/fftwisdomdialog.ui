@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>FFTW Wisdom file generator</string>
+   <string>Генератор FFTW Wisdom</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -31,17 +31,17 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Path to fftwf-wisdom executable</string>
+        <string>Путь к fftwf-wisdom</string>
        </property>
        <property name="text">
-        <string>Program</string>
+        <string>Программа</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLineEdit" name="executable">
        <property name="toolTip">
-        <string>FFTW Wisdom program</string>
+        <string>Программа FFTW Wisdom</string>
        </property>
       </widget>
      </item>
@@ -60,7 +60,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Choose file</string>
+        <string>Выбрать файл</string>
        </property>
        <property name="text">
         <string/>
@@ -78,14 +78,14 @@
      <item>
       <widget class="QLabel" name="fftwMaxSizeLabel">
        <property name="text">
-        <string>FFT max</string>
+        <string>Макс. FFT</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QComboBox" name="fftwMaxSize">
        <property name="toolTip">
-        <string>FFT maximum size</string>
+        <string>Макс. размер FFT</string>
        </property>
        <item>
         <property name="text">
@@ -137,10 +137,10 @@
      <item>
       <widget class="QCheckBox" name="fftwReverse">
        <property name="toolTip">
-        <string>Synchronize with reverse API </string>
+        <string>Синхр. с Reverse API</string>
        </property>
        <property name="text">
-        <string>reverse FFT</string>
+        <string>обратный FFT</string>
        </property>
       </widget>
      </item>
@@ -170,7 +170,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>FFTW Wisdom program invocation</string>
+        <string>Запуск FFTW Wisdom</string>
        </property>
        <property name="text">
         <string>...</string>

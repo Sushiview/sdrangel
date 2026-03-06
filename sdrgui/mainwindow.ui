@@ -69,13 +69,13 @@
    </property>
    <widget class="QMenu" name="menu_File">
     <property name="title">
-     <string>&amp;File</string>
+     <string>&amp;Файл</string>
     </property>
     <addaction name="action_Exit"/>
    </widget>
    <widget class="QMenu" name="menu_Devices">
     <property name="title">
-     <string>&amp;DeviceSets</string>
+     <string>&amp;Устройства</string>
     </property>
     <addaction name="action_addSourceDevice"/>
     <addaction name="action_addSinkDevice"/>
@@ -84,13 +84,13 @@
    </widget>
    <widget class="QMenu" name="menu_View">
     <property name="title">
-     <string>&amp;View</string>
+     <string>&amp;Вид</string>
     </property>
     <addaction name="action_View_Fullscreen"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
-     <string>&amp;Help</string>
+     <string>&amp;Справка</string>
     </property>
     <addaction name="action_Quick_Start"/>
     <addaction name="action_Main_Window"/>
@@ -107,7 +107,7 @@
      </font>
     </property>
     <property name="title">
-     <string>&amp;Window</string>
+     <string>&amp;Окно</string>
     </property>
    </widget>
    <widget class="QMenu" name="menuPreferences">
@@ -118,11 +118,11 @@
      </font>
     </property>
     <property name="title">
-     <string>&amp;Preferences</string>
+     <string>&amp;Настройки</string>
     </property>
     <widget class="QMenu" name="menuDevices">
      <property name="title">
-      <string>Devices</string>
+      <string>Устройства</string>
      </property>
      <addaction name="action_DeviceUserArguments"/>
     </widget>
@@ -136,7 +136,7 @@
    </widget>
    <widget class="QMenu" name="menuFeatureSets">
     <property name="title">
-     <string>F&amp;eatureSets</string>
+     <string>Ф&amp;ункции</string>
     </property>
     <addaction name="action_addFeatureSet"/>
     <addaction name="action_removeLastFeatureSet"/>
@@ -152,7 +152,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="SamplingDevicesDock" name="inputViewDock">
    <property name="windowTitle">
-    <string>Sampling devices</string>
+    <string>SDR устройства</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
@@ -195,7 +195,7 @@
   </widget>
   <widget class="QDockWidget" name="spectraControlDock">
    <property name="windowTitle">
-    <string>Spectrum Control</string>
+    <string>Упр. спектром</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
@@ -235,7 +235,7 @@
   </widget>
   <widget class="QDockWidget" name="presetDock">
    <property name="windowTitle">
-    <string>Presets</string>
+    <string>Пресеты</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
@@ -270,23 +270,23 @@
        </attribute>
        <column>
         <property name="text">
-         <string>Freq (MHz)</string>
+         <string>Частота (МГц)</string>
         </property>
         <property name="toolTip">
-         <string>Center frequency in MHz</string>
+         <string>Центр. частота МГц</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>M</string>
+         <string>М</string>
         </property>
         <property name="toolTip">
-         <string>Mode: R: Rx or source, T: Tx or sink</string>
+         <string>Режим: R: приём, T: передача</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Description</string>
+         <string>Описание</string>
         </property>
        </column>
       </widget>
@@ -296,7 +296,7 @@
        <item>
         <widget class="QToolButton" name="presetSave">
          <property name="toolTip">
-          <string>Save current settings as new preset</string>
+          <string>Сохранить как пресет</string>
          </property>
          <property name="text">
           <string>...</string>
@@ -316,7 +316,7 @@
        <item>
         <widget class="QToolButton" name="presetUpdate">
          <property name="toolTip">
-          <string>Update selected preset with current settings</string>
+          <string>Обновить пресет</string>
          </property>
          <property name="text">
           <string>...</string>
@@ -336,7 +336,7 @@
        <item>
         <widget class="QToolButton" name="settingsSave">
          <property name="toolTip">
-          <string>Save the current settings (inc. presets)</string>
+          <string>Сохранить настройки</string>
          </property>
          <property name="text">
           <string>...</string>
@@ -356,7 +356,7 @@
        <item>
         <widget class="QToolButton" name="presetEdit">
          <property name="toolTip">
-          <string>Edit preset details</string>
+          <string>Редакт. пресет</string>
          </property>
          <property name="text">
           <string/>
@@ -370,7 +370,7 @@
        <item>
         <widget class="QToolButton" name="presetExport">
          <property name="toolTip">
-          <string>Export current preset to file</string>
+          <string>Экспорт пресета</string>
          </property>
          <property name="text">
           <string/>
@@ -384,7 +384,7 @@
        <item>
         <widget class="QToolButton" name="presetImport">
          <property name="toolTip">
-          <string>Import preset from file into current group</string>
+          <string>Импорт пресета в группу</string>
          </property>
          <property name="text">
           <string/>
@@ -411,7 +411,7 @@
        <item>
         <widget class="QToolButton" name="presetDelete">
          <property name="toolTip">
-          <string>Delete selected preset</string>
+          <string>Удалить пресет</string>
          </property>
          <property name="text">
           <string>...</string>
@@ -444,7 +444,7 @@
        <item>
         <widget class="QToolButton" name="presetLoad">
          <property name="toolTip">
-          <string>Load selected preset</string>
+          <string>Загрузить пресет</string>
          </property>
          <property name="text">
           <string>...</string>
@@ -468,7 +468,7 @@
   </widget>
   <widget class="ChannelsDock" name="channelDock">
    <property name="windowTitle">
-    <string>Channels</string>
+    <string>Каналы</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>
@@ -505,7 +505,7 @@
   </widget>
   <widget class="QDockWidget" name="commandsDock">
    <property name="windowTitle">
-    <string>Commands</string>
+    <string>Команды</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
@@ -543,17 +543,17 @@
        </attribute>
        <column>
         <property name="text">
-         <string>Description</string>
+         <string>Описание</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>P/R</string>
+         <string>П/З</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Key</string>
+         <string>Клавиша</string>
         </property>
        </column>
       </widget>
@@ -563,7 +563,7 @@
        <item>
         <widget class="QToolButton" name="commandNew">
          <property name="toolTip">
-          <string>Create new command</string>
+          <string>Создать команду</string>
          </property>
          <property name="text">
           <string/>
@@ -577,7 +577,7 @@
        <item>
         <widget class="QToolButton" name="commandDuplicate">
          <property name="toolTip">
-          <string>Duplicate command</string>
+          <string>Копировать команду</string>
          </property>
          <property name="text">
           <string/>
@@ -591,7 +591,7 @@
        <item>
         <widget class="QToolButton" name="commandEdit">
          <property name="toolTip">
-          <string>Edit command details</string>
+          <string>Редакт. команду</string>
          </property>
          <property name="text">
           <string/>
@@ -605,7 +605,7 @@
        <item>
         <widget class="QToolButton" name="commandRun">
          <property name="toolTip">
-          <string>Run command</string>
+          <string>Выполнить</string>
          </property>
          <property name="text">
           <string/>
@@ -619,7 +619,7 @@
        <item>
         <widget class="QToolButton" name="commandOutput">
          <property name="toolTip">
-          <string>View last run status and output</string>
+          <string>Статус выполнения</string>
          </property>
          <property name="text">
           <string/>
@@ -633,7 +633,7 @@
        <item>
         <widget class="QToolButton" name="commandsSave">
          <property name="toolTip">
-          <string>Save commands in settings</string>
+          <string>Сохранить команды</string>
          </property>
          <property name="text">
           <string/>
@@ -660,7 +660,7 @@
        <item>
         <widget class="QToolButton" name="commandDelete">
          <property name="toolTip">
-          <string>Delete selected command</string>
+          <string>Удалить команду</string>
          </property>
          <property name="text">
           <string/>
@@ -687,7 +687,7 @@
        <item>
         <widget class="ButtonSwitch" name="commandKeyboardConnect">
          <property name="toolTip">
-          <string>Toggle keyboard to command connection</string>
+          <string>Клавиатура → команды</string>
          </property>
          <property name="text">
           <string/>
@@ -705,7 +705,7 @@
   </widget>
   <widget class="FeaturesDock" name="featureDock">
    <property name="windowTitle">
-    <string>Features</string>
+    <string>Функции</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>
@@ -748,7 +748,7 @@
   </widget>
   <action name="action_Exit">
    <property name="text">
-    <string>E&amp;xit</string>
+    <string>В&amp;ыход</string>
    </property>
    <property name="font">
     <font>
@@ -762,7 +762,7 @@
   </action>
   <action name="action_Start">
    <property name="text">
-    <string>&amp;Start</string>
+    <string>&amp;Старт</string>
    </property>
    <property name="font">
     <font/>
@@ -773,7 +773,7 @@
   </action>
   <action name="action_Stop">
    <property name="text">
-    <string>&amp;Stop</string>
+    <string>&amp;Стоп</string>
    </property>
    <property name="font">
     <font/>
@@ -787,7 +787,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Fullscreen</string>
+    <string>&amp;Полный экран</string>
    </property>
    <property name="font">
     <font>
@@ -804,7 +804,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Oscilloscope</string>
+    <string>&amp;Осциллограф</string>
    </property>
    <property name="shortcut">
     <string>F8</string>
@@ -812,7 +812,7 @@
   </action>
   <action name="action_About">
    <property name="text">
-    <string>&amp;About SDRangel...</string>
+    <string>&amp;О SDRangel...</string>
    </property>
    <property name="font">
     <font>
@@ -823,7 +823,7 @@
   </action>
   <action name="action_Preferences">
    <property name="text">
-    <string>&amp;Preferences...</string>
+    <string>&amp;Настройки...</string>
    </property>
    <property name="font">
     <font/>
@@ -831,7 +831,7 @@
   </action>
   <action name="action_Loaded_Plugins">
    <property name="text">
-    <string>Loaded &amp;Plugins...</string>
+    <string>Загр. &amp;плагины...</string>
    </property>
    <property name="font">
     <font>
@@ -842,7 +842,7 @@
   </action>
   <action name="action_addSourceDevice">
    <property name="text">
-    <string>Add source device set</string>
+    <string>Добавить приёмник</string>
    </property>
    <property name="font">
     <font>
@@ -853,7 +853,7 @@
   </action>
   <action name="action_removeLastDevice">
    <property name="text">
-    <string>Remove last device set</string>
+    <string>Удалить посл. набор</string>
    </property>
    <property name="font">
     <font>
@@ -864,10 +864,10 @@
   </action>
   <action name="action_Audio">
    <property name="text">
-    <string>&amp;Audio</string>
+    <string>&amp;Аудио</string>
    </property>
    <property name="toolTip">
-    <string>Audio devices setting</string>
+    <string>Настройки аудио</string>
    </property>
    <property name="font">
     <font>
@@ -884,7 +884,7 @@
     <string>DV Serial</string>
    </property>
    <property name="toolTip">
-    <string>Toggle AMBE DV serial device usage</string>
+    <string>Вкл/выкл AMBE DV Serial</string>
    </property>
    <property name="font">
     <font>
@@ -895,10 +895,10 @@
   </action>
   <action name="action_My_Position">
    <property name="text">
-    <string>My Position</string>
+    <string>Моя позиция</string>
    </property>
    <property name="toolTip">
-    <string>Set my geo position</string>
+    <string>Задать геопозицию</string>
    </property>
    <property name="font">
     <font>
@@ -909,7 +909,7 @@
   </action>
   <action name="action_addSinkDevice">
    <property name="text">
-    <string>Add sink device set</string>
+    <string>Добавить передатчик</string>
    </property>
    <property name="font">
     <font>
@@ -920,10 +920,10 @@
   </action>
   <action name="action_Logging">
    <property name="text">
-    <string>Logging</string>
+    <string>Журнал</string>
    </property>
    <property name="toolTip">
-    <string>Message logging options</string>
+    <string>Настройки журнала</string>
    </property>
    <property name="font">
     <font>
@@ -934,7 +934,7 @@
   </action>
   <action name="action_addMIMODevice">
    <property name="text">
-    <string>Add MIMO device set</string>
+    <string>Добавить MIMO набор</string>
    </property>
    <property name="font">
     <font>
@@ -945,7 +945,7 @@
   </action>
   <action name="action_DeviceUserArguments">
    <property name="text">
-    <string>User arguments</string>
+    <string>Доп. аргументы</string>
    </property>
   </action>
   <action name="action_AMBE">
@@ -960,7 +960,7 @@
   </action>
   <action name="action_addFeatureSet">
    <property name="text">
-    <string>Add feature set</string>
+    <string>Добавить функции</string>
    </property>
    <property name="font">
     <font>
@@ -972,7 +972,7 @@
   </action>
   <action name="action_removeLastFeatureSet">
    <property name="text">
-    <string>Remove last feature set</string>
+    <string>Удалить посл. функции</string>
    </property>
    <property name="font">
     <font>
@@ -988,12 +988,12 @@
   </action>
   <action name="action_Quick_Start">
    <property name="text">
-    <string>&amp;Quick Start...</string>
+    <string>&amp;Быстрый старт...</string>
    </property>
   </action>
   <action name="action_Main_Window">
    <property name="text">
-    <string>&amp;Main Window...</string>
+    <string>&amp;Гл. окно...</string>
    </property>
   </action>
   <zorder>presetDock</zorder>

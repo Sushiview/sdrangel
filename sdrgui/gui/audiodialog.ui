@@ -23,7 +23,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Audio Preferences</string>
+   <string>Настройки аудио</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -33,7 +33,7 @@
      </property>
      <widget class="QWidget" name="tabOutput">
       <attribute name="title">
-       <string>Audio Output</string>
+       <string>Аудио выход</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
@@ -51,7 +51,7 @@
          </column>
          <column>
           <property name="text">
-           <string>Device</string>
+           <string>Устройство</string>
           </property>
          </column>
         </widget>
@@ -61,7 +61,7 @@
          <item>
           <widget class="QLabel" name="outputSampleRateLabel">
            <property name="text">
-            <string>Rate</string>
+            <string>Частота дискр.</string>
            </property>
           </widget>
          </item>
@@ -74,7 +74,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Audio output sample rate</string>
+            <string>Частота дискр. выхода</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -115,7 +115,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Reset values to defaults</string>
+            <string>Сбросить к умолч.</string>
            </property>
            <property name="text">
             <string>R</string>
@@ -144,26 +144,26 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Channel copy mode</string>
+            <string>Режим копир. канала</string>
            </property>
            <item>
             <property name="text">
-             <string>Left</string>
+             <string>Левый</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Right</string>
+             <string>Правый</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Mixed</string>
+             <string>Смешанный</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Stereo</string>
+             <string>Стерео</string>
             </property>
            </item>
           </widget>
@@ -184,7 +184,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Decimation factor</string>
+            <string>Коэфф. децимации</string>
            </property>
            <item>
             <property name="text">
@@ -233,7 +233,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Encoding</string>
+            <string>Кодирование</string>
            </property>
            <item>
             <property name="text">
@@ -276,7 +276,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Encoding string in SDP format</string>
+            <string>Строка кодирования SDP</string>
            </property>
            <property name="text">
             <string>PCMA/48000</string>
@@ -303,7 +303,7 @@
          <item>
           <widget class="QLabel" name="outputUDPAddressLabel">
            <property name="text">
-            <string>Addr</string>
+            <string>Адрес</string>
            </property>
           </widget>
          </item>
@@ -316,7 +316,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Destination UDP address</string>
+            <string>Адрес UDP назначения</string>
            </property>
            <property name="inputMask">
             <string>000.000.000.000</string>
@@ -329,7 +329,7 @@
          <item>
           <widget class="QLabel" name="outputUDPPortLabel">
            <property name="text">
-            <string>Port</string>
+            <string>Порт</string>
            </property>
           </widget>
          </item>
@@ -342,7 +342,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Destination UDP port</string>
+            <string>Порт UDP назначения</string>
            </property>
            <property name="inputMask">
             <string>00000</string>
@@ -371,7 +371,7 @@
          <item>
           <widget class="ButtonSwitch" name="outputUDPCopy">
            <property name="toolTip">
-            <string>Copy audio to UDP</string>
+            <string>Копировать аудио на UDP</string>
            </property>
            <property name="text">
             <string>UDP</string>
@@ -381,7 +381,7 @@
          <item>
           <widget class="QCheckBox" name="outputUDPUseRTP">
            <property name="toolTip">
-            <string>Use RTP protocol</string>
+            <string>Использовать RTP</string>
            </property>
            <property name="text">
             <string>RTP</string>
@@ -401,7 +401,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Start/stop recording</string>
+            <string>Старт/стоп записи</string>
            </property>
            <property name="text">
             <string/>
@@ -427,7 +427,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Open file</string>
+            <string>Открыть файл</string>
            </property>
            <property name="text">
             <string/>
@@ -444,7 +444,7 @@
             <bool>true</bool>
            </property>
            <property name="toolTip">
-            <string>Current recording file</string>
+            <string>Текущий файл записи</string>
            </property>
            <property name="text">
             <string>...</string>
@@ -463,7 +463,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Silence time (s) before recording is stopped. 0 for continuous recording.</string>
+            <string>Тишина (с) до стопа. 0=непрерывно.</string>
            </property>
            <property name="minimum">
             <number>0</number>
@@ -491,7 +491,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Silence time (s) before recording is stopped</string>
+            <string>Тишина (с) до остановки записи</string>
            </property>
            <property name="text">
             <string>10.0</string>
@@ -508,7 +508,7 @@
          <item>
           <widget class="QPushButton" name="outputCleanup">
            <property name="toolTip">
-            <string>Remove references to devices not listed</string>
+            <string>Удалить незарегистр. устр.</string>
            </property>
            <property name="text">
             <string/>
@@ -522,7 +522,7 @@
          <item>
           <widget class="ButtonSwitch" name="outputResetKey">
            <property name="toolTip">
-            <string>Remove settings for this device and return to defaults</string>
+            <string>Сброс настроек устройства</string>
            </property>
            <property name="text">
             <string/>
@@ -552,7 +552,7 @@
      </widget>
      <widget class="QWidget" name="tabInput">
       <attribute name="title">
-       <string>Audio Input</string>
+       <string>Аудио вход</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
@@ -567,7 +567,7 @@
          </column>
          <column>
           <property name="text">
-           <string>Device</string>
+           <string>Устройство</string>
           </property>
          </column>
         </widget>
@@ -577,7 +577,7 @@
          <item>
           <widget class="QLabel" name="inputSampleRateLabel">
            <property name="text">
-            <string>Rate</string>
+            <string>Частота дискр.</string>
            </property>
           </widget>
          </item>
@@ -590,7 +590,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Audio input sample rate</string>
+            <string>Частота дискр. входа</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -618,7 +618,7 @@
             </size>
            </property>
            <property name="text">
-            <string>Volume</string>
+            <string>Громкость</string>
            </property>
           </widget>
          </item>
@@ -631,7 +631,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Input volume</string>
+            <string>Громкость входа</string>
            </property>
            <property name="maximum">
             <number>100</number>
@@ -682,7 +682,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Reset values to default</string>
+            <string>Сбросить к умолч.</string>
            </property>
            <property name="text">
             <string>R</string>
@@ -696,7 +696,7 @@
          <item>
           <widget class="QPushButton" name="inputCleanup">
            <property name="toolTip">
-            <string>Remove references to devices not listed</string>
+            <string>Удалить незарегистр. устр.</string>
            </property>
            <property name="text">
             <string/>
@@ -710,7 +710,7 @@
          <item>
           <widget class="ButtonSwitch" name="inputResetKey">
            <property name="toolTip">
-            <string>Remove settings for this device and return to defaults</string>
+            <string>Сброс настроек устройства</string>
            </property>
            <property name="text">
             <string/>
