@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Display Settings</string>
+   <string>Настройки отображения</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -26,7 +26,7 @@
      </property>
      <widget class="QWidget" name="generalTab">
       <attribute name="title">
-       <string>General</string>
+       <string>Общее</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
@@ -41,7 +41,7 @@
          <item row="0" column="1">
           <widget class="QComboBox" name="units">
            <property name="toolTip">
-            <string>The units to use for altitude, speed and climb rate</string>
+            <string>Единицы измерения высоты/скорости</string>
            </property>
            <item>
             <property name="text">
@@ -58,14 +58,14 @@
          <item row="1" column="0">
           <widget class="QLabel" name="photosLabel">
            <property name="text">
-            <string>Display aircraft photos</string>
+            <string>Показать фото ВС</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
           <widget class="QCheckBox" name="photos">
            <property name="toolTip">
-            <string>Download and display photos of highlighted aircraft</string>
+            <string>Загрузить и показать фото выбранного ВС</string>
            </property>
            <property name="text">
             <string/>
@@ -75,14 +75,14 @@
          <item row="2" column="0">
           <widget class="QLabel" name="timeoutLabel">
            <property name="text">
-            <string>Aircraft timeout (s)</string>
+            <string>Таймаут ВС (с)</string>
            </property>
           </widget>
          </item>
          <item row="2" column="1">
           <widget class="QSpinBox" name="timeout">
            <property name="toolTip">
-            <string>How long in seconds after not receiving any frames will an aircraft be removed from the table and map</string>
+            <string>Таймаут удаления ВС из таблицы (с)</string>
            </property>
            <property name="maximum">
             <number>1000000</number>
@@ -92,14 +92,14 @@
          <item row="3" column="0">
           <widget class="QLabel" name="fontLabel">
            <property name="text">
-            <string>Table font</string>
+            <string>Шрифт таблицы</string>
            </property>
           </widget>
          </item>
          <item row="3" column="1">
           <widget class="QPushButton" name="font">
            <property name="toolTip">
-            <string>Select a font for the table</string>
+            <string>Выбрать шрифт таблицы</string>
            </property>
            <property name="text">
             <string>Select...</string>
@@ -109,14 +109,14 @@
          <item row="4" column="0">
           <widget class="QLabel" name="autoResizeTableColumnsLabel">
            <property name="text">
-            <string>Resize columns after adding aircraft</string>
+            <string>Авторазмер столбцов при добавлении ВС</string>
            </property>
           </widget>
          </item>
          <item row="4" column="1">
           <widget class="QCheckBox" name="autoResizeTableColumns">
            <property name="toolTip">
-            <string>Resize the columns in the table after an aircraft is added to it</string>
+            <string>Изменить размер столбцов при добавлении ВС</string>
            </property>
            <property name="text">
             <string/>
@@ -126,14 +126,14 @@
          <item row="5" column="0">
           <widget class="QLabel" name="verboseModelMatchingLabel">
            <property name="text">
-            <string>Log 3D model matching information</string>
+            <string>Лог сопоставления 3D-моделей</string>
            </property>
           </widget>
          </item>
          <item row="5" column="1">
           <widget class="QCheckBox" name="verboseModelMatching">
            <property name="toolTip">
-            <string>Log information about how aircraft are matched to 3D models</string>
+            <string>Журнал сопоставления ВС с 3D-моделями</string>
            </property>
            <property name="text">
             <string/>
@@ -143,14 +143,14 @@
          <item row="6" column="0">
           <widget class="QLabel" name="favourLiveryLabel">
            <property name="text">
-            <string>Favour airline livery over aircraft type</string>
+            <string>Ливрея авиакомпании вместо типа ВС</string>
            </property>
           </widget>
          </item>
          <item row="6" column="1">
           <widget class="QCheckBox" name="favourLivery">
            <property name="toolTip">
-            <string>Favour airline livery over aircraft type for 3D models</string>
+            <string>Ливрея для 3D-моделей</string>
            </property>
            <property name="text">
             <string/>
@@ -167,35 +167,35 @@
          <item row="7" column="1">
           <widget class="QLineEdit" name="aviationstackAPIKey">
            <property name="toolTip">
-            <string>aviationstack.com API key for accessing flight information</string>
+            <string>Ключ API aviationstack.com</string>
            </property>
           </widget>
          </item>
          <item row="8" column="0">
           <widget class="QLabel" name="checkWXAPIKeyLabel">
            <property name="text">
-            <string>CheckWX API key</string>
+            <string>Ключ API CheckWX</string>
            </property>
           </widget>
          </item>
          <item row="8" column="1">
           <widget class="QLineEdit" name="checkWXAPIKey">
            <property name="toolTip">
-            <string>checkwxapi.com API key for accessing airport weather (METARs)</string>
+            <string>Ключ API checkwxapi.com (METAR)</string>
            </property>
           </widget>
          </item>
          <item row="9" column="0">
           <widget class="QLabel" name="transitionAltitudeLabel">
            <property name="text">
-            <string>Transition altitude (ft)</string>
+            <string>Высота перехода (фут)</string>
            </property>
           </widget>
          </item>
          <item row="9" column="1">
           <widget class="QSpinBox" name="transitionAltitude">
            <property name="toolTip">
-            <string>Transition altitude in feet</string>
+            <string>Высота перехода в футах</string>
            </property>
            <property name="minimum">
             <number>2500</number>
@@ -222,14 +222,14 @@
          <item row="0" column="0">
           <widget class="QLabel" name="mapProviderLabel">
            <property name="text">
-            <string>Map provider</string>
+            <string>Провайдер карты</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
           <widget class="QComboBox" name="mapProvider">
            <property name="toolTip">
-            <string>Mapping service</string>
+            <string>Картографический сервис</string>
            </property>
            <item>
             <property name="text">
@@ -246,14 +246,14 @@
          <item row="1" column="0">
           <widget class="QLabel" name="mapTypeLabel">
            <property name="text">
-            <string>Map type</string>
+            <string>Тип карты</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
           <widget class="QComboBox" name="mapType">
            <property name="toolTip">
-            <string>Type of map to display</string>
+            <string>Тип карты для отображения</string>
            </property>
            <item>
             <property name="text">
@@ -262,7 +262,7 @@
            </item>
            <item>
             <property name="text">
-             <string>Aviation (Dark)</string>
+             <string>Авиация (тёмная)</string>
             </property>
            </item>
            <item>
@@ -280,14 +280,14 @@
          <item row="3" column="0">
           <widget class="QLabel" name="aircraftMinZoomLabel">
            <property name="text">
-            <string>Zoom level for aircraft scaling</string>
+            <string>Уровень зума для масштабирования ВС</string>
            </property>
           </widget>
          </item>
          <item row="3" column="1">
           <widget class="QSpinBox" name="aircraftMinZoom">
            <property name="toolTip">
-            <string>When map zoom (0 min zoom - 15 max zoom) is higher than this value, aircraft icon size will be scaled</string>
+            <string>Масштабировать иконки ВС при зуме выше порога</string>
            </property>
            <property name="maximum">
             <number>15</number>
@@ -297,14 +297,14 @@
          <item row="4" column="0">
           <widget class="QLabel" name="airportSizeLabel">
            <property name="text">
-            <string>Display airports with size</string>
+            <string>Показать аэропорты с размером</string>
            </property>
           </widget>
          </item>
          <item row="4" column="1">
           <widget class="QComboBox" name="airportSize">
            <property name="toolTip">
-            <string>Sets the minimum airport size that will be displayed on the map</string>
+            <string>Мин. размер аэропорта на карте</string>
            </property>
            <item>
             <property name="text">
@@ -326,14 +326,14 @@
          <item row="5" column="0">
           <widget class="QLabel" name="heliportsLabel">
            <property name="text">
-            <string>Display heliports</string>
+            <string>Показать вертодромы</string>
            </property>
           </widget>
          </item>
          <item row="5" column="1">
           <widget class="QCheckBox" name="heliports">
            <property name="toolTip">
-            <string>When checked, heliports are displayed on the map</string>
+            <string>Показывать вертодромы на карте</string>
            </property>
            <property name="text">
             <string/>
@@ -343,14 +343,14 @@
          <item row="6" column="0">
           <widget class="QLabel" name="airportRangeLabel">
            <property name="text">
-            <string>Airport display distance (km)</string>
+            <string>Дист. отображения аэропортов (км)</string>
            </property>
           </widget>
          </item>
          <item row="6" column="1">
           <widget class="QSpinBox" name="airportRange">
            <property name="toolTip">
-            <string>Displays airports within the specified distance in kilometres from My Position</string>
+            <string>Аэропорты в радиусе (км) от моей позиции</string>
            </property>
            <property name="maximum">
             <number>20000</number>
@@ -360,21 +360,21 @@
          <item row="7" column="0">
           <widget class="QLabel" name="airspacesLabel">
            <property name="text">
-            <string>Airspaces to display</string>
+            <string>Воздушные пространства</string>
            </property>
           </widget>
          </item>
          <item row="7" column="1">
           <widget class="QListWidget" name="airspaces">
            <property name="toolTip">
-            <string>Airspace categories to display</string>
+            <string>Категории воздушного пространства</string>
            </property>
            <item>
             <property name="text">
              <string>A</string>
             </property>
             <property name="toolTip">
-             <string>IFR only</string>
+             <string>Только ППП</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -385,7 +385,7 @@
              <string>B</string>
             </property>
             <property name="toolTip">
-             <string>IFR and VFR with ATC clearance</string>
+             <string>ППП и ВПП с разрешением УВД</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -396,7 +396,7 @@
              <string>C</string>
             </property>
             <property name="toolTip">
-             <string>IFR and VFR with ATC clearance</string>
+             <string>ППП и ВПП с разрешением УВД</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -407,7 +407,7 @@
              <string>D</string>
             </property>
             <property name="toolTip">
-             <string>IFR and VFR with ATC clearance</string>
+             <string>ППП и ВПП с разрешением УВД</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -418,7 +418,7 @@
              <string>E</string>
             </property>
             <property name="toolTip">
-             <string>IFR with clearance and VFR</string>
+             <string>ППП с разрешением и ВПП</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -429,7 +429,7 @@
              <string>G</string>
             </property>
             <property name="toolTip">
-             <string>Uncontrolled</string>
+             <string>Неконтролируемая</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -440,7 +440,7 @@
              <string>FIR</string>
             </property>
             <property name="toolTip">
-             <string>Flight Information Region</string>
+             <string>Район полётной информации</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -451,7 +451,7 @@
              <string>CTR</string>
             </property>
             <property name="toolTip">
-             <string>Controlled Traffic Region</string>
+             <string>Контролируемая зона</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -462,7 +462,7 @@
              <string>TMZ</string>
             </property>
             <property name="toolTip">
-             <string>Transponder Mandatory Zone</string>
+             <string>Зона обяз. транспондера</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -473,7 +473,7 @@
              <string>RMZ</string>
             </property>
             <property name="toolTip">
-             <string>Radio Mandatory Zone</string>
+             <string>Зона обяз. радиосвязи</string>
             </property>
             <property name="checkState">
              <enum>Unchecked</enum>
@@ -524,14 +524,14 @@
          <item row="8" column="0">
           <widget class="QLabel" name="airspaceRangeLabel">
            <property name="text">
-            <string>Airspace display distance (km)</string>
+            <string>Дист. отображения воздуш. пр-ва (км)</string>
            </property>
           </widget>
          </item>
          <item row="8" column="1">
           <widget class="QSpinBox" name="airspaceRange">
            <property name="toolTip">
-            <string>Displays airspace within the specified distance in kilometres from My Position</string>
+            <string>Воздушное пространство в радиусе (км)</string>
            </property>
            <property name="maximum">
             <number>20000</number>
@@ -548,7 +548,7 @@
          <item row="9" column="1">
           <widget class="QCheckBox" name="navAids">
            <property name="toolTip">
-            <string>Display NAVAIDs such as VORs and NDBs</string>
+            <string>Показать VOR, NDB и другие НАВСР</string>
            </property>
            <property name="text">
             <string/>
@@ -558,7 +558,7 @@
          <item row="10" column="1">
           <widget class="QCheckBox" name="atcCallsigns">
            <property name="toolTip">
-            <string>Use ATC callsigns (SPEEDBIRD) rather than ICAO (BAW) for aircraft labels on map</string>
+            <string>Позывные ATC вместо ИКАО на карте</string>
            </property>
            <property name="text">
             <string/>
@@ -568,21 +568,21 @@
          <item row="10" column="0">
           <widget class="QLabel" name="atcCallsignsLabel">
            <property name="text">
-            <string>Use ATC callsigns on map</string>
+            <string>Позывные ATC на карте</string>
            </property>
           </widget>
          </item>
          <item row="11" column="1">
           <widget class="QComboBox" name="flightPathPalette">
            <property name="toolTip">
-            <string>Colour palette to use for aircraft flight paths</string>
+            <string>Палитра цветов маршрутов ВС</string>
            </property>
           </widget>
          </item>
          <item row="11" column="0">
           <widget class="QLabel" name="flightPathPaletteLabel">
            <property name="text">
-            <string>Flight path palette</string>
+            <string>Палитра маршрутов</string>
            </property>
           </widget>
          </item>
@@ -592,14 +592,14 @@
             <string/>
            </property>
            <property name="text">
-            <string>Maptiler API key</string>
+            <string>Ключ API Maptiler</string>
            </property>
           </widget>
          </item>
          <item row="2" column="1">
           <widget class="QLineEdit" name="maptilerAPIKey">
            <property name="toolTip">
-            <string>API key for Maptiler (https://maptiler.com) for satellite map</string>
+            <string>Ключ API Maptiler для спутн. карты</string>
            </property>
           </widget>
          </item>

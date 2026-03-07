@@ -20,7 +20,7 @@
    <enum>Qt::PreventContextMenu</enum>
   </property>
   <property name="windowTitle">
-   <string>Notifications</string>
+   <string>Уведомления</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -39,7 +39,7 @@
           <string>Match</string>
          </property>
          <property name="toolTip">
-          <string>ADS-B data to match</string>
+          <string>Данные ADS-B для совпадения</string>
          </property>
         </column>
         <column>
@@ -47,15 +47,15 @@
           <string>Reg Exp</string>
          </property>
          <property name="toolTip">
-          <string>Regular expression to match with</string>
+          <string>Регулярное выражение для поиска</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Speech</string>
+          <string>Озвучка</string>
          </property>
          <property name="toolTip">
-          <string>Speech for the computer to read when a match is made</string>
+          <string>Текст озвучки при совпадении</string>
          </property>
         </column>
         <column>
@@ -63,12 +63,12 @@
           <string>Command</string>
          </property>
          <property name="toolTip">
-          <string>Command/script to execute when a match is made</string>
+          <string>Команда/скрипт при совпадении</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Auto target</string>
+          <string>Авто цель</string>
          </property>
         </column>
        </widget>
@@ -78,7 +78,7 @@
         <item>
          <widget class="QPushButton" name="add">
           <property name="toolTip">
-           <string>Add device set control</string>
+           <string>Добавить набор устройств</string>
           </property>
           <property name="text">
            <string>+</string>
@@ -88,7 +88,7 @@
         <item>
          <widget class="QPushButton" name="remove">
           <property name="toolTip">
-           <string>Remove device set control</string>
+           <string>Удалить набор устройств</string>
           </property>
           <property name="text">
            <string>-</string>

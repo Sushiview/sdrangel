@@ -82,7 +82,7 @@ Workspace::Workspace(int index, QWidget *parent, Qt::WindowFlags flags) :
     m_configurationPresetsButton = new QPushButton();
     QIcon configurationPresetsIcon(":/star.png");
     m_configurationPresetsButton->setIcon(configurationPresetsIcon);
-    m_configurationPresetsButton->setToolTip("Configuration presets");
+    m_configurationPresetsButton->setToolTip("Пресеты конфигураций");
     m_configurationPresetsButton->setFixedSize(20, 20);
     m_configurationPresetsButton->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_P));
 
@@ -99,21 +99,21 @@ Workspace::Workspace(int index, QWidget *parent, Qt::WindowFlags flags) :
     m_addRxDeviceButton = new QPushButton();
     QIcon addRxIcon(":/rx.png");
     m_addRxDeviceButton->setIcon(addRxIcon);
-    m_addRxDeviceButton->setToolTip("Add Rx device");
+    m_addRxDeviceButton->setToolTip("Добавить Rx устройство");
     m_addRxDeviceButton->setFixedSize(20, 20);
     m_addRxDeviceButton->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_R));
 
     m_addTxDeviceButton = new QPushButton();
     QIcon addTxIcon(":/tx.png");
     m_addTxDeviceButton->setIcon(addTxIcon);
-    m_addTxDeviceButton->setToolTip("Add Tx device");
+    m_addTxDeviceButton->setToolTip("Добавить Tx устройство");
     m_addTxDeviceButton->setFixedSize(20, 20);
     m_addTxDeviceButton->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_T));
 
     m_addMIMODeviceButton = new QPushButton();
     QIcon addMIMOIcon(":/mimo.png");
     m_addMIMODeviceButton->setIcon(addMIMOIcon);
-    m_addMIMODeviceButton->setToolTip("Add MIMO device");
+    m_addMIMODeviceButton->setToolTip("Добавить MIMO устройство");
     m_addMIMODeviceButton->setFixedSize(20, 20);
     m_addMIMODeviceButton->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_M));
 
@@ -124,14 +124,14 @@ Workspace::Workspace(int index, QWidget *parent, Qt::WindowFlags flags) :
     m_addFeatureButton = new QPushButton();
     QIcon addFeatureIcon(":/tool_add.png");
     m_addFeatureButton->setIcon(addFeatureIcon);
-    m_addFeatureButton->setToolTip("Add features");
+    m_addFeatureButton->setToolTip("Добавить функции");
     m_addFeatureButton->setFixedSize(20, 20);
     m_addFeatureButton->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_E));
 
     m_featurePresetsButton = new QPushButton();
     QIcon presetsIcon(":/tool_star.png");
     m_featurePresetsButton->setIcon(presetsIcon);
-    m_featurePresetsButton->setToolTip("Feature presets");
+    m_featurePresetsButton->setToolTip("Пресеты функций");
     m_featurePresetsButton->setFixedSize(20, 20);
     m_featurePresetsButton->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_P));
 
@@ -142,28 +142,28 @@ Workspace::Workspace(int index, QWidget *parent, Qt::WindowFlags flags) :
     m_cascadeSubWindows = new QPushButton();
     QIcon cascadeSubWindowsIcon(":/cascade.png");
     m_cascadeSubWindows->setIcon(cascadeSubWindowsIcon);
-    m_cascadeSubWindows->setToolTip("Cascade sub windows");
+    m_cascadeSubWindows->setToolTip("Каскадом");
     m_cascadeSubWindows->setFixedSize(20, 20);
     m_cascadeSubWindows->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_C));
 
     m_tileSubWindows = new QPushButton();
     QIcon tileSubWindowsIcon(":/tiles.png");
     m_tileSubWindows->setIcon(tileSubWindowsIcon);
-    m_tileSubWindows->setToolTip("Tile sub windows");
+    m_tileSubWindows->setToolTip("Плиткой");
     m_tileSubWindows->setFixedSize(20, 20);
     m_tileSubWindows->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_T));
 
     m_stackVerticalSubWindows = new QPushButton();
     QIcon stackVerticalSubWindowsIcon(":/stackvertical.png");
     m_stackVerticalSubWindows->setIcon(stackVerticalSubWindowsIcon);
-    m_stackVerticalSubWindows->setToolTip("Stack sub windows vertically");
+    m_stackVerticalSubWindows->setToolTip("Сложить вертикально");
     m_stackVerticalSubWindows->setFixedSize(20, 20);
     m_stackVerticalSubWindows->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_V));
 
     m_stackSubWindows = new QPushButton();
     QIcon stackSubWindowsIcon(":/stackcolumns.png");
     m_stackSubWindows->setIcon(stackSubWindowsIcon);
-    m_stackSubWindows->setToolTip("Stack sub windows in columns. Right click to stack automatically.");
+    m_stackSubWindows->setToolTip("Сложить в колонки. ПКМ — авто-укладка.");
     m_stackSubWindows->setFixedSize(20, 20);
     m_stackSubWindows->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_S));
     CRightClickEnabler *stackSubWindowsRightClickEnabler = new CRightClickEnabler(m_stackSubWindows);
@@ -173,20 +173,20 @@ Workspace::Workspace(int index, QWidget *parent, Qt::WindowFlags flags) :
     QIcon tabSubWindowsIcon(":/tab.png");
     m_tabSubWindows->setIcon(tabSubWindowsIcon);
     m_tabSubWindows->setCheckable(true);
-    m_tabSubWindows->setToolTip("Display sub windows in tabs");
+    m_tabSubWindows->setToolTip("Отображать вкладками");
     m_tabSubWindows->setFixedSize(20, 20);
     m_tabSubWindows->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_B));
 
     m_normalButton = new QPushButton();
     QIcon normalIcon(":/dock.png");
     m_normalButton->setIcon(normalIcon);
-    m_normalButton->setToolTip("Dock/undock");
+    m_normalButton->setToolTip("Прикрепить/открепить");
     m_normalButton->setFixedSize(20, 20);
 
     m_closeButton = new QPushButton();
     QIcon closeIcon(":/hide.png");
     m_closeButton->setIcon(closeIcon);
-    m_closeButton->setToolTip("Hide workspace");
+    m_closeButton->setToolTip("Скрыть рабочую область");
     m_closeButton->setFixedSize(20, 20);
 
     m_titleBarLayout->addWidget(m_titleLabel);
@@ -939,14 +939,14 @@ void Workspace::updateStartStopButton(bool checked)
         QIcon startIcon(":/play.png");
         m_startStopButton->setIcon(startIcon);
         m_startStopButton->setStyleSheet("QToolButton { background-color : blue; }");
-        m_startStopButton->setToolTip("Start all devices in workspace");
+        m_startStopButton->setToolTip("Запустить все устройства");
     }
     else
     {
         QIcon stopIcon(":/stop.png");
         m_startStopButton->setIcon(stopIcon);
         m_startStopButton->setStyleSheet("QToolButton { background-color : green; }");
-        m_startStopButton->setToolTip("Stop all devices in workspace");
+        m_startStopButton->setToolTip("Остановить все устройства");
     }
 }
 

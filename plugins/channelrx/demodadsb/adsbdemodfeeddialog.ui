@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Feed Settings</string>
+   <string>Настройки трансляции</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -25,7 +25,7 @@
       <item row="2" column="0" colspan="2">
        <widget class="QGroupBox" name="importSettings">
         <property name="title">
-         <string>Import</string>
+         <string>Импорт</string>
         </property>
         <layout class="QGridLayout" name="gridLayout">
          <item row="4" column="0">
@@ -38,7 +38,7 @@
          <item row="2" column="1">
           <widget class="QLineEdit" name="importUsername">
            <property name="toolTip">
-            <string>Username to access server with</string>
+            <string>Имя пользователя для сервера</string>
            </property>
           </widget>
          </item>
@@ -47,38 +47,38 @@
            <item row="0" column="0">
             <widget class="QLabel" name="latitudeMinLabel">
              <property name="text">
-              <string>Latitude Min</string>
+              <string>Широта мин.</string>
              </property>
             </widget>
            </item>
            <item row="0" column="1">
             <widget class="QLineEdit" name="latitudeMin">
              <property name="toolTip">
-              <string>Minimum latitude of area to receive aircraft data from</string>
+              <string>Мин. широта зоны получения данных</string>
              </property>
             </widget>
            </item>
            <item row="0" column="2">
             <widget class="QLabel" name="latitudeMaxLabel">
              <property name="text">
-              <string>Latitude Max</string>
+              <string>Широта макс.</string>
              </property>
             </widget>
            </item>
            <item row="0" column="3">
             <widget class="QLineEdit" name="latitudeMax">
              <property name="toolTip">
-              <string>Maximum latitude of area to receive aircraft data from</string>
+              <string>Макс. широта зоны получения данных</string>
              </property>
             </widget>
            </item>
            <item row="1" column="0">
             <widget class="QLabel" name="longitudeMinLabel">
              <property name="toolTip">
-              <string>Minimum longitude of area to receive aircraft data from</string>
+              <string>Мин. долгота зоны получения данных</string>
              </property>
              <property name="text">
-              <string>Longitude Min</string>
+              <string>Долгота мин.</string>
              </property>
             </widget>
            </item>
@@ -88,14 +88,14 @@
            <item row="1" column="2">
             <widget class="QLabel" name="longitudeMaxLabel">
              <property name="text">
-              <string>Longitude Max</string>
+              <string>Долгота макс.</string>
              </property>
             </widget>
            </item>
            <item row="1" column="3">
             <widget class="QLineEdit" name="longitudeMax">
              <property name="toolTip">
-              <string>Maximum longitude of area to receive aircraft data from</string>
+              <string>Макс. долгота зоны получения данных</string>
              </property>
             </widget>
            </item>
@@ -104,7 +104,7 @@
          <item row="1" column="0">
           <widget class="QLabel" name="importHostnameLabel">
            <property name="text">
-            <string>Server hostname</string>
+            <string>Имя хоста сервера</string>
            </property>
           </widget>
          </item>
@@ -118,7 +118,7 @@
          <item row="5" column="0">
           <widget class="QLabel" name="importPeriodLabel">
            <property name="text">
-            <string>Update period (s)</string>
+            <string>Период обновл. (с)</string>
            </property>
           </widget>
          </item>
@@ -138,28 +138,28 @@
             </size>
            </property>
            <property name="text">
-            <string>Enable import</string>
+            <string>Включить импорт</string>
            </property>
           </widget>
          </item>
          <item row="3" column="1">
           <widget class="QLineEdit" name="importPassword">
            <property name="toolTip">
-            <string>Password to access the server with</string>
+            <string>Пароль для доступа к серверу</string>
            </property>
           </widget>
          </item>
          <item row="4" column="1">
           <widget class="QLineEdit" name="importParameters">
            <property name="toolTip">
-            <string>Parameters for the API call such as geographic location</string>
+            <string>Параметры API (геолокация и др.)</string>
            </property>
           </widget>
          </item>
          <item row="5" column="1">
           <widget class="QDoubleSpinBox" name="importPeriod">
            <property name="toolTip">
-            <string>Time period in seconds between updates requested from the server</string>
+            <string>Период обновления с сервера (с)</string>
            </property>
            <property name="decimals">
             <number>0</number>
@@ -178,7 +178,7 @@
          <item row="1" column="1">
           <widget class="QComboBox" name="importHost">
            <property name="toolTip">
-            <string>Hostname of server to receive ADS-B data from</string>
+            <string>Хост сервера-источника ADS-B</string>
            </property>
            <item>
             <property name="text">
@@ -200,7 +200,7 @@
       <item row="0" column="0" colspan="2">
        <widget class="QGroupBox" name="exportClientSettings">
         <property name="title">
-         <string>Export Client</string>
+         <string>Экспорт (клиент)</string>
         </property>
         <layout class="QFormLayout" name="formLayout_2">
          <item row="0" column="0">
@@ -212,14 +212,14 @@
             </size>
            </property>
            <property name="text">
-            <string>Enable client</string>
+            <string>Включить клиент</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
           <widget class="QCheckBox" name="exportClientEnabled">
            <property name="toolTip">
-            <string>Enable TCP client</string>
+            <string>Включить TCP клиент</string>
            </property>
            <property name="text">
             <string/>
@@ -229,14 +229,14 @@
          <item row="1" column="0">
           <widget class="QLabel" name="exportClientHostLabel">
            <property name="text">
-            <string>Server hostname</string>
+            <string>Имя хоста сервера</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
           <widget class="QComboBox" name="exportClientHost">
            <property name="toolTip">
-            <string>Hostname of server to feed ADS-B data to</string>
+            <string>Хост сервера приёма ADS-B</string>
            </property>
            <property name="editable">
             <bool>true</bool>
@@ -263,7 +263,7 @@
          <item row="2" column="1">
           <widget class="QSpinBox" name="exportClientPort">
            <property name="toolTip">
-            <string>The TCP port number the server is listening on</string>
+            <string>TCP порт сервера</string>
            </property>
            <property name="minimum">
             <number>1024</number>
@@ -283,16 +283,16 @@
          <item row="3" column="1">
           <widget class="QComboBox" name="exportClientFormat">
            <property name="toolTip">
-            <string>Format to feed the data to the server in</string>
+            <string>Формат передачи данных серверу</string>
            </property>
            <item>
             <property name="text">
-             <string>Beast binary</string>
+             <string>Beast двоичный</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Beast hex</string>
+             <string>Beast шестн.</string>
             </property>
            </item>
           </widget>
@@ -303,7 +303,7 @@
       <item row="1" column="0" colspan="2">
        <widget class="QGroupBox" name="exportServerSettings">
         <property name="title">
-         <string>Export Server</string>
+         <string>Экспорт (сервер)</string>
         </property>
         <layout class="QFormLayout" name="formLayout_3">
          <item row="1" column="0">
@@ -316,7 +316,7 @@
          <item row="1" column="1">
           <widget class="QSpinBox" name="exportServerPort">
            <property name="toolTip">
-            <string>TCP port number to listen for connections on</string>
+            <string>TCP порт для входящих подключений</string>
            </property>
            <property name="minimum">
             <number>1024</number>
@@ -335,14 +335,14 @@
             </size>
            </property>
            <property name="text">
-            <string>Enable server</string>
+            <string>Включить сервер</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
           <widget class="QCheckBox" name="exportServerEnabled">
            <property name="toolTip">
-            <string>Enable TCP server</string>
+            <string>Включить TCP сервер</string>
            </property>
            <property name="text">
             <string/>

@@ -28,7 +28,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>ADS-B Demodulator</string>
+   <string>Демодулятор ADS-B</string>
   </property>
   <widget class="QWidget" name="settingsContainer" native="true">
    <property name="geometry">
@@ -46,7 +46,7 @@
     </size>
    </property>
    <property name="windowTitle">
-    <string>Settings</string>
+    <string>Настройки</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayoutSettings">
     <property name="spacing">
@@ -110,7 +110,7 @@
            <enum>Qt::FocusPolicy::StrongFocus</enum>
           </property>
           <property name="toolTip">
-           <string>Demod shift frequency from center in Hz</string>
+           <string>Сдвиг частоты демодулятора (Гц)</string>
           </property>
          </widget>
         </item>
@@ -148,7 +148,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Channel power</string>
+         <string>Мощность канала</string>
         </property>
         <property name="layoutDirection">
          <enum>Qt::LayoutDirection::RightToLeft</enum>
@@ -210,7 +210,7 @@
       <item>
        <widget class="QSlider" name="rfBW">
         <property name="toolTip">
-         <string>RF bandwidth</string>
+         <string>Полоса RF</string>
         </property>
         <property name="minimum">
          <number>1000000</number>
@@ -255,7 +255,7 @@
       <item>
        <widget class="ButtonSwitch" name="manualQNH">
         <property name="toolTip">
-         <string>Check to set QNH manually</string>
+         <string>Задать QNH вручную</string>
         </property>
         <property name="text">
          <string>QNH</string>
@@ -268,7 +268,7 @@
       <item>
        <widget class="QSpinBox" name="qnh">
         <property name="toolTip">
-         <string>Air pressure in hPa</string>
+         <string>Давление воздуха (гПа)</string>
         </property>
         <property name="minimum">
          <number>500</number>
@@ -294,7 +294,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Interpolator phase steps</string>
+         <string>Шаги фазы интерполятора</string>
         </property>
         <property name="minimum">
          <number>1</number>
@@ -338,7 +338,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Interpolator taps per phase</string>
+         <string>Отводов на фазу интерполятора</string>
         </property>
         <property name="minimum">
          <number>10</number>
@@ -383,7 +383,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Demodulator sample rate. This should ideally be matched to baseband sample rate</string>
+         <string>Частота дискретизации демодулятора</string>
         </property>
         <item>
          <property name="text">
@@ -434,7 +434,7 @@
       <item>
        <widget class="ButtonSwitch" name="demodModeS">
         <property name="toolTip">
-         <string>Demodulate all Mode-S frames, not just ADS-B</string>
+         <string>Демодулировать все кадры Mode-S</string>
         </property>
         <property name="text">
          <string>S</string>
@@ -467,7 +467,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Correlation threshold in dB. Lower values will increase the number of frames that can be received, but require more processing and possibly result in invalid frames.</string>
+         <string>Порог корреляции (дБ). Меньше — больше кадров, но больше нагрузка.</string>
         </property>
         <property name="minimum">
          <number>10</number>
@@ -512,7 +512,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Number of allowed premable chip errors for Mode S frames</string>
+         <string>Доп. ошибок преамбулы Mode-S</string>
         </property>
         <property name="minimum">
          <number>0</number>
@@ -548,7 +548,7 @@
       <item>
        <widget class="QToolButton" name="getAircraftDB">
         <property name="toolTip">
-         <string>Download the latest aircraft and route database (45MB)</string>
+         <string>Загрузить базу ВС и маршрутов (45МБ)</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -562,7 +562,7 @@
       <item>
        <widget class="QToolButton" name="getAirportDB">
         <property name="toolTip">
-         <string>Download the latest OurAirports airport databases (10MB)</string>
+         <string>Загрузить базу аэропортов OurAirports (10МБ)</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -576,7 +576,7 @@
       <item>
        <widget class="QToolButton" name="getAirspacesDB">
         <property name="toolTip">
-         <string>Download airspaces and NAVAIDs from OpenAIP (40MB)</string>
+         <string>Загрузить воздушные пространства из OpenAIP (40МБ)</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -590,7 +590,7 @@
       <item>
        <widget class="QToolButton" name="displaySettings">
         <property name="toolTip">
-         <string>Open display settings dialog</string>
+         <string>Открыть настройки отображения</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -604,7 +604,7 @@
       <item>
        <widget class="ButtonSwitch" name="flightPaths">
         <property name="toolTip">
-         <string>Display flight path for selected aircraft</string>
+         <string>Маршрут выбранного ВС</string>
         </property>
         <property name="text">
          <string>^</string>
@@ -624,7 +624,7 @@
       <item>
        <widget class="ButtonSwitch" name="allFlightPaths">
         <property name="toolTip">
-         <string>Display flight paths for all aircraft</string>
+         <string>Маршруты всех ВС</string>
         </property>
         <property name="text">
          <string>^</string>
@@ -644,7 +644,7 @@
       <item>
        <widget class="ButtonSwitch" name="atcLabels">
         <property name="toolTip">
-         <string>Display altitude, speed and short paths for all aircraft</string>
+         <string>Высота, скорость и маршруты всех ВС</string>
         </property>
         <property name="text">
          <string>^</string>
@@ -664,7 +664,7 @@
       <item>
        <widget class="ButtonSwitch" name="coverage">
         <property name="toolTip">
-         <string>Display receiver coverage on map. Right click to reset coverage data.</string>
+         <string>Зона покрытия на карте. ПКМ — сброс.</string>
         </property>
         <property name="text">
          <string>^</string>
@@ -684,7 +684,7 @@
       <item>
        <widget class="ButtonSwitch" name="stats">
         <property name="toolTip">
-         <string>Display statistics. Right click to reset data.</string>
+         <string>Статистика. ПКМ — сбросить данные.</string>
         </property>
         <property name="text">
          <string/>
@@ -704,7 +704,7 @@
       <item>
        <widget class="ButtonSwitch" name="displayChart">
         <property name="toolTip">
-         <string>Display chart. Right click to reset data</string>
+         <string>График. ПКМ — сбросить данные</string>
         </property>
         <property name="text">
          <string/>
@@ -724,7 +724,7 @@
       <item>
        <widget class="ButtonSwitch" name="displayOrientation">
         <property name="toolTip">
-         <string>Check to display table and map side by side. Uncheck for table on top of map</string>
+         <string>Таблица и карта рядом / таблица над картой</string>
         </property>
         <property name="text">
          <string/>
@@ -745,7 +745,7 @@
       <item>
        <widget class="ButtonSwitch" name="displayRadius">
         <property name="toolTip">
-         <string>Check to display aircraft containment radius on map</string>
+         <string>Показать радиус точности ВС на карте</string>
         </property>
         <property name="text">
          <string/>
@@ -765,7 +765,7 @@
       <item>
        <widget class="QToolButton" name="flightInfo">
         <property name="toolTip">
-         <string>Download flight information for selected aircraft</string>
+         <string>Загрузить данные рейса</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -782,7 +782,7 @@
       <item>
        <widget class="ButtonSwitch" name="feed">
         <property name="toolTip">
-         <string>Enable feeding of received ADS-B messages to the specified server. Right click for settings.</string>
+         <string>Отправка ADS-B на сервер. ПКМ — настройки.</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -799,7 +799,7 @@
       <item>
        <widget class="QToolButton" name="notifications">
         <property name="toolTip">
-         <string>Open notifications dialog</string>
+         <string>Открыть настройки уведомлений</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -822,7 +822,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Start/stop logging of received frames to .csv file</string>
+         <string>Вкл/выкл запись кадров в .csv</string>
         </property>
         <property name="text">
          <string/>
@@ -836,7 +836,7 @@
       <item>
        <widget class="QToolButton" name="logFilename">
         <property name="toolTip">
-         <string>Set log .csv filename</string>
+         <string>Указать имя .csv файла лога</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -853,7 +853,7 @@
       <item>
        <widget class="QToolButton" name="logOpen">
         <property name="toolTip">
-         <string>Read data from .csv log file</string>
+         <string>Читать данные из .csv файла</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -870,7 +870,7 @@
       <item>
        <widget class="QToolButton" name="findOnMapFeature">
         <property name="toolTip">
-         <string>Find selected aircraft on feature map</string>
+         <string>Найти ВС на карте функций</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -887,7 +887,7 @@
       <item>
        <widget class="QToolButton" name="deleteAircraft">
         <property name="toolTip">
-         <string>Delete all aircraft</string>
+         <string>Удалить все ВС</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -904,7 +904,7 @@
       <item>
        <widget class="CheckList" name="ic">
         <property name="toolTip">
-         <string>Check to display radar coverage by Interogator Code</string>
+         <string>Показать зону покрытия радара по IC</string>
         </property>
        </widget>
       </item>
@@ -931,7 +931,7 @@
       <item>
        <widget class="QComboBox" name="amDemod">
         <property name="toolTip">
-         <string>AM Demod to tune when selecting an ATC frequency on the map</string>
+         <string>AM демодулятор для частот ATC на карте</string>
         </property>
        </widget>
       </item>
@@ -968,7 +968,7 @@
     </size>
    </property>
    <property name="windowTitle">
-    <string>ADS-B Data</string>
+    <string>Данные ADS-B</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_5">
     <property name="leftMargin">
@@ -1117,7 +1117,7 @@
                    <string>Callsign</string>
                   </property>
                   <property name="toolTip">
-                   <string>Callsign. Links to www.flightradar24.com</string>
+                   <string>Позывной. Ссылка на flightradar24.com</string>
                   </property>
                  </column>
                  <column>
@@ -1125,7 +1125,7 @@
                    <string>ATC Callsign</string>
                   </property>
                   <property name="toolTip">
-                   <string>Airline callsign used by ATC</string>
+                   <string>Позывной авиакомпании (ATC)</string>
                   </property>
                  </column>
                  <column>
@@ -1133,7 +1133,7 @@
                    <string>Aircraft</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft model</string>
+                   <string>Модель ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1141,12 +1141,12 @@
                    <string>Type</string>
                   </property>
                   <property name="toolTip">
-                   <string>ICAO aircraft type designator</string>
+                   <string>Тип ВС по ИКАО</string>
                   </property>
                  </column>
                  <column>
                   <property name="text">
-                   <string>Sideview</string>
+                   <string>Вид сбоку</string>
                   </property>
                  </column>
                  <column>
@@ -1154,7 +1154,7 @@
                    <string>Airline</string>
                   </property>
                   <property name="toolTip">
-                   <string>Airline logo</string>
+                   <string>Логотип авиакомпании</string>
                   </property>
                  </column>
                  <column>
@@ -1162,7 +1162,7 @@
                    <string>Country</string>
                   </property>
                   <property name="toolTip">
-                   <string>Country of registration</string>
+                   <string>Страна регистрации</string>
                   </property>
                  </column>
                  <column>
@@ -1170,7 +1170,7 @@
                    <string>GS (kn)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Groundspeed in knots or kilometers per hour</string>
+                   <string>Путевая скорость (узлы/км/ч)</string>
                   </property>
                  </column>
                  <column>
@@ -1178,7 +1178,7 @@
                    <string>TAS (kn)</string>
                   </property>
                   <property name="toolTip">
-                   <string>True airpeed in knots or kilometers per hour</string>
+                   <string>Истинная скорость (узлы/км/ч)</string>
                   </property>
                  </column>
                  <column>
@@ -1186,7 +1186,7 @@
                    <string>IAS (kn)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Indicated airspeed in knots or kilometers per hour</string>
+                   <string>Приборная скорость (узлы/км/ч)</string>
                   </property>
                  </column>
                  <column>
@@ -1194,7 +1194,7 @@
                    <string>Mach</string>
                   </property>
                   <property name="toolTip">
-                   <string>Mach number</string>
+                   <string>Число Маха</string>
                   </property>
                  </column>
                  <column>
@@ -1202,7 +1202,7 @@
                    <string>Sel Alt (ft)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Selected altitude in feet or metres (As set on MCP/FCU or by FMS)</string>
+                   <string>Зад. высота (фут/м) по MCP/FCU или FMS</string>
                   </property>
                  </column>
                  <column>
@@ -1210,7 +1210,7 @@
                    <string>Alt (ft)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Altitude in feet or metres</string>
+                   <string>Высота (фут/м)</string>
                   </property>
                  </column>
                  <column>
@@ -1218,7 +1218,7 @@
                    <string>VR (ft/m)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Vertical climb rate in feet per minute or metres per second</string>
+                   <string>Верт. скороподъёмность (фут/мин или м/с)</string>
                   </property>
                  </column>
                  <column>
@@ -1226,7 +1226,7 @@
                    <string>Sel Hd (°)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Selected heading in degrees (As set on MCP/FCU or by FMS)</string>
+                   <string>Зад. курс (°) по MCP/FCU или FMS</string>
                   </property>
                  </column>
                  <column>
@@ -1234,7 +1234,7 @@
                    <string>Hd (°)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft heading in degrees</string>
+                   <string>Курс ВС в градусах</string>
                   </property>
                  </column>
                  <column>
@@ -1242,7 +1242,7 @@
                    <string>Trk (°)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft track in degrees</string>
+                   <string>Трек ВС в градусах</string>
                   </property>
                  </column>
                  <column>
@@ -1250,7 +1250,7 @@
                    <string>TR (°/s)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Turn rate in degrees per second</string>
+                   <string>Скорость разворота (°/с)</string>
                   </property>
                  </column>
                  <column>
@@ -1258,7 +1258,7 @@
                    <string>Roll (°)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Roll angle in degrees</string>
+                   <string>Крен в градусах</string>
                   </property>
                  </column>
                  <column>
@@ -1266,7 +1266,7 @@
                    <string>D (km)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Range or distance of aircraft from home location</string>
+                   <string>Дальность ВС от базовой позиции</string>
                   </property>
                  </column>
                  <column>
@@ -1274,7 +1274,7 @@
                    <string>Az/El (°)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Azimuth and elevation to aircraft from My Position. Double click to set as target.</string>
+                   <string>Азимут/угол до ВС. Двойной клик — установить целью.</string>
                   </property>
                  </column>
                  <column>
@@ -1282,7 +1282,7 @@
                    <string>Cat</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft standard category</string>
+                   <string>Стандартная категория ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1290,7 +1290,7 @@
                    <string>Status</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft emergency status</string>
+                   <string>Аварийный статус ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1298,7 +1298,7 @@
                    <string>Squawk</string>
                   </property>
                   <property name="toolTip">
-                   <string>Mode-A transponder code</string>
+                   <string>Код транспондера Mode-A</string>
                   </property>
                  </column>
                  <column>
@@ -1306,7 +1306,7 @@
                    <string>Ident</string>
                   </property>
                   <property name="toolTip">
-                   <string>Ident switch active</string>
+                   <string>Кнопка Ident активна</string>
                   </property>
                  </column>
                  <column>
@@ -1314,7 +1314,7 @@
                    <string>Reg</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft registration</string>
+                   <string>Регистрация ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1322,7 +1322,7 @@
                    <string>Registered</string>
                   </property>
                   <property name="toolTip">
-                   <string>Date aircraft was registered</string>
+                   <string>Дата регистрации ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1330,7 +1330,7 @@
                    <string>Manufacturer</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft manufacturer</string>
+                   <string>Производитель ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1346,7 +1346,7 @@
                    <string>Operator</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft operator ICAO code</string>
+                   <string>Код ИКАО оператора ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1354,7 +1354,7 @@
                    <string>AP</string>
                   </property>
                   <property name="toolTip">
-                   <string>Autopilot enabled</string>
+                   <string>Автопилот вкл.</string>
                   </property>
                  </column>
                  <column>
@@ -1362,7 +1362,7 @@
                    <string>V Mode</string>
                   </property>
                   <property name="toolTip">
-                   <string>MCP/FCU vertical mode</string>
+                   <string>Вертикальный режим MCP/FCU</string>
                   </property>
                  </column>
                  <column>
@@ -1370,7 +1370,7 @@
                    <string>L Mode</string>
                   </property>
                   <property name="toolTip">
-                   <string>MCP/FCU lateral mode</string>
+                   <string>Боковой режим MCP/FCU</string>
                   </property>
                  </column>
                  <column>
@@ -1378,7 +1378,7 @@
                    <string>TCAS</string>
                   </property>
                   <property name="toolTip">
-                   <string>TCAS operational. RA in red if active</string>
+                   <string>TCAS активен. RA красный если активен</string>
                   </property>
                  </column>
                  <column>
@@ -1386,7 +1386,7 @@
                    <string>ACAS</string>
                   </property>
                   <property name="toolTip">
-                   <string>Airborne collision avoidance system capability</string>
+                   <string>Система ACAS (возможности)</string>
                   </property>
                  </column>
                  <column>
@@ -1394,7 +1394,7 @@
                    <string>RA</string>
                   </property>
                   <property name="toolTip">
-                   <string>ACAS active resolition advisory</string>
+                   <string>Активный RA ACAS</string>
                   </property>
                  </column>
                  <column>
@@ -1402,7 +1402,7 @@
                    <string>Max AS (kn)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Maximum speed in knots</string>
+                   <string>Макс. скорость (узлы)</string>
                   </property>
                  </column>
                  <column>
@@ -1410,7 +1410,7 @@
                    <string>Version</string>
                   </property>
                   <property name="toolTip">
-                   <string>ADS-B version</string>
+                   <string>Версия ADS-B</string>
                   </property>
                  </column>
                  <column>
@@ -1418,7 +1418,7 @@
                    <string>L (m)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft length in metres</string>
+                   <string>Длина ВС в метрах</string>
                   </property>
                  </column>
                  <column>
@@ -1426,7 +1426,7 @@
                    <string>W (m)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Aircraft width in metres</string>
+                   <string>Ширина ВС в метрах</string>
                   </property>
                  </column>
                  <column>
@@ -1434,7 +1434,7 @@
                    <string>QNH (mb)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Barometer setting in millibars</string>
+                   <string>Давление баромет. (мбар)</string>
                   </property>
                  </column>
                  <column>
@@ -1442,7 +1442,7 @@
                    <string>H Wnd (kn)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Headwind in knots or kilometers per hour</string>
+                   <string>Встречный ветер (узлы/км/ч)</string>
                   </property>
                  </column>
                  <column>
@@ -1450,7 +1450,7 @@
                    <string>OAT (C)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Outside air temperature in degrees Celsius estimated from Mach and TAS</string>
+                   <string>Темп. наружного воздуха (°C, расч.)</string>
                   </property>
                  </column>
                  <column>
@@ -1458,7 +1458,7 @@
                    <string>Wnd (kn)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Wind speed in knots</string>
+                   <string>Скорость ветра (узлы)</string>
                   </property>
                  </column>
                  <column>
@@ -1466,7 +1466,7 @@
                    <string>Wnd (°)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Wind direction in degrees</string>
+                   <string>Направление ветра (°)</string>
                   </property>
                  </column>
                  <column>
@@ -1474,7 +1474,7 @@
                    <string>P (hPa)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Static air pressure in hectopascals</string>
+                   <string>Статич. давление (гПа)</string>
                   </property>
                  </column>
                  <column>
@@ -1482,7 +1482,7 @@
                    <string>T (C)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Static air temperature in degrees Celsius</string>
+                   <string>Статич. температура воздуха (°C)</string>
                   </property>
                  </column>
                  <column>
@@ -1490,7 +1490,7 @@
                    <string>U (%)</string>
                   </property>
                   <property name="toolTip">
-                   <string>Humidity in percent</string>
+                   <string>Влажность (%)</string>
                   </property>
                  </column>
                  <column>
@@ -1514,7 +1514,7 @@
                    <string>IC</string>
                   </property>
                   <property name="toolTip">
-                   <string>Interrogator code (II/SI)</string>
+                   <string>Код опросчика (II/SI)</string>
                   </property>
                  </column>
                  <column>
@@ -1522,7 +1522,7 @@
                    <string>Updated</string>
                   </property>
                   <property name="toolTip">
-                   <string>Time when the last ADS-B message from this aircraft was received.</string>
+                   <string>Время последнего ADS-B сообщения от ВС.</string>
                   </property>
                  </column>
                  <column>
@@ -1530,7 +1530,7 @@
                    <string>Frames</string>
                   </property>
                   <property name="toolTip">
-                   <string>Number of ADS-B and Mode S frames received from this aircraft</string>
+                   <string>Кадров ADS-B + Mode-S от ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1538,7 +1538,7 @@
                    <string>ADS-B FC</string>
                   </property>
                   <property name="toolTip">
-                   <string>Number of ADS-B frames received from this aircraft</string>
+                   <string>Кадров ADS-B от ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1546,7 +1546,7 @@
                    <string>Mode S FC</string>
                   </property>
                   <property name="toolTip">
-                   <string>Number of Mode S frames received from this aircraft</string>
+                   <string>Кадров Mode-S от ВС</string>
                   </property>
                  </column>
                  <column>
@@ -1554,7 +1554,7 @@
                    <string>Non-transponder</string>
                   </property>
                   <property name="toolTip">
-                   <string>Non transponder device frame count</string>
+                   <string>Счётчик кадров без транспондера</string>
                   </property>
                  </column>
                  <column>
@@ -1562,7 +1562,7 @@
                    <string>TIS-B FC</string>
                   </property>
                   <property name="toolTip">
-                   <string>Number of TIS-B frames received with this aircraft's ICAO</string>
+                   <string>Кадров TIS-B для этого ИКАО</string>
                   </property>
                  </column>
                  <column>
@@ -1570,7 +1570,7 @@
                    <string>ADS-R FC</string>
                   </property>
                   <property name="toolTip">
-                   <string>Number of ADS-R frames received with this aircraft's ICAO</string>
+                   <string>Кадров ADS-R для этого ИКАО</string>
                   </property>
                  </column>
                  <column>
@@ -1578,7 +1578,7 @@
                    <string>Rc</string>
                   </property>
                   <property name="toolTip">
-                   <string>Horizontal containment radius limit</string>
+                   <string>Горизонт. радиус точности</string>
                   </property>
                  </column>
                  <column>
@@ -1586,7 +1586,7 @@
                    <string>NACp</string>
                   </property>
                   <property name="toolTip">
-                   <string>Navigation accuracy category - 95% horizontal position</string>
+                   <string>Точность навигации — 95% горизонт.</string>
                   </property>
                  </column>
                  <column>
@@ -1594,7 +1594,7 @@
                    <string>NACv</string>
                   </property>
                   <property name="toolTip">
-                   <string>Navigation accuracy category - velocity</string>
+                   <string>Точность навигации — скорость</string>
                   </property>
                  </column>
                  <column>
@@ -1602,7 +1602,7 @@
                    <string>GVA</string>
                   </property>
                   <property name="toolTip">
-                   <string>Geometric vertical accuracy</string>
+                   <string>Геометр. вертикальная точность</string>
                   </property>
                  </column>
                  <column>
@@ -1610,7 +1610,7 @@
                    <string>NIC</string>
                   </property>
                   <property name="toolTip">
-                   <string>Navigation integrity category</string>
+                   <string>Категория целостности навигации</string>
                   </property>
                  </column>
                  <column>
@@ -1618,7 +1618,7 @@
                    <string>NICbaro</string>
                   </property>
                   <property name="toolTip">
-                   <string>Barometric altitude integrity code</string>
+                   <string>Код целостности барометр. высоты</string>
                   </property>
                  </column>
                  <column>
@@ -1626,15 +1626,15 @@
                    <string>SIL</string>
                   </property>
                   <property name="toolTip">
-                   <string>Surveillance integrity level</string>
+                   <string>Уровень целостности наблюдения</string>
                   </property>
                  </column>
                  <column>
                   <property name="text">
-                   <string>Correlation</string>
+                   <string>Корреляция</string>
                   </property>
                   <property name="toolTip">
-                   <string>Correlation values for received frames. min/avg/max</string>
+                   <string>Корреляция кадров: мин/ср/макс</string>
                   </property>
                  </column>
                  <column>
@@ -1642,15 +1642,15 @@
                    <string>RSSI</string>
                   </property>
                   <property name="toolTip">
-                   <string>Received Signal Strength Indicator (dBFS)</string>
+                   <string>RSSI (дБОШ)</string>
                   </property>
                  </column>
                  <column>
                   <property name="text">
-                   <string>Flight Status</string>
+                   <string>Статус рейса</string>
                   </property>
                   <property name="toolTip">
-                   <string>Status of flight</string>
+                   <string>Статус рейса</string>
                   </property>
                  </column>
                  <column>
@@ -1658,7 +1658,7 @@
                    <string>Dep</string>
                   </property>
                   <property name="toolTip">
-                   <string>Departure airport</string>
+                   <string>Аэропорт вылета</string>
                   </property>
                  </column>
                  <column>
@@ -1666,7 +1666,7 @@
                    <string>Arr</string>
                   </property>
                   <property name="toolTip">
-                   <string>Arrival airport</string>
+                   <string>Аэропорт прибытия</string>
                   </property>
                  </column>
                  <column>
@@ -1679,7 +1679,7 @@
                    <string>STD</string>
                   </property>
                   <property name="toolTip">
-                   <string>Scheduled time of departure</string>
+                   <string>Расп. время отправления</string>
                   </property>
                  </column>
                  <column>
@@ -1687,7 +1687,7 @@
                    <string>ETD</string>
                   </property>
                   <property name="toolTip">
-                   <string>Estimated time of departure</string>
+                   <string>Расч. время отправления</string>
                   </property>
                  </column>
                  <column>
@@ -1695,7 +1695,7 @@
                    <string>ATD</string>
                   </property>
                   <property name="toolTip">
-                   <string>Actual time of departure</string>
+                   <string>Факт. время отправления</string>
                   </property>
                  </column>
                  <column>
@@ -1703,7 +1703,7 @@
                    <string>STA</string>
                   </property>
                   <property name="toolTip">
-                   <string>Scheduled time of arrival</string>
+                   <string>Расп. время прибытия</string>
                   </property>
                  </column>
                  <column>
@@ -1711,7 +1711,7 @@
                    <string>ETA</string>
                   </property>
                   <property name="toolTip">
-                   <string>Estimated time of arrival</string>
+                   <string>Расч. время прибытия</string>
                   </property>
                  </column>
                  <column>
@@ -1719,7 +1719,7 @@
                    <string>ATA</string>
                   </property>
                   <property name="toolTip">
-                   <string>Actual time of arrival</string>
+                   <string>Факт. время прибытия</string>
                   </property>
                  </column>
                 </widget>
@@ -1863,7 +1863,7 @@
                 <string>ADS-B Frames</string>
                </property>
                <property name="toolTip">
-                <string>Number of ABS-B frames received</string>
+                <string>Принято кадров ADS-B</string>
                </property>
               </row>
               <row>
@@ -1871,7 +1871,7 @@
                 <string>Mode-S Frames</string>
                </property>
                <property name="toolTip">
-                <string>Number of Mode S frames received (Excluding ADS-B)</string>
+                <string>Кадров Mode-S (без ADS-B)</string>
                </property>
               </row>
               <row>
@@ -1879,15 +1879,15 @@
                 <string>Total Frames</string>
                </property>
                <property name="toolTip">
-                <string>Total number of ADS-B and Mode S frames received</string>
+                <string>Всего кадров ADS-B и Mode-S</string>
                </property>
               </row>
               <row>
                <property name="text">
-                <string>ASD-B rate (fps)</string>
+                <string>Частота ADS-B (кадр/с)</string>
                </property>
                <property name="toolTip">
-                <string>ADS-B received frame rate in frames per second</string>
+                <string>Частота кадров ADS-B (кадр/с)</string>
                </property>
               </row>
               <row>
@@ -1895,7 +1895,7 @@
                 <string>Mode-S rate (fps)</string>
                </property>
                <property name="toolTip">
-                <string>Mode S received frame rate in frames per second</string>
+                <string>Частота кадров Mode-S (кадр/с)</string>
                </property>
               </row>
               <row>
@@ -1903,7 +1903,7 @@
                 <string>Total rate (fps)</string>
                </property>
                <property name="toolTip">
-                <string>Total received frame rate in frames per second</string>
+                <string>Общая частота кадров (кадр/с)</string>
                </property>
               </row>
               <row>
@@ -1913,7 +1913,7 @@
               </row>
               <row>
                <property name="text">
-                <string>Correlator Matches</string>
+                <string>Совпадений коррелятора</string>
                </property>
               </row>
               <row>
@@ -1931,7 +1931,7 @@
                 <string>CRC Fails</string>
                </property>
                <property name="toolTip">
-                <string>Number of frames where CRC is invalid</string>
+                <string>Кадров с ошибкой CRC</string>
                </property>
               </row>
               <row>
@@ -1939,7 +1939,7 @@
                 <string>Type Fails</string>
                </property>
                <property name="toolTip">
-                <string>Frames where DF is invalid</string>
+                <string>Кадры с невалидным DF</string>
                </property>
               </row>
               <row>
@@ -1957,7 +1957,7 @@
                 <string>Range Fails</string>
                </property>
                <property name="toolTip">
-                <string>Positions rejected due to range from station being too great</string>
+                <string>Позиции откл. (превышение дальности)</string>
                </property>
               </row>
               <row>
@@ -2335,7 +2335,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Aircraft map</string>
+        <string>Карта ВС</string>
        </property>
        <property name="resizeMode">
         <enum>QQuickWidget::ResizeMode::SizeRootObjectToView</enum>
@@ -2354,7 +2354,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Chart. Use wheel to scale x-axis and shift+wheel to scale y-axis</string>
+        <string>График. Колесо — масштаб X, Shift+колесо — масштаб Y</string>
        </property>
       </widget>
      </widget>
