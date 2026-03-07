@@ -2016,112 +2016,112 @@ void MainWindow::createMenuBar(QToolButton *button) const
     if (button == nullptr)
     {
         QMenuBar *menuBar = this->menuBar();
-        fileMenu = menuBar->addMenu("&File");
-        viewMenu = menuBar->addMenu("&View");
-        workspacesMenu = menuBar->addMenu("&Workspaces");
-        preferencesMenu = menuBar->addMenu("&Preferences");
-        helpMenu = menuBar->addMenu("&Help");
+        fileMenu = menuBar->addMenu("&Файл");
+        viewMenu = menuBar->addMenu("&Вид");
+        workspacesMenu = menuBar->addMenu("&Рабочие области");
+        preferencesMenu = menuBar->addMenu("&Настройки");
+        helpMenu = menuBar->addMenu("&Справка");
     }
     else
     {
         auto *menu = new QMenu();
-        fileMenu = new QMenu("&File");
+        fileMenu = new QMenu("&Файл");
         menu->addMenu(fileMenu);
-        viewMenu = new QMenu("&View");
+        viewMenu = new QMenu("&Вид");
         menu->addMenu(viewMenu);
-        workspacesMenu = new QMenu("&Workspaces");
+        workspacesMenu = new QMenu("&Рабочие области");
         menu->addMenu(workspacesMenu);
-        preferencesMenu = new QMenu("&Preferences");
+        preferencesMenu = new QMenu("&Настройки");
         menu->addMenu(preferencesMenu);
-        helpMenu = new QMenu("&Help");
+        helpMenu = new QMenu("&Справка");
         menu->addMenu(helpMenu);
         button->setMenu(menu);
     }
 
-    QAction *exitAction = fileMenu->addAction("E&xit");
+    QAction *exitAction = fileMenu->addAction("В&ыход");
     exitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
-    exitAction->setToolTip("Exit");
+    exitAction->setToolTip("Выход");
     QObject::connect(exitAction, &QAction::triggered, this, &QMainWindow::close);
 
-    QAction *fullscreenAction = viewMenu->addAction("&Fullscreen");
+    QAction *fullscreenAction = viewMenu->addAction("&Полный экран");
     fullscreenAction->setShortcut(QKeySequence(Qt::Key_F11));
-    fullscreenAction->setToolTip("Toggle fullscreen view");
+    fullscreenAction->setToolTip("Вкл/выкл полный экран");
     fullscreenAction->setCheckable(true);
     QObject::connect(fullscreenAction, &QAction::triggered, this, &MainWindow::on_action_View_Fullscreen_toggled);
 #ifdef ANDROID
-    QAction *keepscreenonAction = viewMenu->addAction("&Keep screen on");
-    keepscreenonAction->setToolTip("Prevent screen from switching off");
+    QAction *keepscreenonAction = viewMenu->addAction("&Не гасить экран");
+    keepscreenonAction->setToolTip("Не выключать экран");
     keepscreenonAction->setCheckable(true);
     QObject::connect(keepscreenonAction, &QAction::triggered, this, &MainWindow::on_action_View_KeepScreenOn_toggled);
 #endif
 #ifdef ENABLE_PROFILER
-    QAction *profileAction = viewMenu->addAction("&Profile data...");
-    profileAction->setToolTip("View profile data");
+    QAction *profileAction = viewMenu->addAction("&Данные профиля...");
+    profileAction->setToolTip("Просмотр данных профиля");
     QObject::connect(profileAction, &QAction::triggered, this, &MainWindow::on_action_Profile_triggered);
 #endif
 
-    QAction *newWorkspaceAction = workspacesMenu->addAction("&New");
-    newWorkspaceAction->setToolTip("Add a new workspace");
+    QAction *newWorkspaceAction = workspacesMenu->addAction("&Создать");
+    newWorkspaceAction->setToolTip("Добавить рабочую область");
     QObject::connect(newWorkspaceAction, &QAction::triggered, this, &MainWindow::addWorkspace);
-    QAction *viewAllWorkspacesAction = workspacesMenu->addAction("&View all");
-    viewAllWorkspacesAction->setToolTip("View all workspaces");
+    QAction *viewAllWorkspacesAction = workspacesMenu->addAction("&Показать все");
+    viewAllWorkspacesAction->setToolTip("Показать все рабочие области");
     QObject::connect(viewAllWorkspacesAction, &QAction::triggered, this, &MainWindow::viewAllWorkspaces);
-    QAction *removeEmptyWorkspacesAction = workspacesMenu->addAction("&Remove empty");
-    removeEmptyWorkspacesAction->setToolTip("Remove empty workspaces");
+    QAction *removeEmptyWorkspacesAction = workspacesMenu->addAction("&Удалить пустые");
+    removeEmptyWorkspacesAction->setToolTip("Удалить пустые рабочие области");
     QObject::connect(removeEmptyWorkspacesAction, &QAction::triggered, this, &MainWindow::removeEmptyWorkspaces);
 
-    QAction *configurationsAction = preferencesMenu->addAction("&Configurations...");
-    configurationsAction->setToolTip("Manage configurations");
+    QAction *configurationsAction = preferencesMenu->addAction("&Конфигурации...");
+    configurationsAction->setToolTip("Управление конфигурациями");
     QObject::connect(configurationsAction, &QAction::triggered, this, &MainWindow::on_action_Configurations_triggered);
-    QAction *audioAction = preferencesMenu->addAction("&Audio...");
-    audioAction->setToolTip("Audio preferences");
+    QAction *audioAction = preferencesMenu->addAction("&Аудио...");
+    audioAction->setToolTip("Настройки аудио");
     QObject::connect(audioAction, &QAction::triggered, this, &MainWindow::on_action_Audio_triggered);
-    QAction *graphicsAction = preferencesMenu->addAction("&Graphics...");
-    graphicsAction->setToolTip("Graphics preferences");
+    QAction *graphicsAction = preferencesMenu->addAction("&Графика...");
+    graphicsAction->setToolTip("Настройки графики");
     QObject::connect(graphicsAction, &QAction::triggered, this, &MainWindow::on_action_Graphics_triggered);
-    QAction *loggingAction = preferencesMenu->addAction("&Logging...");
-    loggingAction->setToolTip("Logging preferences");
+    QAction *loggingAction = preferencesMenu->addAction("&Журнал...");
+    loggingAction->setToolTip("Настройки журнала");
     QObject::connect(loggingAction, &QAction::triggered, this, &MainWindow::on_action_Logging_triggered);
-    QAction *myPositionAction = preferencesMenu->addAction("My &Position...");
-    myPositionAction->setToolTip("Set station position");
+    QAction *myPositionAction = preferencesMenu->addAction("Моя &позиция...");
+    myPositionAction->setToolTip("Задать позицию станции");
     QObject::connect(myPositionAction, &QAction::triggered, this, &MainWindow::on_action_My_Position_triggered);
     QAction *fftAction = preferencesMenu->addAction("&FFT...");
-    fftAction->setToolTip("Set FFT preferences");
+    fftAction->setToolTip("Настройки FFT");
     QObject::connect(fftAction, &QAction::triggered, this, &MainWindow::on_action_FFT_triggered);
 #if QT_CONFIG(process)
     QAction *fftWisdomAction = preferencesMenu->addAction("&FFTW Wisdom...");
-    fftWisdomAction->setToolTip("Set FFTW cache");
+    fftWisdomAction->setToolTip("Настроить кэш FFTW");
     QObject::connect(fftWisdomAction, &QAction::triggered, this, &MainWindow::on_action_FFTWisdom_triggered);
 #endif
-    QMenu *devicesMenu = preferencesMenu->addMenu("&Devices");
-    QAction *userArgumentsAction = devicesMenu->addAction("&User arguments...");
-    userArgumentsAction->setToolTip("Device custom user arguments");
+    QMenu *devicesMenu = preferencesMenu->addMenu("&Устройства");
+    QAction *userArgumentsAction = devicesMenu->addAction("&Аргументы устройств...");
+    userArgumentsAction->setToolTip("Аргументы пользователя");
     QObject::connect(userArgumentsAction, &QAction::triggered, this, &MainWindow::on_action_DeviceUserArguments_triggered);
 #if QT_CONFIG(process)
-    QAction *commandsAction = preferencesMenu->addAction("C&ommands...");
-    commandsAction->setToolTip("External commands dialog");
+    QAction *commandsAction = preferencesMenu->addAction("К&оманды...");
+    commandsAction->setToolTip("Внешние команды");
     QObject::connect(commandsAction, &QAction::triggered, this, &MainWindow::on_action_commands_triggered);
 #endif
-    QAction *saveAllAction = preferencesMenu->addAction("&Save all");
-    saveAllAction->setToolTip("Save all current settings");
+    QAction *saveAllAction = preferencesMenu->addAction("&Сохранить всё");
+    saveAllAction->setToolTip("Сохранить все настройки");
     QObject::connect(saveAllAction, &QAction::triggered, this, &MainWindow::on_action_saveAll_triggered);
 
 #if defined(ANDROID) || defined(__EMSCRIPTEN__)
-    QAction *welcomeAction = helpMenu->addAction("&Welcome...");
-    welcomeAction->setToolTip("Show welcome dialog");
+    QAction *welcomeAction = helpMenu->addAction("&Добро пожаловать...");
+    welcomeAction->setToolTip("Показать приветствие");
     QObject::connect(welcomeAction, &QAction::triggered, this, &MainWindow::on_action_Welcome_triggered);
 #endif
-    QAction *quickStartAction = helpMenu->addAction("&Quick start...");
-    quickStartAction->setToolTip("Instructions for quick start");
+    QAction *quickStartAction = helpMenu->addAction("&Быстрый старт...");
+    quickStartAction->setToolTip("Инструкции быстрого старта");
     QObject::connect(quickStartAction, &QAction::triggered, this, &MainWindow::on_action_Quick_Start_triggered);
-    QAction *mainWindowAction = helpMenu->addAction("&Main Window...");
-    mainWindowAction->setToolTip("Help on main window details");
+    QAction *mainWindowAction = helpMenu->addAction("&Главное окно...");
+    mainWindowAction->setToolTip("Справка по главному окну");
     QObject::connect(mainWindowAction, &QAction::triggered, this, &MainWindow::on_action_Main_Window_triggered);
-    QAction *loadedPluginsAction = helpMenu->addAction("Loaded &Plugins...");
-    loadedPluginsAction->setToolTip("List available plugins");
+    QAction *loadedPluginsAction = helpMenu->addAction("Загр. &плагины...");
+    loadedPluginsAction->setToolTip("Список загруженных плагинов");
     QObject::connect(loadedPluginsAction, &QAction::triggered, this, &MainWindow::on_action_Loaded_Plugins_triggered);
-    QAction *aboutAction = helpMenu->addAction("&About SDRangel...");
-    aboutAction->setToolTip("SDRangel application details");
+    QAction *aboutAction = helpMenu->addAction("&О SDRangel...");
+    aboutAction->setToolTip("Сведения о программе");
     QObject::connect(aboutAction, &QAction::triggered, this, &MainWindow::on_action_About_triggered);
 }
 
@@ -2137,8 +2137,8 @@ void MainWindow::createStatusBar()
 #endif
     statusBar()->addPermanentWidget(m_showSystemWidget);
 
-	m_dateTimeWidget = new QLabel(tr("Date"), this);
-	m_dateTimeWidget->setToolTip(tr("Current date/time"));
+	m_dateTimeWidget = new QLabel(tr("Дата"), this);
+	m_dateTimeWidget->setToolTip(tr("Текущая дата/время"));
 	statusBar()->addPermanentWidget(m_dateTimeWidget);
 }
 
@@ -2660,7 +2660,7 @@ void MainWindow::on_action_saveAll_triggered()
 {
     saveConfiguration(m_mainCore->m_settings.getWorkingConfiguration());
     m_mainCore->m_settings.save();
-    QMessageBox::information(this, tr("Done"), tr("All current settings saved"));
+    QMessageBox::information(this, tr("Готово"), tr("Все настройки сохранены"));
 }
 
 void MainWindow::on_action_Welcome_triggered()
@@ -2779,7 +2779,7 @@ void MainWindow::on_action_FFTWisdom_triggered()
 
     if (m_fftWisdomProcess)
     {
-        QMessageBox::information(this, "FFTW Wisdom", QString("Process %1 is already running").arg(m_fftWisdomProcess->processId()));
+        QMessageBox::information(this, "FFTW Wisdom", QString("Процесс %1 уже запущен").arg(m_fftWisdomProcess->processId()));
         return;
     }
 
@@ -2802,7 +2802,7 @@ void MainWindow::on_action_FFTWisdom_triggered()
     }
     else
     {
-        QMessageBox::information(this, "FFTW Wisdom", QString("Process %1 started").arg(m_fftWisdomProcess->processId()));
+        QMessageBox::information(this, "FFTW Wisdom", QString("Процесс %1 запущен").arg(m_fftWisdomProcess->processId()));
     }
 }
 
@@ -2812,12 +2812,12 @@ void MainWindow::fftWisdomProcessFinished(int exitCode, QProcess::ExitStatus exi
 
     if ((exitCode != 0) || (exitStatus != QProcess::NormalExit))
     {
-        QMessageBox::critical(this, "FFTW Wisdom", "fftwf-widdsom program failed");
+        QMessageBox::critical(this, "FFTW Wisdom", "Ошибка запуска fftwf-wisdom");
     }
     else
     {
         QString log = m_fftWisdomProcess->readAllStandardOutput();
-        QMessageBox::information(this, "FFTW Wisdom", QString("Success\n%1").arg(log));
+        QMessageBox::information(this, "FFTW Wisdom", QString("Успешно\n%1").arg(log));
 
     }
 
