@@ -37,7 +37,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>FileInput</string>
+   <string>Вх. файл</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -64,7 +64,7 @@
          <item>
           <widget class="ButtonSwitch" name="startStop">
            <property name="toolTip">
-            <string>start/stop acquisition</string>
+            <string>старт/стоп захвата</string>
            </property>
            <property name="text">
             <string/>
@@ -89,7 +89,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>I/Q sample rate kS/s</string>
+            <string>Част. I/Q дискр,кВыб/с</string>
            </property>
            <property name="text">
             <string>00000k</string>
@@ -133,7 +133,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Record center frequency in Hz</string>
+        <string>Центр. частота записи (Гц)</string>
        </property>
        <property name="text">
         <string>10,000,000,000</string>
@@ -189,7 +189,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Open file</string>
+        <string>Открыть файл</string>
        </property>
        <property name="text">
         <string/>
@@ -206,7 +206,7 @@
         <bool>false</bool>
        </property>
        <property name="toolTip">
-        <string>File currently opened</string>
+        <string>Файл открыт</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -244,7 +244,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Record sample rate (kS/s)</string>
+        <string>Частота дискр. записи (кВыб/с)</string>
        </property>
        <property name="text">
         <string>00000k</string>
@@ -278,7 +278,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Record sample size (bits)</string>
+        <string>Разрядность записи (бит)</string>
        </property>
        <property name="text">
         <string>00b</string>
@@ -306,7 +306,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>CRC status: Green: OK Red: KO Grey: undefined</string>
+        <string>CRC: Зелёный: ОК, Красный: ошибка, Серый: н/д</string>
        </property>
        <property name="text">
         <string>CRC</string>
@@ -345,7 +345,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Record absolute time</string>
+        <string>Абс. время записи</string>
        </property>
        <property name="text">
         <string>2015-01-01 00:00:00.000</string>
@@ -369,7 +369,7 @@
      <item>
       <widget class="ButtonSwitch" name="playLoop">
        <property name="toolTip">
-        <string>Play file in a loop</string>
+        <string>Воспроизводить по кругу</string>
        </property>
        <property name="text">
         <string/>
@@ -392,7 +392,7 @@
      <item>
       <widget class="ButtonSwitch" name="play">
        <property name="toolTip">
-        <string>Stopped / Play / Pause</string>
+        <string>Стоп / Воспр. / Пауза</string>
        </property>
        <property name="text">
         <string/>
@@ -445,7 +445,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Acceleration factor</string>
+        <string>Фактор ускорения</string>
        </property>
        <item>
         <property name="text">
@@ -531,7 +531,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Record time from start</string>
+        <string>Время от начала</string>
        </property>
        <property name="text">
         <string>00:00:00.000</string>
@@ -560,7 +560,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Total record time</string>
+        <string>Длит. записи</string>
        </property>
        <property name="text">
         <string>00:00:00.000</string>
@@ -577,7 +577,7 @@
      <item>
       <widget class="QSlider" name="navTimeSlider">
        <property name="toolTip">
-        <string>Time navigator</string>
+        <string>Навигатор времени</string>
        </property>
        <property name="maximum">
         <number>1000</number>

@@ -32,7 +32,7 @@
    <enum>Qt::FocusPolicy::StrongFocus</enum>
   </property>
   <property name="windowTitle">
-   <string>AIS Demodulator</string>
+   <string>Демодулятор AIS</string>
   </property>
   <widget class="QWidget" name="settingsContainer" native="true">
    <property name="geometry">
@@ -50,7 +50,7 @@
     </size>
    </property>
    <property name="windowTitle">
-    <string>Settings</string>
+    <string>Настройки</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
@@ -113,7 +113,7 @@
          <enum>Qt::FocusPolicy::StrongFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Demod shift frequency from center in Hz</string>
+         <string>Сдвиг частоты демодулятора (Гц)</string>
         </property>
        </widget>
       </item>
@@ -149,7 +149,7 @@
         <item>
          <widget class="QLabel" name="channelPower">
           <property name="toolTip">
-           <string>Channel power</string>
+           <string>Мощность канала</string>
           </property>
           <property name="layoutDirection">
            <enum>Qt::LayoutDirection::RightToLeft</enum>
@@ -200,7 +200,7 @@
          </font>
         </property>
         <property name="toolTip">
-         <string>Level meter (dB) top trace: average, bottom trace: instantaneous peak, tip: peak hold</string>
+         <string>Уровень (дБ): верх — среднее, низ — пик, вершина — удержание пика</string>
         </property>
        </widget>
       </item>
@@ -218,7 +218,7 @@
       <item>
        <widget class="QLabel" name="rfBWLabel">
         <property name="text">
-         <string>BW</string>
+         <string>Полоса</string>
         </property>
        </widget>
       </item>
@@ -237,7 +237,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>RF bandwidth</string>
+         <string>Полоса RF</string>
         </property>
         <property name="minimum">
          <number>10</number>
@@ -282,7 +282,7 @@
       <item>
        <widget class="QLabel" name="fmDevLabel">
         <property name="text">
-         <string>Dev</string>
+         <string>Откл</string>
         </property>
        </widget>
       </item>
@@ -301,7 +301,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Frequency deviation</string>
+         <string>Девиация частоты</string>
         </property>
         <property name="minimum">
          <number>10</number>
@@ -346,7 +346,7 @@
       <item>
        <widget class="QLabel" name="thresholdLabel">
         <property name="text">
-         <string>TH</string>
+         <string>Порог</string>
         </property>
        </widget>
       </item>
@@ -359,7 +359,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Correlation threshold</string>
+         <string>Порог корреляции</string>
         </property>
         <property name="minimum">
          <number>0</number>
@@ -406,7 +406,7 @@
       <item>
        <widget class="QCheckBox" name="udpEnabled">
         <property name="toolTip">
-         <string>Send packets via UDP</string>
+         <string>Отправлять пакеты по UDP</string>
         </property>
         <property name="layoutDirection">
          <enum>Qt::LayoutDirection::RightToLeft</enum>
@@ -428,7 +428,7 @@
          <enum>Qt::FocusPolicy::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Destination UDP address</string>
+         <string>Адрес UDP</string>
         </property>
         <property name="inputMask">
          <string>000.000.000.000</string>
@@ -466,7 +466,7 @@
          <enum>Qt::FocusPolicy::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Destination UDP port</string>
+         <string>Порт UDP</string>
         </property>
         <property name="inputMask">
          <string>00000</string>
@@ -479,7 +479,7 @@
       <item>
        <widget class="QLabel" name="udpFormatLabel">
         <property name="text">
-         <string>Format</string>
+         <string>Формат</string>
         </property>
        </widget>
       </item>
@@ -492,11 +492,11 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Format used to forward received AIS messages</string>
+         <string>Формат передачи AIS сообщений</string>
         </property>
         <item>
          <property name="text">
-          <string>Binary</string>
+          <string>Двоичный</string>
          </property>
         </item>
         <item>
@@ -533,14 +533,14 @@
       <item>
        <widget class="QLabel" name="filterMMSILabel">
         <property name="text">
-         <string>Find</string>
+         <string>Поиск</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QLineEdit" name="filterMMSI">
         <property name="toolTip">
-         <string>Display only messages where the MMSI matches the specified regular expression</string>
+         <string>Фильтр сообщений по MMSI (рег. выражение)</string>
         </property>
        </widget>
       </item>
@@ -566,7 +566,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Check to use date and time from input file. Uncheck to use date and time from clock.</string>
+         <string>Вкл — время из файла, выкл — время системы</string>
         </property>
         <property name="text">
          <string/>
@@ -587,7 +587,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Show/hide slot map</string>
+         <string>Показать/скрыть карту слотов</string>
         </property>
         <property name="text">
          <string/>
@@ -613,7 +613,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>Start/stop logging of received messages to .csv file</string>
+         <string>Вкл/выкл запись сообщений в .csv</string>
         </property>
         <property name="text">
          <string/>
@@ -627,7 +627,7 @@
       <item>
        <widget class="QToolButton" name="logFilename">
         <property name="toolTip">
-         <string>Set log .csv filename</string>
+         <string>Указать имя .csv файла лога</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -644,7 +644,7 @@
       <item>
        <widget class="QToolButton" name="logOpen">
         <property name="toolTip">
-         <string>Read data from .csv log file</string>
+         <string>Читать данные из .csv файла</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -661,7 +661,7 @@
       <item>
        <widget class="QPushButton" name="clearTable">
         <property name="toolTip">
-         <string>Clear messages from table</string>
+         <string>Очистить таблицу</string>
         </property>
         <property name="text">
          <string/>
@@ -692,7 +692,7 @@
     </sizepolicy>
    </property>
    <property name="windowTitle">
-    <string>Received Messages</string>
+    <string>Принятые сообщения</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="leftMargin">
@@ -747,7 +747,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Slot map</string>
+           <string>Карта слотов</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::Shape::Panel</enum>
@@ -771,14 +771,14 @@
           <item>
            <widget class="QLabel" name="slotsUsedLabel">
             <property name="text">
-             <string>Used</string>
+             <string>Занято</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLineEdit" name="slotsUsed">
             <property name="toolTip">
-             <string>Number of used slots in previous frame</string>
+             <string>Занятых слотов в предыд. кадре</string>
             </property>
             <property name="readOnly">
              <bool>true</bool>
@@ -795,14 +795,14 @@
           <item>
            <widget class="QLabel" name="slotsFreeLabel">
             <property name="text">
-             <string>Free</string>
+             <string>Свободно</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLineEdit" name="slotsFree">
             <property name="toolTip">
-             <string>Number of free slots in previous frame</string>
+             <string>Свободных слотов в предыд. кадре</string>
             </property>
             <property name="readOnly">
              <bool>true</bool>
@@ -819,14 +819,14 @@
           <item>
            <widget class="QLabel" name="slotUtilizationLabel">
             <property name="text">
-             <string>Utilisation</string>
+             <string>Загрузка</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QProgressBar" name="slotUtilization">
             <property name="toolTip">
-             <string>Slot utilisation in % for previous frame</string>
+             <string>Загрузка слотов (%) предыд. кадра</string>
             </property>
             <property name="value">
              <number>24</number>
@@ -839,25 +839,25 @@
       </widget>
       <widget class="QTableWidget" name="messages">
        <property name="toolTip">
-        <string>Received packets</string>
+        <string>Принято пакетов</string>
        </property>
        <property name="editTriggers">
         <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
        </property>
        <column>
         <property name="text">
-         <string>Date</string>
+         <string>Дата</string>
         </property>
         <property name="toolTip">
-         <string>Date message was received</string>
+         <string>Дата получения сообщения</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Time</string>
+         <string>Время</string>
         </property>
         <property name="toolTip">
-         <string>Time message was received</string>
+         <string>Время получения сообщения</string>
         </property>
        </column>
        <column>
@@ -865,39 +865,39 @@
          <string>MMSI</string>
         </property>
         <property name="toolTip">
-         <string>Maritime Mobile Service Identity</string>
+         <string>Идентификатор MMSI</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Country</string>
+         <string>Страна</string>
         </property>
         <property name="toolTip">
-         <string>Country with jurisdiction over station/vessel</string>
+         <string>Страна юрисдикции станции/судна</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Type</string>
+         <string>Тип</string>
         </property>
         <property name="toolTip">
-         <string>Message type</string>
+         <string>Тип сообщения</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Id</string>
+         <string>Ид</string>
         </property>
         <property name="toolTip">
-         <string>Message type identifier</string>
+         <string>Идентификатор типа</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Data</string>
+         <string>Данные</string>
         </property>
         <property name="toolTip">
-         <string>Decoded message data</string>
+         <string>Декодированные данные</string>
         </property>
        </column>
        <column>
@@ -905,23 +905,23 @@
          <string>NMEA</string>
         </property>
         <property name="toolTip">
-         <string>Message data in NMEA format</string>
+         <string>Данные в формате NMEA</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Hex</string>
+         <string>Шестн.</string>
         </property>
         <property name="toolTip">
-         <string>Message data as hex</string>
+         <string>Данные в шестн. формате</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Slot</string>
+         <string>Слот</string>
         </property>
         <property name="toolTip">
-         <string>Time slot</string>
+         <string>Временной слот</string>
         </property>
        </column>
       </widget>
@@ -945,7 +945,7 @@
     </size>
    </property>
    <property name="windowTitle">
-    <string>Waveforms</string>
+    <string>Формы сигнала</string>
    </property>
    <layout class="QVBoxLayout" name="transmittedLayout_2">
     <property name="spacing">

@@ -289,9 +289,9 @@ void DeviceSetPresetsDialog::on_presetExport_clicked()
 			QString base64Str = preset->serialize().toBase64();
 			QString fileName = QFileDialog::getSaveFileName(
                 this,
-			    tr("Open preset export file"),
+			    tr("Файл экспорта пресета"),
                 ".",
-                tr("Preset export files (*.prex)"),
+                tr("Файлы пресетов (*.prex)"),
                 0
             );
 
@@ -316,7 +316,7 @@ void DeviceSetPresetsDialog::on_presetExport_clicked()
 				}
 				else
 				{
-			    	QMessageBox::information(this, tr("Message"), tr("Cannot open file for writing"));
+			    	QMessageBox::information(this, tr("Сообщение"), tr("Не удалось открыть файл для записи"));
 				}
 			}
 		}
@@ -341,9 +341,9 @@ void DeviceSetPresetsDialog::on_presetImport_clicked()
 
 		QString fileName = QFileDialog::getOpenFileName(
             this,
-		    tr("Open preset export file"),
+		    tr("Файл экспорта пресета"),
             ".",
-            tr("Preset export files (*.prex)"),
+            tr("Файлы пресетов (*.prex)"),
             0
         );
 
@@ -366,7 +366,7 @@ void DeviceSetPresetsDialog::on_presetImport_clicked()
 			}
 			else
 			{
-				QMessageBox::information(this, tr("Message"), tr("Cannot open file for reading"));
+				QMessageBox::information(this, tr("Сообщение"), tr("Не удалось открыть файл для чтения"));
 			}
 		}
 	}
@@ -415,8 +415,8 @@ void DeviceSetPresetsDialog::on_presetDelete_clicked()
             {
                 if (QMessageBox::question(
                     this,
-                    tr("Delete Preset"),
-                    tr("Do you want to delete preset '%1'?").arg(preset->getDescription()),
+                    tr("Удалить пресет"),
+                    tr("Удалить пресет '%1'?").arg(preset->getDescription()),
                     QMessageBox::No | QMessageBox::Yes, QMessageBox::No) == QMessageBox::Yes
                 )
                 {
@@ -429,8 +429,8 @@ void DeviceSetPresetsDialog::on_presetDelete_clicked()
         {
             if (QMessageBox::question(
                 this,
-                tr("Delete preset group"),
-                tr("Do you want to delete preset group '%1'?").arg(item->text(0)),
+                tr("Удалить группу пресетов"),
+                tr("Удалить группу пресетов '%1'?").arg(item->text(0)),
                 QMessageBox::No | QMessageBox::Yes, QMessageBox::No) == QMessageBox::Yes
             )
             {
