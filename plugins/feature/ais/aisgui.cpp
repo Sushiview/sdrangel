@@ -381,7 +381,7 @@ void AISGUI::resizeTable()
     ui->vessels->setRowCount(row + 1);
     ui->vessels->setItem(row, VESSEL_COL_MMSI, new QTableWidgetItem("123456789"));
     ui->vessels->setItem(row, VESSEL_COL_COUNTRY, new QTableWidgetItem("flag"));
-    ui->vessels->setItem(row, VESSEL_COL_TYPE, new QTableWidgetItem("Base station"));
+    ui->vessels->setItem(row, VESSEL_COL_TYPE, new QTableWidgetItem("Баз. станция"));
     ui->vessels->setItem(row, VESSEL_COL_LATITUDE, new QTableWidgetItem("90.000000-"));
     ui->vessels->setItem(row, VESSEL_COL_LONGITUDE, new QTableWidgetItem("180.00000-"));
     ui->vessels->setItem(row, VESSEL_COL_COURSE, new QTableWidgetItem("360.0"));
@@ -626,13 +626,13 @@ void AISGUI::updateVessels(AISMessage *ais, QDateTime dateTime)
     messagesItem->setData(Qt::DisplayRole, messagesItem->data(Qt::DisplayRole).toInt() + 1);
 
     if ((ais->m_id <= 3) || (ais->m_id == 5) || (ais->m_id == 18) || (ais->m_id == 19)) {
-        typeItem->setText("Vessel");
+        typeItem->setText("Судно");
     } else if (ais->m_id == 4) {
-        typeItem->setText("Base station");
+        typeItem->setText("Баз. станция");
     } else if (ais->m_id == 9) {
-        typeItem->setText("Aircraft");
+        typeItem->setText("Самолёт");
     } else if (ais->m_id == 21) {
-        typeItem->setText("Aid-to-nav");
+        typeItem->setText("СНО");
     }
     if (ais->m_id == 21)
     {
@@ -742,10 +742,10 @@ void AISGUI::updateVessels(AISMessage *ais, QDateTime dateTime)
         QString destination = destinationItem->text();
         float heading = 0.0f;
         if (!name.isEmpty()) {
-            text.append(QString("Name: %1").arg(name));
+            text.append(QString("Название: %1").arg(name));
         }
         if (!callsign.isEmpty()) {
-            text.append(QString("Callsign: %1").arg(callsign));
+            text.append(QString("Позывной: %1").arg(callsign));
         }
         if (!destination.isEmpty()) {
             text.append(QString("Destination: %1").arg(destination));
@@ -753,22 +753,22 @@ void AISGUI::updateVessels(AISMessage *ais, QDateTime dateTime)
         if (!courseV.isNull())
         {
             float course = courseV.toFloat();
-            text.append(QString("Course: %1%2").arg(course).arg(QChar(0xb0)));
+            text.append(QString("Курс: %1%2").arg(course).arg(QChar(0xb0)));
             heading = course;
         }
         if (!speedV.isNull()) {
-            text.append(QString("Speed: %1 knts").arg(speedV.toFloat()));
+            text.append(QString("Скорость: %1 уз.").arg(speedV.toFloat()));
         }
         if (!headingV.isNull())
         {
             heading = headingV.toFloat();
-            text.append(QString("Heading: %1%2").arg(heading).arg(QChar(0xb0)));
+            text.append(QString("Курс пр.: %1%2").arg(heading).arg(QChar(0xb0)));
         }
         if (!shipType.isEmpty()) {
-            text.append(QString("Ship type: %1").arg(shipType));
+            text.append(QString("Тип судна: %1").arg(shipType));
         }
         if (!status.isEmpty()) {
-            text.append(QString("Status: %1").arg(status));
+            text.append(QString("Статус: %1").arg(status));
         }
         // Send to map feature
         sendToMap(mmsiItem->text(), callsign,
@@ -781,18 +781,18 @@ void AISGUI::updateVessels(AISMessage *ais, QDateTime dateTime)
 
 void AISGUI::getImageAndModel(const QString &type, const QString &shipType, int length, const QString &status, Vessel *vessel)
 {
-    if (type == "Aircraft")
+    if (type == "Самолёт")
     {
         // I presume search and rescue aircraft are more likely to be helicopters
         vessel->m_image = "helicopter.png";
         vessel->m_model = "helicopter.glb";
     }
-    else if (type == "Base station")
+    else if (type == "Баз. станция")
     {
         vessel->m_image = "anchor.png";
         vessel->m_model = "antenna.glb";
     }
-    else if (type == "Aid-to-nav")
+    else if (type == "СНО")
     {
         vessel->m_image = "bouy.png";
         vessel->m_model = "buoy.glb";
