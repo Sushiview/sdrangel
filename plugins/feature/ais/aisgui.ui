@@ -91,7 +91,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Country</string>
+        <string>Страна</string>
        </property>
        <property name="toolTip">
         <string>Страна юрисдикции станции/судна</string>
@@ -99,7 +99,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Type</string>
+        <string>Тип</string>
        </property>
        <property name="toolTip">
         <string>Тип сообщения</string>
@@ -107,7 +107,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Lat</string>
+        <string>Широта</string>
        </property>
        <property name="toolTip">
         <string>Широта в градусах. Восток — плюс.</string>
@@ -115,7 +115,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Lon</string>
+        <string>Долгота</string>
        </property>
        <property name="toolTip">
         <string>Долгота в градусах. Север — плюс.</string>
@@ -123,7 +123,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Course</string>
+        <string>Курс</string>
        </property>
        <property name="toolTip">
         <string>Курс в градусах.</string>
@@ -131,7 +131,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Speed</string>
+        <string>Скорость</string>
        </property>
        <property name="toolTip">
         <string>Скорость в узлах.</string>
@@ -139,7 +139,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Heading</string>
+        <string>Курс пр.</string>
        </property>
        <property name="toolTip">
         <string>Курс в градусах.</string>
@@ -147,7 +147,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Status</string>
+        <string>Статус</string>
        </property>
       </column>
       <column>
@@ -160,7 +160,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Name</string>
+        <string>Название</string>
        </property>
        <property name="toolTip">
         <string>Название судна</string>
@@ -168,22 +168,22 @@
       </column>
       <column>
        <property name="text">
-        <string>Callsign</string>
+        <string>Позывной</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Ship Type</string>
+        <string>Тип судна</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Length</string>
+        <string>Длина</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>Destination</string>
+        <string>Назначение</string>
        </property>
       </column>
       <column>
@@ -204,7 +204,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Messages</string>
+        <string>Сообщения</string>
        </property>
        <property name="toolTip">
         <string>Принято сообщений</string>
