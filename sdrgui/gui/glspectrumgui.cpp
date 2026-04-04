@@ -205,11 +205,11 @@ void GLSpectrumGUI::displaySettings()
     ui->gridIntensity->setSliderPosition(m_settings.m_displayGridIntensity);
     ui->truncateScale->setChecked(m_settings.m_truncateFreqScale);
 
-    ui->decay->setToolTip(QString("Decay: %1").arg(m_settings.m_decay));
-    ui->decayDivisor->setToolTip(QString("Decay divisor: %1").arg(m_settings.m_decayDivisor));
-    ui->stroke->setToolTip(QString("Stroke: %1").arg(m_settings.m_histogramStroke));
-    ui->gridIntensity->setToolTip(QString("Grid intensity: %1").arg(m_settings.m_displayGridIntensity));
-    ui->traceIntensity->setToolTip(QString("Trace intensity: %1").arg(m_settings.m_displayTraceIntensity));
+    ui->decay->setToolTip(QString("Затухание: %1").arg(m_settings.m_decay));
+    ui->decayDivisor->setToolTip(QString("Делитель затухания: %1").arg(m_settings.m_decayDivisor));
+    ui->stroke->setToolTip(QString("Толщина: %1").arg(m_settings.m_histogramStroke));
+    ui->gridIntensity->setToolTip(QString("Яркость сетки: %1").arg(m_settings.m_displayGridIntensity));
+    ui->traceIntensity->setToolTip(QString("Яркость трассы: %1").arg(m_settings.m_displayTraceIntensity));
 
     ui->fftWindow->blockSignals(true);
     ui->averaging->blockSignals(true);
@@ -606,21 +606,21 @@ void GLSpectrumGUI::on_fps_currentIndexChanged(int index)
 void GLSpectrumGUI::on_decay_valueChanged(int index)
 {
     m_settings.m_decay = index;
-    ui->decay->setToolTip(QString("Decay: %1").arg(m_settings.m_decay));
+    ui->decay->setToolTip(QString("Затухание: %1").arg(m_settings.m_decay));
     applySettings();
 }
 
 void GLSpectrumGUI::on_decayDivisor_valueChanged(int index)
 {
     m_settings.m_decayDivisor = index;
-    ui->decayDivisor->setToolTip(QString("Decay divisor: %1").arg(m_settings.m_decayDivisor));
+    ui->decayDivisor->setToolTip(QString("Делитель затухания: %1").arg(m_settings.m_decayDivisor));
     applySettings();
 }
 
 void GLSpectrumGUI::on_stroke_valueChanged(int index)
 {
     m_settings.m_histogramStroke = index;
-    ui->stroke->setToolTip(QString("Stroke: %1").arg(m_settings.m_histogramStroke));
+    ui->stroke->setToolTip(QString("Толщина: %1").arg(m_settings.m_histogramStroke));
     applySettings();
 }
 
@@ -735,7 +735,7 @@ void GLSpectrumGUI::on_grid_toggled(bool checked)
 void GLSpectrumGUI::on_gridIntensity_valueChanged(int index)
 {
     m_settings.m_displayGridIntensity = index;
-    ui->gridIntensity->setToolTip(QString("Grid intensity: %1").arg(m_settings.m_displayGridIntensity));
+    ui->gridIntensity->setToolTip(QString("Яркость сетки: %1").arg(m_settings.m_displayGridIntensity));
     applySettings();
 }
 
@@ -749,7 +749,7 @@ void GLSpectrumGUI::on_truncateScale_toggled(bool checked)
 void GLSpectrumGUI::on_traceIntensity_valueChanged(int index)
 {
     m_settings.m_displayTraceIntensity = index;
-    ui->traceIntensity->setToolTip(QString("Trace intensity: %1").arg(m_settings.m_displayTraceIntensity));
+    ui->traceIntensity->setToolTip(QString("Яркость трассы: %1").arg(m_settings.m_displayTraceIntensity));
     applySettings();
 }
 
@@ -876,11 +876,11 @@ void GLSpectrumGUI::setAveragingToolitp()
             1 :
             SpectrumSettings::getAveragingValue(averagingIndex, m_settings.m_averagingMode))) / (float) m_glSpectrum->getSampleRate();
         setNumberStr(averagingTime*overlapFactor, 2, s);
-        ui->averaging->setToolTip(QString("Number of averaging samples (avg time: %1s)").arg(s));
+        ui->averaging->setToolTip(QString("Число сэмплов усреднения (время: %1с)").arg(s));
     }
     else
     {
-        ui->averaging->setToolTip(QString("Number of averaging samples"));
+        ui->averaging->setToolTip(QString("Число сэмплов усреднения"));
     }
 }
 
@@ -890,11 +890,11 @@ void GLSpectrumGUI::setFFTSizeToolitp()
     {
         QString s;
         setNumberStr((float) m_glSpectrum->getSampleRate() / m_settings.m_fftSize, 2, s);
-        ui->fftSize->setToolTip(QString("FFT size (resolution: %1Hz)").arg(s));
+        ui->fftSize->setToolTip(QString("Размер FFT (разрешение: %1Гц)").arg(s));
     }
     else
     {
-        ui->fftSize->setToolTip(QString("FFT size"));
+        ui->fftSize->setToolTip(QString("Размер FFT"));
     }
 }
 
@@ -914,7 +914,7 @@ void GLSpectrumGUI::setMaximumOverlap()
     ui->fftOverlap->setMaximum(m_settings.m_fftSize -1);
     int value = ui->fftOverlap->value();
     ui->fftOverlap->setValue(value);
-    ui->fftOverlap->setToolTip(tr("FFT overlap %1 %").arg((value/(float)m_settings.m_fftSize)*100.0f));
+    ui->fftOverlap->setToolTip(tr("Перекрытие FFT %1 %").arg((value/(float)m_settings.m_fftSize)*100.0f));
 
     if (m_glSpectrum) {
         m_glSpectrum->setFFTOverlap(value);

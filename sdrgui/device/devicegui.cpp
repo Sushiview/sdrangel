@@ -64,7 +64,7 @@ DeviceGUI::DeviceGUI(QWidget *parent) :
     m_settingsButton->setFixedSize(20, 20);
     QIcon settingsIcon(":/gear.png");
     m_settingsButton->setIcon(settingsIcon);
-    m_settingsButton->setToolTip("Common settings");
+    m_settingsButton->setToolTip("Общие настройки");
 
     m_changeDeviceButton = new QPushButton();
     m_changeDeviceButton->setFixedSize(20, 20);
@@ -88,7 +88,7 @@ DeviceGUI::DeviceGUI(QWidget *parent) :
     m_deviceSetPresetsButton->setFixedSize(20, 20);
     QIcon deviceSetPresetsIcon(":/star.png");
     m_deviceSetPresetsButton->setIcon(deviceSetPresetsIcon);
-    m_deviceSetPresetsButton->setToolTip("Device set presets");
+    m_deviceSetPresetsButton->setToolTip("Пресеты набора устройств");
 
     m_titleLabel = new QLabel();
     m_titleLabel->setText("Устройство");
@@ -415,7 +415,7 @@ void DeviceGUI::deviceSetPresetsDialog()
 
 void DeviceGUI::setTitle(const QString& title)
 {
-    setWindowTitle(title + " Device");
+    setWindowTitle(title + " (устройство)");
     m_titleLabel->setText(title);
 }
 
