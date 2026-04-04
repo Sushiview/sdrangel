@@ -51,7 +51,6 @@
 #include "remotetcpsinkstarter.h"
 #include "dsp/dsptypes.h"
 #include "crashhandler.h"
-#include <QDialogButtonBox>
 
 static void logExceptionStackTrace()
 {
@@ -96,53 +95,6 @@ static void logExceptionStackTrace()
     qCritical("Stack trace unavailable (libunwind not enabled).");
 #endif
 }
-
-
-class RussianButtonFilter : public QObject
-{
-public:
-    RussianButtonFilter(QObject *parent = nullptr) : QObject(parent) {}
-
-    bool eventFilter(QObject *obj, QEvent *event) override
-    {
-        if (event->type() == QEvent::Show)
-        {
-            QWidget *widget = qobject_cast<QWidget*>(obj);
-            if (widget) {
-                translateButtons(widget);
-            }
-        }
-        return false;
-    }
-
-    void translateButtons(QWidget *widget)
-    {
-        for (auto *box : widget->findChildren<QDialogButtonBox*>()) {
-            translateBox(box);
-        }
-    }
-
-    void translateBox(QDialogButtonBox *box)
-    {
-        static const struct { QDialogButtonBox::StandardButton btn; const char* text; } map[] = {
-            { QDialogButtonBox::Ok,     "ОК" },
-            { QDialogButtonBox::Cancel, "Отмена" },
-            { QDialogButtonBox::Close,  "Закрыть" },
-            { QDialogButtonBox::Apply,  "Применить" },
-            { QDialogButtonBox::Yes,    "Да" },
-            { QDialogButtonBox::No,     "Нет" },
-            { QDialogButtonBox::Save,   "Сохранить" },
-            { QDialogButtonBox::Open,   "Открыть" },
-            { QDialogButtonBox::Reset,  "Сбросить" },
-            { QDialogButtonBox::Help,   "Справка" },
-        };
-        for (const auto& m : map) {
-            if (auto *btn = box->button(m.btn)) {
-                btn->setText(m.text);
-            }
-        }
-    }
-};
 
 class SDRangelApplication final : public QApplication
 {
@@ -229,7 +181,6 @@ static int runQtApplication(int argc, char* argv[], qtwebapp::LoggerWithFile *lo
     }
 
     SDRangelApplication a(argc, argv);
-    a.installEventFilter(new RussianButtonFilter(&a));
 
 #if 1
     qApp->setStyle(QStyleFactory::create("fusion"));
