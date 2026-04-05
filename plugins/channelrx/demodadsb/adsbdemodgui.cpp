@@ -376,7 +376,7 @@ QString Aircraft::getText(const ADSBDemodSettings *settings, bool all) const
         if (m_aircraftInfo != nullptr)
         {
             if (!m_aircraftInfo->m_model.isEmpty()) {
-                list.append(QString("Aircraft: %1").arg(m_aircraftInfo->m_model));
+                list.append(QString("ВС: %1").arg(m_aircraftInfo->m_model));
             }
         }
         if (!m_emitterCategory.isEmpty()) {
@@ -5272,7 +5272,7 @@ bool ADSBDemodGUI::handleMessage(const Message& message)
         bool srTooLow = sr < 2000000;
         ui->warning->setVisible(srTooLow);
         if (srTooLow) {
-            ui->warning->setText(QString("Sample rate must be >= 2000000. Currently %1").arg(sr));
+            ui->warning->setText(QString("Частота дискр. должна быть >= 2000000. Текущая: %1").arg(sr));
         } else {
             ui->warning->setText("");
         }
@@ -5517,7 +5517,7 @@ void ADSBDemodGUI::statsTable_customContextMenuRequested(QPoint pos)
         QMenu* tableContextMenu = new QMenu(ui->statsTable);
         connect(tableContextMenu, &QMenu::aboutToHide, tableContextMenu, &QMenu::deleteLater);
 
-        QAction* copyAction = new QAction("Copy", tableContextMenu);
+        QAction* copyAction = new QAction("Копировать", tableContextMenu);
         const QString text = item->text();
         connect(copyAction, &QAction::triggered, this, [text]()->void {
             QClipboard *clipboard = QGuiApplication::clipboard();
@@ -5547,7 +5547,7 @@ void ADSBDemodGUI::adsbData_customContextMenuRequested(QPoint pos)
 
         // Copy current cell
 
-        QAction* copyAction = new QAction("Copy", tableContextMenu);
+        QAction* copyAction = new QAction("Копировать", tableContextMenu);
         const QString text = item->text();
         connect(copyAction, &QAction::triggered, this, [text]()->void {
             QClipboard *clipboard = QGuiApplication::clipboard();
@@ -5558,20 +5558,20 @@ void ADSBDemodGUI::adsbData_customContextMenuRequested(QPoint pos)
 
         // View aircraft on various websites
 
-        QAction* planeSpottersAction = new QAction("View aircraft on planespotters.net...", tableContextMenu);
+        QAction* planeSpottersAction = new QAction("ВС на planespotters.net...", tableContextMenu);
         connect(planeSpottersAction, &QAction::triggered, this, [icao]()->void {
             QString icaoUpper = QString("%1").arg(icao, 1, 16).toUpper();
             QDesktopServices::openUrl(QUrl(QString("https://www.planespotters.net/hex/%1").arg(icaoUpper)));
         });
         tableContextMenu->addAction(planeSpottersAction);
 
-        QAction* adsbExchangeAction = new QAction("View aircraft on adsbexchange.com...", tableContextMenu);
+        QAction* adsbExchangeAction = new QAction("ВС на adsbexchange.com...", tableContextMenu);
         connect(adsbExchangeAction, &QAction::triggered, this, [icaoHex]()->void {
             QDesktopServices::openUrl(QUrl(QString("https://globe.adsbexchange.com/?icao=%1").arg(icaoHex)));
         });
         tableContextMenu->addAction(adsbExchangeAction);
 
-        QAction* viewOpenSkyAction = new QAction("View aircraft on opensky-network.org...", tableContextMenu);
+        QAction* viewOpenSkyAction = new QAction("ВС на opensky-network.org...", tableContextMenu);
         connect(viewOpenSkyAction, &QAction::triggered, this, [icaoHex]()->void {
             QDesktopServices::openUrl(QUrl(QString("https://map.opensky-network.org/?icao=%1").arg(icaoHex)));
         });
@@ -5579,7 +5579,7 @@ void ADSBDemodGUI::adsbData_customContextMenuRequested(QPoint pos)
 
         if (!aircraft->m_callsign.isEmpty())
         {
-            QAction* flightRadarAction = new QAction("View flight on flightradar24.com...", tableContextMenu);
+            QAction* flightRadarAction = new QAction("Рейс на flightradar24.com...", tableContextMenu);
             connect(flightRadarAction, &QAction::triggered, this, [aircraft]()->void {
                 QDesktopServices::openUrl(QUrl(QString("https://www.flightradar24.com/%1").arg(aircraft->m_callsign)));
             });
@@ -5592,7 +5592,7 @@ void ADSBDemodGUI::adsbData_customContextMenuRequested(QPoint pos)
 
         /*if (!aircraft->m_aircraftInfo)
         {
-            QAction* addOpenSkyAction = new QAction("Add aircraft to opensky-network.org...", tableContextMenu);
+            QAction* addOpenSkyAction = new QAction("Добавить ВС на opensky-network.org...", tableContextMenu);
             connect(addOpenSkyAction, &QAction::triggered, this, []()->void {
                 QDesktopServices::openUrl(QUrl(QString("https://old.opensky-network.org/edit-aircraft-profile")));
             });
@@ -5601,14 +5601,14 @@ void ADSBDemodGUI::adsbData_customContextMenuRequested(QPoint pos)
         else
         {
 
-            QAction* editOpenSkyAction = new QAction("Edit aircraft on opensky-network.org...", tableContextMenu);
+            QAction* editOpenSkyAction = new QAction("Изменить ВС на opensky-network.org...", tableContextMenu);
             connect(editOpenSkyAction, &QAction::triggered, this, [icaoHex]()->void {
                 QDesktopServices::openUrl(QUrl(QString("https://old.opensky-network.org/edit-aircraft-profile?icao24=%1").arg(icaoHex)));
             });
             tableContextMenu->addAction(editOpenSkyAction);
         }*/
 
-        QAction* editSDMAction = new QAction("Edit aircraft on sdm.virtualradarserver.co.uk...", tableContextMenu);
+        QAction* editSDMAction = new QAction("Изменить ВС на virtualradarserver.co.uk...", tableContextMenu);
         connect(editSDMAction, &QAction::triggered, this, []()->void {
             QDesktopServices::openUrl(QUrl(QString("https://sdm.virtualradarserver.co.uk/Edit/Aircraft")));
             });
@@ -5619,13 +5619,13 @@ void ADSBDemodGUI::adsbData_customContextMenuRequested(QPoint pos)
         {
             tableContextMenu->addSeparator();
 
-            QAction* findChannelMapAction = new QAction("Find on ADS-B map", tableContextMenu);
+            QAction* findChannelMapAction = new QAction("Найти на карте ADS-B", tableContextMenu);
             connect(findChannelMapAction, &QAction::triggered, this, [this, aircraft]()->void {
                 findOnChannelMap(aircraft);
             });
             tableContextMenu->addAction(findChannelMapAction);
 
-            QAction* findMapFeatureAction = new QAction("Find on feature map", tableContextMenu);
+            QAction* findMapFeatureAction = new QAction("Найти на карте функций", tableContextMenu);
             connect(findMapFeatureAction, &QAction::triggered, this, [icaoHex]()->void {
                 FeatureWebAPIUtils::mapFind(icaoHex);
             });

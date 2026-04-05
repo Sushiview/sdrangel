@@ -1106,7 +1106,7 @@
                  </property>
                  <column>
                   <property name="text">
-                   <string>ICAO ID</string>
+                   <string>ИКАО ИД</string>
                   </property>
                   <property name="toolTip">
                    <string extracomment="Double click to search for the aircraft on www.planespotters.net">Aircraft International Civil Aviation Organization identifier. Links to www.planespotters.net</string>
@@ -1114,7 +1114,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Callsign</string>
+                   <string>Позывной</string>
                   </property>
                   <property name="toolTip">
                    <string>Позывной. Ссылка на flightradar24.com</string>
@@ -1122,7 +1122,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>ATC Callsign</string>
+                   <string>Позывной ATC</string>
                   </property>
                   <property name="toolTip">
                    <string>Позывной авиакомпании (ATC)</string>
@@ -1130,7 +1130,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Aircraft</string>
+                   <string>ВС</string>
                   </property>
                   <property name="toolTip">
                    <string>Модель ВС</string>
@@ -1138,7 +1138,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Type</string>
+                   <string>Тип</string>
                   </property>
                   <property name="toolTip">
                    <string>Тип ВС по ИКАО</string>
@@ -1151,7 +1151,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Airline</string>
+                   <string>Авиакомпания</string>
                   </property>
                   <property name="toolTip">
                    <string>Логотип авиакомпании</string>
@@ -1159,7 +1159,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Country</string>
+                   <string>Страна</string>
                   </property>
                   <property name="toolTip">
                    <string>Страна регистрации</string>
@@ -1167,7 +1167,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>GS (kn)</string>
+                   <string>ПС (уз)</string>
                   </property>
                   <property name="toolTip">
                    <string>Путевая скорость (узлы/км/ч)</string>
@@ -1175,7 +1175,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>TAS (kn)</string>
+                   <string>ИВС (уз)</string>
                   </property>
                   <property name="toolTip">
                    <string>Истинная скорость (узлы/км/ч)</string>
@@ -1183,7 +1183,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>IAS (kn)</string>
+                   <string>ПВС (уз)</string>
                   </property>
                   <property name="toolTip">
                    <string>Приборная скорость (узлы/км/ч)</string>
@@ -1199,7 +1199,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Sel Alt (ft)</string>
+                   <string>Зад.выс (фт)</string>
                   </property>
                   <property name="toolTip">
                    <string>Зад. высота (фут/м) по MCP/FCU или FMS</string>
@@ -1207,7 +1207,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Alt (ft)</string>
+                   <string>Выс (фт)</string>
                   </property>
                   <property name="toolTip">
                    <string>Высота (фут/м)</string>
@@ -1215,7 +1215,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>VR (ft/m)</string>
+                   <string>СП (фт/м)</string>
                   </property>
                   <property name="toolTip">
                    <string>Верт. скороподъёмность (фут/мин или м/с)</string>
@@ -1223,7 +1223,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Sel Hd (°)</string>
+                   <string>Зад.кур (°)</string>
                   </property>
                   <property name="toolTip">
                    <string>Зад. курс (°) по MCP/FCU или FMS</string>
@@ -1231,7 +1231,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Hd (°)</string>
+                   <string>Курс (°)</string>
                   </property>
                   <property name="toolTip">
                    <string>Курс ВС в градусах</string>
@@ -1271,7 +1271,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Az/El (°)</string>
+                   <string>Аз/Уг (°)</string>
                   </property>
                   <property name="toolTip">
                    <string>Азимут/угол до ВС. Двойной клик — установить целью.</string>
@@ -1495,7 +1495,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Lat (°)</string>
+                   <string>Шир (°)</string>
                   </property>
                   <property name="toolTip">
                    <string extracomment="Double click to centre the map on this aircraft">Latitude in degrees positive towards the North</string>
@@ -1503,7 +1503,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Lon (°)</string>
+                   <string>Дол (°)</string>
                   </property>
                   <property name="toolTip">
                    <string extracomment="Double click to centre the map on this aircraft">Longitude in degrees. Positive towards the East</string>
@@ -1655,7 +1655,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Dep</string>
+                   <string>Выл</string>
                   </property>
                   <property name="toolTip">
                    <string>Аэропорт вылета</string>
@@ -1663,7 +1663,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>Arr</string>
+                   <string>Приб</string>
                   </property>
                   <property name="toolTip">
                    <string>Аэропорт прибытия</string>
@@ -1936,7 +1936,7 @@
               </row>
               <row>
                <property name="text">
-                <string>Type Fails</string>
+                <string>Ошибок типа</string>
                </property>
                <property name="toolTip">
                 <string>Кадры с невалидным DF</string>
@@ -1949,7 +1949,7 @@
               </row>
               <row>
                <property name="text">
-                <string>ICAO Fails</string>
+                <string>Ошибок ИКАО</string>
                </property>
               </row>
               <row>
@@ -1962,7 +1962,7 @@
               </row>
               <row>
                <property name="text">
-                <string>Alt Fails</string>
+                <string>Ошибок высоты</string>
                </property>
               </row>
               <row>
